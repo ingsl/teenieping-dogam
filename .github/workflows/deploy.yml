@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci --omit=optional
+      - run: npm ci
       - name: React 빌드 (+ 주소별 index.html, OG 메타)
         run: npm run build
         env:
