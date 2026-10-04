@@ -123,6 +123,15 @@ async function main() {
     items.push(rec);
   }
 
+  // 이미지가 없거나 한쪽 위키에서만 확인된 항목(그룹 문서·정령 등)은 도감에서 뺀다.
+  // overrides 에 { "<id>": { "keep": true } } 를 주면 예외로 남긴다.
+  const excluded = [];
+  for (let i = items.length - 1; i >= 0; i--) {
+    const r = items[i];
+    if ((!r.image || !r.verified) && !overrides[r.id]?.keep) excluded.push(...items.splice(i, 1));
+  }
+  for (const r of items) delete r.keep;
+
   // 관계: Fandom 링크 대상 중 도감에 있는 캐릭터만 id 참조로 연결
   const ids = new Set(items.map((r) => r.id));
   for (const rec of items) {
@@ -159,7 +168,8 @@ async function main() {
   await writeJson(path.join(PUBLIC, 'data', 'teeniepings.json'), out);
 
   // ── 리포트 ──
-  console.log(`✔ public/data/teeniepings.json — ${items.length}건 (확인됨 ${items.filter((r) => r.verified).length}, 한쪽 위키만 ${items.filter((r) => !r.verified).length})`);
+  console.log(`✔ public/data/teeniepings.json — ${items.length}건 (모두 이미지 있음 · 두 위키 확인)`);
+  if (excluded.length) console.log(`  제외 ${excluded.length}건 (이미지 없음 또는 미확인): ${excluded.map((r) => r.nameKo).join(', ')}`);
   const fields = ['seasonKey', 'gender', 'emotion', 'item', 'magic', 'intro', 'image'];
   console.log('  빈 필드:');
   for (const k of fields) {

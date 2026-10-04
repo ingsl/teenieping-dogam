@@ -5,7 +5,7 @@
     "namu": "https://namu.wiki (CC BY-NC-SA 2.0 KR)",
     "fandom": "https://catchteenieping.fandom.com (CC BY-SA 3.0)"
   },
-  "count": 162,
+  "count": 158,
   "seasons": [
     {
       "key": "emotion",
@@ -2599,35 +2599,6 @@
       "voice": "김현심"
     },
     {
-      "id": "nursepings",
-      "nameKo": "간호핑들",
-      "nameEn": "Nursepings",
-      "season": "3기 비밀",
-      "seasonKey": "secret",
-      "grade": "일반",
-      "gender": "여성",
-      "emotion": "",
-      "intro": "",
-      "item": "",
-      "magic": "",
-      "episodes": [],
-      "relations": [
-        {
-          "id": "cureping",
-          "label": "친구"
-        }
-      ],
-      "colorHex": "#017DAC",
-      "image": "",
-      "thumb": "",
-      "verified": false,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Nursepings",
-        "fandomRevId": 221081
-      },
-      "updatedAt": "2026-10-04T13:11:52.687Z"
-    },
-    {
       "id": "handyping",
       "nameKo": "고쳐핑",
       "nameEn": "Handyping",
@@ -2864,12 +2835,7 @@
           "plot": ""
         }
       ],
-      "relations": [
-        {
-          "id": "nursepings",
-          "label": "친구"
-        }
-      ],
+      "relations": [],
       "colorHex": "#E42580",
       "image": "images/cureping.webp",
       "thumb": "images/thumb/cureping.webp",
@@ -4980,10 +4946,6 @@
         {
           "id": "eclipseping",
           "label": "라이벌"
-        },
-        {
-          "id": "mirror-spirit",
-          "label": "라이벌"
         }
       ],
       "colorHex": "#D09EC8",
@@ -5023,10 +4985,6 @@
       "relations": [
         {
           "id": "henryping",
-          "label": "친구"
-        },
-        {
-          "id": "mirror-spirit",
           "label": "친구"
         },
         {
@@ -5502,35 +5460,6 @@
       "voice": "김은아"
     },
     {
-      "id": "choruspings",
-      "nameKo": "코러스핑",
-      "nameEn": "Choruspings",
-      "season": "6기 프린세스",
-      "seasonKey": "princess",
-      "grade": "일반",
-      "gender": "여성",
-      "emotion": "",
-      "intro": "",
-      "item": "",
-      "magic": "",
-      "episodes": [],
-      "relations": [
-        {
-          "id": "trotping",
-          "label": "친구"
-        }
-      ],
-      "colorHex": "hsl(315 70% 80%)",
-      "image": "",
-      "thumb": "",
-      "verified": false,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Choruspings",
-        "fandomRevId": 216424
-      },
-      "updatedAt": "2026-10-04T13:11:52.637Z"
-    },
-    {
       "id": "dozyping",
       "nameKo": "쿨쿨핑",
       "nameEn": "Dozyping",
@@ -5629,10 +5558,6 @@
         {
           "id": "henryping",
           "label": "친구"
-        },
-        {
-          "id": "choruspings",
-          "label": "친구"
         }
       ],
       "colorHex": "#119AD5",
@@ -5648,35 +5573,6 @@
       "likes": "노래, 화려한 조명",
       "dislikes": "심심한 것",
       "voice": "강성우"
-    },
-    {
-      "id": "mirror-spirit",
-      "nameKo": "거울의 정령",
-      "nameEn": "Mirror Spirit",
-      "season": "6기 프린세스",
-      "seasonKey": "princess",
-      "grade": "빌런",
-      "gender": "남성",
-      "emotion": "",
-      "intro": "",
-      "item": "",
-      "magic": "",
-      "episodes": [],
-      "relations": [
-        {
-          "id": "eclipseping",
-          "label": "친구"
-        }
-      ],
-      "colorHex": "#1F4B3D",
-      "image": "",
-      "thumb": "",
-      "verified": false,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mirror_Spirit",
-        "fandomRevId": 215238
-      },
-      "updatedAt": "2026-10-04T13:11:52.670Z"
     },
     {
       "id": "limeping",
@@ -5989,35 +5885,6 @@
       "updatedAt": "2026-10-04T13:11:52.726Z",
       "partner": "카이트",
       "voice": "서다혜"
-    },
-    {
-      "id": "soldierpings",
-      "nameKo": "병사핑",
-      "nameEn": "Soldierpings",
-      "season": "극장판",
-      "seasonKey": "movie",
-      "grade": "빌런",
-      "gender": "Varies",
-      "emotion": "",
-      "intro": "",
-      "item": "",
-      "magic": "",
-      "episodes": [],
-      "relations": [
-        {
-          "id": "heartsping",
-          "label": "라이벌"
-        }
-      ],
-      "colorHex": "#4B4955",
-      "image": "",
-      "thumb": "",
-      "verified": false,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Soldierpings",
-        "fandomRevId": 204882
-      },
-      "updatedAt": "2026-10-04T13:11:52.700Z"
     },
     {
       "id": "truthping",
