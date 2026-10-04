@@ -98,7 +98,7 @@ export default function Quiz() {
   if (!level) {
     const present = new Set(data.items.map((i) => i.seasonKey));
     return (
-      <GameSetup emoji="❓" title="누구일까?" desc={`그림을 보고 어떤 티니핑인지 맞혀요. 한 판에 ${ROUNDS}문제!`}>
+      <GameSetup emoji="🤔" title="누구일까?" desc={`그림을 보고 어떤 티니핑인지 맞혀요. 한 판에 ${ROUNDS}문제!`}>
         <SetupStep n="1" title="어떤 티니핑으로 할까요?">
           <div className="chip-scroll">
             {[['', '전체'], ...data.seasons.filter((s) => present.has(s.key)).map((s) => [s.key, s.label])].map(([k, l]) => (
@@ -142,7 +142,7 @@ export default function Quiz() {
         : `아쉬워요! 정답은 ${josa(q.answer.nameKo, '이에요/예요')}`;
 
   return (
-    <GameShell title="누구일까?" emoji="❓" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => { clearTimeout(timer.current); setLevel(null); }}>
+    <GameShell title="누구일까?" emoji="🤔" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => { clearTimeout(timer.current); setLevel(null); }}>
       <div className="quiz-stage">
         <ProgressDots results={results} total={questions.length} current={index} />
         <div className="timebar" aria-hidden="true" style={{ visibility: level.seconds ? 'visible' : 'hidden' }}>
