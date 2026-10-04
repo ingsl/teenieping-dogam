@@ -1,3 +1,4 @@
+import { Crown, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { asset } from '../lib/data.js';
 
@@ -26,7 +27,7 @@ export default function CharacterCard({ item, compact = false }) {
     <>
       {!compact && special && (
         <span className={`badge ${GRADE_CLASS[item.grade]}`} title={item.grade}>
-          {item.grade === '로열' ? '👑' : '🌟'}<span className="sr-only">{item.grade}</span>
+          {item.grade === '로열' ? <Crown size={16} strokeWidth={2.4} aria-hidden="true" /> : <Sparkles size={16} strokeWidth={2.4} aria-hidden="true" />}<span className="sr-only">{item.grade}</span>
         </span>
       )}
       <div className="art"><CharacterArt item={item} /></div>

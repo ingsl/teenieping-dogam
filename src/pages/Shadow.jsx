@@ -1,6 +1,7 @@
 // 그림자 찾기 — 티니핑을 보고, 그림자 5개 중 같은 모양을 찾기
 import { useEffect, useRef, useState } from 'react';
-import GameShell, { GameSetup, SetupStep, ProgressDots } from '../components/GameShell.jsx';
+import { Play } from 'lucide-react';
+import GameShell, { GameSetup, SetupStep, ProgressDots, pickArt } from '../components/GameShell.jsx';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, asset, shuffle, store, confetti } from '../lib/data.js';
 import { useFx } from '../lib/fx.jsx';
@@ -76,7 +77,7 @@ export default function Shadow() {
     const present = new Set(data.items.map((i) => i.seasonKey));
     const best = store.get(bestKey(scope));
     return (
-      <GameSetup emoji="🌑" title="그림자 찾기" desc="티니핑과 똑같은 모양의 그림자를 찾아요. 그림자 5개 중 하나!">
+      <GameSetup art={pickArt(data.items, 'lalaping')} artStyle="shadow" title="그림자 찾기" desc="티니핑과 똑같은 모양의 그림자를 찾아요. 그림자 5개 중 하나!">
         <SetupStep n="1" title="어떤 티니핑으로 할까요?">
           <div className="chip-scroll">
             {[['', '전체'], ...data.seasons.filter((s) => present.has(s.key)).map((s) => [s.key, s.label])].map(([k, l]) => (
@@ -85,7 +86,7 @@ export default function Shadow() {
           </div>
         </SetupStep>
         <div className="setup-start">
-          <button className="btn big" type="button" onClick={start}>시작하기 ▶</button>
+          <button className="btn big" type="button" onClick={start}><Play size={20} fill="currentColor" aria-hidden="true" /> 시작하기</button>
           <small>{best !== null ? `최고 기록 ${best}/${ROUNDS}` : `한 판에 ${ROUNDS}문제`}</small>
         </div>
       </GameSetup>
@@ -93,7 +94,7 @@ export default function Shadow() {
   }
 
   return (
-    <GameShell title="그림자 찾기" emoji="🌑" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => setRounds(null)}>
+    <GameShell title="그림자 찾기" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => setRounds(null)}>
       <div className="shadow-stage">
         <ProgressDots results={results} total={rounds.length} current={index} />
         {r && (
@@ -102,7 +103,7 @@ export default function Shadow() {
               <img src={asset(r.answer.image)} alt={r.answer.nameKo} draggable="false" />
             </div>
             <p className={`quiz-feedback${solved ? ' ok' : tried.length ? ' no' : ''}`} aria-live="polite">
-              {solved ? `찾았다! ${josa(r.answer.nameKo, '이/가')} 맞아요 💖`
+              {solved ? `찾았다! ${josa(r.answer.nameKo, '이/가')} 맞아요`
                 : tried.length ? '다시 한번 찾아볼까요?' : `${josa(r.answer.nameKo, '과/와')} 똑같은 그림자는 어디 있을까요?`}
             </p>
             <div className="shadow-options">

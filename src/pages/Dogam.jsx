@@ -1,4 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+import { ArrowRight, ArrowUp, Search, Sparkles, X } from 'lucide-react';
 import { Link, useSearchParams } from 'react-router-dom';
 import CharacterCard, { CharacterArt, GradeChip } from '../components/CharacterCard.jsx';
 import { useData, useTitle, matches } from '../lib/data.js';
@@ -15,14 +16,14 @@ function Spotlight({ item }) {
     <Link className="spotlight" to={`/p/${item.id}`}>
       <div className="spotlight-art"><CharacterArt item={item} full /></div>
       <div className="spotlight-body">
-        <span className="spotlight-label">✨ 오늘의 티니핑</span>
+        <span className="spotlight-label"><Sparkles size={15} aria-hidden="true" /> 오늘의 티니핑</span>
         <strong className="spotlight-name">{item.nameKo}</strong>
         <div className="chips">
           {item.season && <span className="chip">{item.season}</span>}
           <GradeChip grade={item.grade} />
         </div>
         {item.intro && <p className="spotlight-intro">{item.intro}</p>}
-        <span className="spotlight-more">자세히 보기 →</span>
+        <span className="spotlight-more">자세히 보기 <ArrowRight size={16} aria-hidden="true" /></span>
       </div>
     </Link>
   );
@@ -36,7 +37,7 @@ function BackToTop() {
     return () => window.removeEventListener('scroll', on);
   }, []);
   return (
-    <button type="button" className={`to-top${show ? ' show' : ''}`} aria-label="맨 위로" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>↑</button>
+    <button type="button" className={`to-top${show ? ' show' : ''}`} aria-label="맨 위로" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><ArrowUp size={22} /></button>
   );
 }
 
@@ -76,9 +77,10 @@ export default function Dogam() {
       <section className="toolbar" aria-label="검색과 필터">
         <div className="search-wrap">
           <label className="sr-only" htmlFor="q">이름 검색</label>
+          <Search className="search-icon" size={20} aria-hidden="true" />
           <input id="q" className="search" type="search" placeholder="이름으로 찾기 (하츄핑, Heartsping, ㅎㅊㅍ)" autoComplete="off"
             value={q} onChange={(e) => set('q', e.target.value)} enterKeyHint="search" />
-          {q && <button type="button" className="search-clear" aria-label="검색어 지우기" onClick={() => set('q', '')}>✕</button>}
+          {q && <button type="button" className="search-clear" aria-label="검색어 지우기" onClick={() => set('q', '')}><X size={16} /></button>}
         </div>
         {data && (
           <>
@@ -108,7 +110,7 @@ export default function Dogam() {
       </div>
       {data && !list.length && (
         <div className="empty">
-          <p>찾는 티니핑이 없어요 🥲</p>
+          <p>찾는 티니핑이 없어요</p>
           <button type="button" className="btn ghost" onClick={() => setParams({}, { replace: true })}>전체 보기</button>
         </div>
       )}

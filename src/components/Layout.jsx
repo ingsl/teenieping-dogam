@@ -1,3 +1,5 @@
+import { BookOpen, Gamepad2, Shuffle } from 'lucide-react';
+import LogoMark from './Logo.jsx';
 import { NavLink, Link, Outlet, useNavigate, useLocation, useNavigationType } from 'react-router-dom';
 import { useEffect } from 'react';
 import { loadData } from '../lib/data.js';
@@ -9,7 +11,7 @@ function RandomLink() {
     const { items } = await loadData();
     navigate(`/p/${items[Math.floor(Math.random() * items.length)].id}`);
   };
-  return <a href="#random" onClick={go}><span className="ico" aria-hidden="true">🎲</span>랜덤핑</a>;
+  return <a href="#random" onClick={go}><Shuffle className="ico" size={20} aria-hidden="true" />랜덤핑</a>;
 }
 
 export default function Layout() {
@@ -40,10 +42,10 @@ export default function Layout() {
     <>
       <header className="site-header">
         <div className="inner">
-          <Link className="logo" to="/"><span className="heart">💖</span>티니핑 도감</Link>
+          <Link className="logo" to="/"><LogoMark />티니핑 도감</Link>
           <nav className="site-nav" aria-label="주 메뉴">
-            <NavLink to="/" end className={({ isActive }) => (isActive || pathname.startsWith('/p/') ? 'active' : '')}><span className="ico" aria-hidden="true">📖</span>도감</NavLink>
-            <NavLink to="/games"><span className="ico" aria-hidden="true">🎮</span>게임</NavLink>
+            <NavLink to="/" end className={({ isActive }) => (isActive || pathname.startsWith('/p/') ? 'active' : '')}><BookOpen className="ico" size={20} aria-hidden="true" />도감</NavLink>
+            <NavLink to="/games"><Gamepad2 className="ico" size={20} aria-hidden="true" />게임</NavLink>
             <RandomLink />
           </nav>
         </div>

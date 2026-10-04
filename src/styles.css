@@ -624,4 +624,49 @@ img { -webkit-user-drag: none; }
   .quiz-option { min-height: 56px; }
   .detail-nav .btn { padding: 8px 14px; }
 }
-@media (min-width: 600px) { .site-nav a .ico { display: none; } }
+
+
+/* ═════════════ 아이콘 (Lucide SVG — 이모지 대신) ═════════════ */
+svg.lucide { flex: none; vertical-align: -0.15em; }
+.btn, .back-link, .spotlight-label, .spotlight-more, .best-badge, .score-pill, .catch-time,
+.hud .stats span, .section h2, .site-nav a, .logo { display: inline-flex; align-items: center; gap: 6px; }
+.logo { gap: 8px; }
+.logo-mark { animation: beat 1.8s ease-in-out infinite; transform-origin: 50% 60%; }
+.site-nav a .ico { display: none; }
+.section h2 svg { color: var(--pink); }
+.hud .stats span svg { color: var(--pink); }
+.score-pill .star-icon { color: var(--sun); fill: var(--sun); }
+.catch-time svg { color: var(--ink-soft); }
+
+/* 로열·레전드 배지 */
+.card .badge.royal { color: #d69a00; }
+.card .badge.legend { color: #7b5cff; }
+
+/* 결과 별 */
+dialog.result .big-stars { display: flex; justify-content: center; gap: 6px; margin: 6px 0; }
+dialog.result .big-stars svg.on { color: var(--sun); fill: var(--sun); filter: drop-shadow(0 2px 4px rgba(255, 180, 0, 0.35)); }
+dialog.result .big-stars svg.off { color: var(--line); fill: var(--line); }
+.best-badge { margin: 0; padding: 4px 12px; border-radius: 999px; background: #fff1c2; color: #8a5b00; font-weight: 800; font-size: 0.9rem; }
+@media (prefers-color-scheme: dark) { .best-badge { background: #4d3b0c; color: #ffd772; } }
+
+/* 검색창 돋보기 */
+.search-wrap .search { padding-left: 44px; }
+.search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--ink-soft); pointer-events: none; }
+.search-clear { display: grid; place-items: center; }
+
+/* 게임 설정 화면 대표 캐릭터 */
+.setup-art { width: 120px; height: 120px; object-fit: contain; filter: drop-shadow(0 8px 12px rgba(59, 35, 64, 0.18)); }
+.setup-art.shadow { filter: brightness(0) opacity(0.75); }
+.choice-icon { color: var(--pink); }
+
+/* 메모리 카드 뒷면 하트 · 보너스 칸 별 */
+.mcard .back { color: rgba(255, 255, 255, 0.92); }
+.mcard.free .face { color: #fff; }
+
+/* 캐치: 잡았을 때 반짝 링 */
+.catch-burst { position: absolute; inset: 12%; border-radius: 50%; border: 4px solid var(--sun); box-shadow: 0 0 0 6px rgba(255, 201, 77, 0.35); animation: burst 0.4s ease-out forwards; pointer-events: none; }
+
+@media (max-width: 599px) {
+  .site-nav a { display: grid; justify-items: center; gap: 2px; }
+  .site-nav a .ico { display: block; }
+}

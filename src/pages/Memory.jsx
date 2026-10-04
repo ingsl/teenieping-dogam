@@ -1,5 +1,6 @@
 // 메모리(카드 짝 맞추기) 게임 — 카드 앞면은 도감 카드와 같은 모양
 import { useEffect, useRef, useState } from 'react';
+import { Hand, Heart, Star, Timer } from 'lucide-react';
 import CharacterCard from '../components/CharacterCard.jsx';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, useTimer, shuffle, store, formatTime, confetti } from '../lib/data.js';
@@ -127,9 +128,9 @@ export default function Memory() {
     <section>
       <div className="hud">
         <div className="stats">
-          <span>⏱ {formatTime(seconds)}</span>
-          <span>👆 {moves}번</span>
-          <span>💗 {matched.size / 2}/{totalPairs}</span>
+          <span><Timer size={18} aria-hidden="true" />{formatTime(seconds)}</span>
+          <span><Hand size={18} aria-hidden="true" />{moves}번</span>
+          <span><Heart size={18} aria-hidden="true" />{matched.size / 2}/{totalPairs}</span>
         </div>
         <div className="actions">
           <button className="btn ghost" type="button" onClick={() => start(level)}>다시 섞기</button>
@@ -139,14 +140,14 @@ export default function Memory() {
       </div>
       <div className={`memory-board${level.cols >= 8 ? ' tiny' : ''}`} style={{ '--cols': level.cols, '--rows': level.rows }} role="grid" aria-label="메모리 카드판">
         {cards.map((c, i) => {
-          if (c.free) return <div key="free" className="mcard free" role="gridcell" aria-label="보너스 칸"><div className="face">🌟</div></div>;
+          if (c.free) return <div key="free" className="mcard free" role="gridcell" aria-label="보너스 칸"><div className="face"><Star size="40%" fill="currentColor" strokeWidth={0} /></div></div>;
           const up = open.includes(i) || matched.has(i);
           const cls = ['mcard', up && 'flipped', matched.has(i) && 'matched', shake.includes(i) && 'shake'].filter(Boolean).join(' ');
           return (
             <button key={`${round}-${i}`} type="button" className={cls} role="gridcell" onClick={() => flip(i)}
               aria-label={up ? `${c.item.nameKo} 카드${matched.has(i) ? ' 짝 찾음' : ''}` : `뒤집힌 카드 ${i + 1}`}>
               <div className="inner">
-                <div className="face back" aria-hidden="true">♥</div>
+                <div className="face back" aria-hidden="true"><Heart size="38%" fill="currentColor" strokeWidth={0} /></div>
                 <div className="face front" aria-hidden="true"><CharacterCard item={c.item} compact /></div>
               </div>
             </button>

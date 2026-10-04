@@ -1,5 +1,6 @@
 // 퍼즐 게임: 바꾸기(swap) / 슬라이드(slide) × 난이도 3~6
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Camera, Eye, Hand, Hash, Shuffle, Timer } from 'lucide-react';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, useTimer, asset, shuffle, store, formatTime, confetti, matches, characterCanvas } from '../lib/data.js';
 import { useFx, SoundToggle } from '../lib/fx.jsx';
@@ -185,13 +186,13 @@ export default function Puzzle() {
     return (
       <section>
         <div className="hero">
-          <h1>🧩 퍼즐 게임</h1>
+          <h1>퍼즐 게임</h1>
           <p>조각을 맞춰 티니핑 그림을 완성해요.</p>
         </div>
         <div className="section">
           <h2>1. 놀이 방법</h2>
           <div className="filter-row" role="radiogroup" aria-label="놀이 방법">
-            {[['swap', '🔄 바꾸기 — 두 조각을 눌러 자리 바꾸기'], ['slide', '⬜ 슬라이드 — 빈칸으로 밀기']].map(([m, label]) => (
+            {[['swap', '바꾸기 — 두 조각을 눌러 자리 바꾸기'], ['slide', '슬라이드 — 빈칸으로 밀기']].map(([m, label]) => (
               <button key={m} type="button" className="pill" aria-pressed={mode === m} onClick={() => { setMode(m); store.set('puzzle:mode', m); }}>{label}</button>
             ))}
           </div>
@@ -203,14 +204,14 @@ export default function Puzzle() {
             <div>
               <div className="picked-name">{upload ? '내 사진' : item?.nameKo}</div>
               <div className="option-row">
-                <button className="btn ghost" type="button" onClick={() => { setUpload(null); setItem(randomItem()); }}>🎲 아무나</button>
-                <label className="btn ghost" htmlFor="upload">📷 내 사진으로</label>
+                <button className="btn ghost" type="button" onClick={() => { setUpload(null); setItem(randomItem()); }}><Shuffle size={18} aria-hidden="true" /> 아무나</button>
+                <label className="btn ghost" htmlFor="upload"><Camera size={18} aria-hidden="true" /> 내 사진으로</label>
                 <input id="upload" type="file" accept="image/*" className="sr-only" onChange={(e) => e.target.files[0] && onUpload(e.target.files[0])} />
               </div>
             </div>
           </div>
           <label className="sr-only" htmlFor="pick-q">티니핑 찾기</label>
-          <input id="pick-q" className="search" type="search" placeholder="🔍 티니핑 찾기" value={q} onChange={(e) => setQ(e.target.value)} />
+          <input id="pick-q" className="search" type="search" placeholder="티니핑 찾기" value={q} onChange={(e) => setQ(e.target.value)} />
           <div className="picker">
             {list.map((i) => (
               <button key={i.id} type="button" aria-pressed={!upload && item?.id === i.id} onClick={() => { setUpload(null); setItem(i); }}>
@@ -243,13 +244,13 @@ export default function Puzzle() {
     <section>
       <div className="hud">
         <div className="stats">
-          <span>⏱ {formatTime(seconds)}</span>
-          <span>👆 {moves}번</span>
+          <span><Timer size={18} aria-hidden="true" />{formatTime(seconds)}</span>
+          <span><Hand size={18} aria-hidden="true" />{moves}번</span>
         </div>
         <div className="actions">
-          <button className="btn ghost" type="button" aria-pressed={showNum} onClick={() => { setShowNum(!showNum); store.set('puzzle:showNum', !showNum); }}>🔢 번호</button>
+          <button className="btn ghost" type="button" aria-pressed={showNum} onClick={() => { setShowNum(!showNum); store.set('puzzle:showNum', !showNum); }}><Hash size={18} aria-hidden="true" /> 번호</button>
           <button className="btn ghost" type="button" onPointerDown={() => setPeek(true)} onPointerUp={() => setPeek(false)} onPointerLeave={() => setPeek(false)}
-            onKeyDown={(e) => (e.key === ' ' || e.key === 'Enter') && setPeek(true)} onKeyUp={() => setPeek(false)}>👀 정답 보기</button>
+            onKeyDown={(e) => (e.key === ' ' || e.key === 'Enter') && setPeek(true)} onKeyUp={() => setPeek(false)}><Eye size={18} aria-hidden="true" /> 정답 보기</button>
           <button className="btn ghost" type="button" onClick={() => start(n)}>다시 섞기</button>
           <button className="btn ghost" type="button" onClick={() => setN(null)}>설정</button>
           <SoundToggle on={soundOn} toggle={toggleSound} />

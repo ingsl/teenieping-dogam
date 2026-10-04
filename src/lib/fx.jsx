@@ -1,3 +1,4 @@
+import { Volume2, VolumeX } from 'lucide-react';
 // 게임 소리: 부드러운 실로폰·종소리 느낌의 효과음(Web Audio, 파일 없음)
 // 목소리: 브라우저 기계음(TTS)은 쓰지 않는다. public/voice/<이름>.mp3 녹음 파일이 있을 때만 재생.
 //   예) public/voice/correct.mp3 ("우와~ 정답이에요!"), wrong.mp3, start.mp3, win.mp3
@@ -133,7 +134,7 @@ export function useFx() {
 export function SoundToggle({ on, toggle }) {
   return (
     <button className="icon-btn" type="button" aria-pressed={on} onClick={toggle} aria-label={on ? '소리 끄기' : '소리 켜기'} title={on ? '소리 끄기' : '소리 켜기'}>
-      {on ? '🔊' : '🔇'}
+      {on ? <Volume2 size={20} aria-hidden="true" /> : <VolumeX size={20} aria-hidden="true" />}
     </button>
   );
 }

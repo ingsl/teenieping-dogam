@@ -1,3 +1,4 @@
+import { Star, Trophy } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 /** 게임 결과 모달. result 가 있으면 열린다: { stars, text, isBest } */
@@ -14,8 +15,11 @@ export default function ResultDialog({ result, title, onAgain, onMenu, menuLabel
       <h2>{title}</h2>
       {result && (
         <>
-          <div className="big-stars">{'★'.repeat(result.stars)}{'☆'.repeat(3 - result.stars)}</div>
-          <p>{result.text}{result.isBest && <><br />🎉 최고 기록!</>}</p>
+          <div className="big-stars" aria-label={`별 ${result.stars}개`}>
+            {[0, 1, 2].map((i) => <Star key={i} size={40} className={i < result.stars ? 'on' : 'off'} aria-hidden="true" />)}
+          </div>
+          <p>{result.text}</p>
+          {result.isBest && <p className="best-badge"><Trophy size={16} aria-hidden="true" /> 최고 기록!</p>}
         </>
       )}
       <div className="btns">

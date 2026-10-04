@@ -1,6 +1,7 @@
 // 누구일까? — 사진 / 그림자 / 확대 사진을 보고 티니핑 이름 맞히기
 import { useEffect, useRef, useState } from 'react';
-import GameShell, { GameSetup, SetupStep, ProgressDots } from '../components/GameShell.jsx';
+import { Image as ImageIcon, Moon, ZoomIn } from 'lucide-react';
+import GameShell, { GameSetup, SetupStep, ProgressDots, pickArt } from '../components/GameShell.jsx';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, asset, shuffle, store, confetti } from '../lib/data.js';
 import { useFx } from '../lib/fx.jsx';
@@ -8,9 +9,9 @@ import { josa } from '../lib/korean.js';
 
 const ROUNDS = 10;
 const MODES = [
-  { key: 'photo', emoji: '📷', name: '사진', desc: '사진을 보고 맞혀요' },
-  { key: 'shadow', emoji: '🌑', name: '그림자', desc: '까만 그림자만 보고 맞혀요' },
-  { key: 'zoom', emoji: '🔍', name: '확대', desc: '크게 확대된 부분을 보고 맞혀요' },
+  { key: 'photo', Icon: ImageIcon, name: '사진', desc: '사진을 보고 맞혀요' },
+  { key: 'shadow', Icon: Moon, name: '그림자', desc: '까만 그림자만 보고 맞혀요' },
+  { key: 'zoom', Icon: ZoomIn, name: '확대', desc: '크게 확대된 부분을 보고 맞혀요' },
 ];
 const LEVELS = [
   { key: 'easy', name: '쉬움', choices: 3, seconds: 0, desc: '보기 3개 · 시간 제한 없음' },
@@ -98,7 +99,7 @@ export default function Quiz() {
   if (!level) {
     const present = new Set(data.items.map((i) => i.seasonKey));
     return (
-      <GameSetup emoji="🤔" title="누구일까?" desc={`그림을 보고 어떤 티니핑인지 맞혀요. 한 판에 ${ROUNDS}문제!`}>
+      <GameSetup art={pickArt(data.items, 'heartsping')} title="누구일까?" desc={`그림을 보고 어떤 티니핑인지 맞혀요. 한 판에 ${ROUNDS}문제!`}>
         <SetupStep n="1" title="어떤 티니핑으로 할까요?">
           <div className="chip-scroll">
             {[['', '전체'], ...data.seasons.filter((s) => present.has(s.key)).map((s) => [s.key, s.label])].map(([k, l]) => (
@@ -110,7 +111,7 @@ export default function Quiz() {
           <div className="choice-grid three">
             {MODES.map((m) => (
               <button key={m.key} type="button" className="choice" aria-pressed={mode === m.key} onClick={() => { setMode(m.key); store.set('quiz:mode', m.key); }}>
-                <span className="choice-emoji" aria-hidden="true">{m.emoji}</span>
+                <m.Icon className="choice-icon" size={28} aria-hidden="true" />
                 <strong>{m.name}</strong>
                 <small>{m.desc}</small>
               </button>
@@ -137,12 +138,12 @@ export default function Quiz() {
 
   const modeInfo = MODES.find((m) => m.key === mode);
   const feedback = !q ? '' : !revealed ? '이 티니핑은 누구일까요?'
-    : picked === q.answer.id ? `딩동댕! ${josa(q.answer.nameKo, '이에요/예요')} 💖`
+    : picked === q.answer.id ? `딩동댕! ${josa(q.answer.nameKo, '이에요/예요')}`
       : picked === 'timeout' ? `시간이 다 됐어요. 정답은 ${josa(q.answer.nameKo, '이에요/예요')}`
         : `아쉬워요! 정답은 ${josa(q.answer.nameKo, '이에요/예요')}`;
 
   return (
-    <GameShell title="누구일까?" emoji="🤔" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => { clearTimeout(timer.current); setLevel(null); }}>
+    <GameShell title="누구일까?" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => { clearTimeout(timer.current); setLevel(null); }}>
       <div className="quiz-stage">
         <ProgressDots results={results} total={questions.length} current={index} />
         <div className="timebar" aria-hidden="true" style={{ visibility: level.seconds ? 'visible' : 'hidden' }}>

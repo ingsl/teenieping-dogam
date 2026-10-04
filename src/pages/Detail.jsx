@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Heart, Tv, Users, Wand2 } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { CharacterArt, GradeChip } from '../components/CharacterCard.jsx';
 import { useData, useTitle, asset, store } from '../lib/data.js';
@@ -28,7 +29,7 @@ function LikeButton({ id }) {
   };
   return (
     <button className="btn like-btn" type="button" aria-pressed={liked} onClick={like}>
-      💗 좋아요 {count !== null && <span>{count.toLocaleString('ko-KR')}</span>}
+      <Heart size={18} fill={liked ? 'currentColor' : 'none'} aria-hidden="true" /> 좋아요 {count !== null && <span>{count.toLocaleString('ko-KR')}</span>}
     </button>
   );
 }
@@ -77,11 +78,11 @@ export default function Detail() {
   return (
     <div onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
       <nav className="detail-nav" aria-label="티니핑 이동">
-        <button type="button" className="btn ghost" onClick={goBack}>← 도감</button>
+        <button type="button" className="btn ghost" onClick={goBack}><ArrowLeft size={18} aria-hidden="true" /> 도감</button>
         <div className="detail-step">
-          {prev ? <Link className="icon-btn" to={`/p/${prev.id}`} replace aria-label={`이전: ${prev.nameKo}`} title={prev.nameKo}>‹</Link> : <span className="icon-btn disabled" aria-hidden="true">‹</span>}
+          {prev ? <Link className="icon-btn" to={`/p/${prev.id}`} replace aria-label={`이전: ${prev.nameKo}`} title={prev.nameKo}><ChevronLeft size={22} /></Link> : <span className="icon-btn disabled" aria-hidden="true"><ChevronLeft size={22} /></span>}
           <span className="detail-pos">{index + 1} / {data.items.length}</span>
-          {next ? <Link className="icon-btn" to={`/p/${next.id}`} replace aria-label={`다음: ${next.nameKo}`} title={next.nameKo}>›</Link> : <span className="icon-btn disabled" aria-hidden="true">›</span>}
+          {next ? <Link className="icon-btn" to={`/p/${next.id}`} replace aria-label={`다음: ${next.nameKo}`} title={next.nameKo}><ChevronRight size={22} /></Link> : <span className="icon-btn disabled" aria-hidden="true"><ChevronRight size={22} /></span>}
         </div>
       </nav>
       <article className="detail">
@@ -102,16 +103,16 @@ export default function Detail() {
           {CONFIG.counterUrl && <LikeButton id={it.id} />}
         </div>
       </article>
-      {it.magic && <section className="section"><h2>✨ 마법</h2><p className="pre">{it.magic}</p></section>}
+      {it.magic && <section className="section"><h2><Wand2 size={20} aria-hidden="true" /> 마법</h2><p className="pre">{it.magic}</p></section>}
       {it.episodes?.length > 0 && (
         <section className="section">
-          <h2>📺 에피소드</h2>
+          <h2><Tv size={20} aria-hidden="true" /> 에피소드</h2>
           <ul>{it.episodes.map((e) => <li key={e.episode}>{e.label && <strong>{e.label} · </strong>}{e.episode}</li>)}</ul>
         </section>
       )}
       {relations.length > 0 && (
         <section className="section">
-          <h2>🤝 관계</h2>
+          <h2><Users size={20} aria-hidden="true" /> 관계</h2>
           <div className="relations">
             {relations.map((r) => {
               const o = byId.get(r.id);

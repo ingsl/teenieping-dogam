@@ -1,6 +1,7 @@
 // 티니핑을 캐치! — 구멍에서 쏙쏙 나오는 티니핑 중 "찾는 티니핑"만 콕 잡기 (두더지 잡기 방식)
 import { useEffect, useRef, useState } from 'react';
-import GameShell, { GameSetup, SetupStep } from '../components/GameShell.jsx';
+import { Timer } from 'lucide-react';
+import GameShell, { GameSetup, SetupStep, pickArt } from '../components/GameShell.jsx';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, asset, shuffle, store, confetti } from '../lib/data.js';
 import { useFx } from '../lib/fx.jsx';
@@ -98,7 +99,7 @@ export default function Catch() {
 
   if (!speed) {
     return (
-      <GameSetup emoji="🫳" title="티니핑을 캐치!" desc={`쏙쏙 나오는 티니핑 중에서 찾는 티니핑만 콕! ${SECONDS}초 동안 몇 마리 잡을 수 있을까요?`}>
+      <GameSetup art={pickArt(data.items, 'happying')} title="티니핑을 캐치!" desc={`쏙쏙 나오는 티니핑 중에서 찾는 티니핑만 콕! ${SECONDS}초 동안 몇 마리 잡을 수 있을까요?`}>
         <SetupStep n="1" title="빠르기를 골라 시작해요">
           <div className="choice-grid three">
             {SPEEDS.map((sp) => {
@@ -118,7 +119,7 @@ export default function Catch() {
   }
 
   return (
-    <GameShell title="티니핑을 캐치!" emoji="🫳" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => setSpeed(null)}>
+    <GameShell title="티니핑을 캐치!" score={score} sound={{ on: soundOn, toggle: toggleSound }} onExit={() => setSpeed(null)}>
       <div className="catch-stage">
         <div className="catch-target">
           <img src={asset(target.thumb)} alt="" draggable="false" />
@@ -126,7 +127,7 @@ export default function Catch() {
             <small>찾는 티니핑</small>
             <strong>{josa(target.nameKo, '을/를')} 잡아요!</strong>
           </div>
-          <span className={`catch-time${left <= 5 ? ' danger' : ''}`} aria-label={`남은 시간 ${left}초`}>⏱ {left}</span>
+          <span className={`catch-time${left <= 5 ? ' danger' : ''}`} aria-label={`남은 시간 ${left}초`}><Timer size={20} aria-hidden="true" />{left}</span>
         </div>
         <div className="catch-field">
           {holes.map((h, i) => (
@@ -136,7 +137,7 @@ export default function Catch() {
                   <img src={asset(h.item.thumb)} alt="" draggable="false" />
                 </span>
               )}
-              {h?.state === 'caught' && <span className="catch-burst" aria-hidden="true">✨</span>}
+              {h?.state === 'caught' && <span className="catch-burst" aria-hidden="true" />}
             </button>
           ))}
         </div>

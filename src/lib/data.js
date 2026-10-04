@@ -111,14 +111,22 @@ export async function characterCanvas(item, size = 720) {
   ctx.fillRect(0, 0, size, size);
   ctx.globalAlpha = 0.12;
   ctx.fillStyle = item.colorHex || '#ff5fa2';
-  ctx.font = `${size / 10}px serif`;
-  for (let i = 0; i < 14; i++) ctx.fillText(i % 2 ? '♥' : '★', ((i * 97) % 10) * size / 10, ((i * 61) % 10 + 1) * size / 10);
+  for (let i = 0; i < 14; i++) {
+    ctx.beginPath();
+    ctx.arc(((i * 97) % 10 + 0.5) * size / 10, ((i * 61) % 10 + 0.5) * size / 10, size / (i % 2 ? 36 : 22), 0, Math.PI * 2);
+    ctx.fill();
+  }
   ctx.globalAlpha = 1;
   if (item.image) {
     try {
-      const img = new Image();
-      img.src = asset(item.image);
-      await img.decode();
+      // decode() 는 백그라운드 탭에서 멈출 수 있어 load 이벤트 + 시간 제한으로 기다린다
+      const img = await new Promise((resolve, reject) => {
+        const im = new Image();
+        const t = setTimeout(() => reject(new Error('timeout')), 5000);
+        im.onload = () => { clearTimeout(t); resolve(im); };
+        im.onerror = () => { clearTimeout(t); reject(new Error('load error')); };
+        im.src = asset(item.image);
+      });
       const s = size * 0.86;
       ctx.drawImage(img, (size - s) / 2, (size - s) / 2, s, s);
     } catch { /* 배경만 */ }
