@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/달콤핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:24:56.968Z",
+    "fetchedAt": "2026-10-04T14:11:44.571Z",
+    "nameEn": "Sweetping",
     "gender": "여성",
     "classification": "디저트 티니핑\n레전드 티니핑",
     "birthday": "",
@@ -47,5 +48,6 @@
       "연출",
       "작화감독"
     ]
-  }
+  },
+  "nameKo": "달콤핑"
 }

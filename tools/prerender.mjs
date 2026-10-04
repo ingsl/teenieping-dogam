@@ -39,14 +39,12 @@ async function main() {
   await writeFile(path.join(DIST, '.nojekyll'), '', 'utf8');
 
   const statics = [
-    ['games', '티니핑 게임', '티니핑 메모리 게임과 퍼즐 게임 — 난이도별로 즐겨요.'],
+    ['games', '티니핑 게임', '누구일까? · 그림자 찾기 · 티니핑을 캐치! · 메모리 · 퍼즐 — 티니핑과 함께 놀아요.'],
     ['games/memory', '메모리 게임 — 티니핑 도감', '같은 티니핑 짝을 찾는 카드 뒤집기 게임. 3×4부터 8×8까지.'],
     ['games/puzzle', '퍼즐 게임 — 티니핑 도감', '조각을 맞춰 티니핑 그림을 완성하는 퍼즐. 쉬움 3×3부터 고수 6×6까지.'],
-    ['games/quiz', '티니핑 맞추기 — 티니핑 도감', '사진(또는 그림자)을 보고 어떤 티니핑인지 맞혀요. 전체·기수별, 3단계 난이도.'],
-    ['games/kids/shadow', '그림자 찾기 — 티니핑 도감', '유아용: 그림자와 같은 티니핑을 찾아요.'],
-    ['games/kids/different', '다른 하나 찾기 — 티니핑 도감', '유아용: 혼자 다른 티니핑을 찾아요.'],
-    ['games/kids/count', '몇 마리일까? — 티니핑 도감', '유아용: 티니핑이 몇 마리인지 세어 봐요.'],
-    ['games/kids/bubbles', '비눗방울 톡톡 — 티니핑 도감', '유아용: 방울 속 티니핑을 터뜨려요.'],
+    ['games/quiz', '누구일까? — 티니핑 도감', '사진·그림자·확대 사진을 보고 어떤 티니핑인지 맞혀요. 전체·기수별, 3단계 난이도.'],
+    ['games/shadow', '그림자 찾기 — 티니핑 도감', '티니핑과 똑같은 그림자를 5개 중에서 찾아요.'],
+    ['games/catch', '티니핑을 캐치! — 티니핑 도감', '쏙쏙 나오는 티니핑 중 찾는 티니핑만 콕! 30초 캐치 게임.'],
   ];
   for (const [route, title, description] of statics) await emit(route, page(template, { title, description }));
 

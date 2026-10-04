@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/똑똑핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:24:16.888Z",
+    "fetchedAt": "2026-10-04T14:09:57.744Z",
+    "nameEn": "Shushping",
     "gender": "남성",
     "classification": "큐브 티니핑\n일반 티니핑",
     "birthday": "",
@@ -36,5 +37,6 @@
       "첫 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "똑똑핑"
 }

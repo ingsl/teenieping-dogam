@@ -3,12 +3,13 @@
 //
 //   node tools/build-data.mjs
 //
-// 소스와 우선순위 (아래가 이김)
-//   1. Fandom 캐시 (cache/fandom)  — 명단, 영문명, 기수·등급 분류, 대표색, 관계
-//   2. 나무위키 캐시 (cache/extra) — 한국어 상세: 성별·감정·소품·마법·좋아하는 것·첫 등장·소개, 등급 보조
-//   3. content/roster.js               — (선택) 사람이 확정한 이름·기수·등급
-//   4. content/overrides.json          — (선택) 사람이 고친 값. 모든 소스를 이김
-// 화면에는 한국어만 보인다. Fandom의 영문 설명 문장은 쓰지 않는다 (영문명 제외).
+// 소스 우선순위 (위가 이김)
+//   1. content/overrides.json   — (선택) 사람이 고친 값
+//   2. content/roster.js        — (선택) 사람이 확정한 이름·기수·등급
+//   3. 나무위키 (cache/extra)    — ★ 1순위 자동 소스: 명단·기수·등급(「티니핑」 문서 분류), 한국어 설명 전부, 대표 이미지
+//   4. Fandom (cache/fandom)    — 나무위키에 없을 때만: 명단 보충, 영문명, 성별·기수·등급, 대표색, 관계, 이미지
+// 화면은 한국어만 → Fandom 의 영어 설명 문장은 쓰지 않는다.
+// 나무위키·Fandom 어디에도 정보가 없거나 이미지가 없으면 도감에서 뺀다.
 // 출력 파일은 빌드 산출물이므로 직접 수정하지 말 것.
 
 import path from 'node:path';
@@ -24,13 +25,14 @@ function normalizeGender(raw = '') {
   return parts.join(' / ');
 }
 
-// 이미지가 없을 때 쓰는 파스텔 대표색 (id 해시 기반, 매 빌드 동일)
+// 대표색이 없을 때 (id 해시 기반, 매 빌드 동일)
 function fallbackColor(id) {
   let h = 0;
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
   return `hsl(${h % 360} 70% 80%)`;
 }
 
+/** Fandom: 나무위키에 없을 때 쓰는 보충값 (영어 문장은 제외) */
 function fromFandom(f) {
   if (!f) return {};
   return {
@@ -45,28 +47,30 @@ function fromFandom(f) {
   };
 }
 
-function fromNamu(n, current) {
-  if (!n) return {};
+/** 나무위키 캐릭터 문서 + 「티니핑」 명단 분류 */
+function fromNamu(n, listed) {
+  if (!n && !listed) return {};
   return {
-    gender: normalizeGender(n.gender),
-    emotion: n.emotion,
-    intro: n.intro,
-    item: n.item,
-    magic: n.magic,
-    jewel: n.jewel,
-    likes: n.likes,
-    dislikes: n.dislikes,
-    favoriteFood: n.favoriteFood,
-    birthday: n.birthday,
-    motif: n.motif,
-    symbol: n.symbol,
-    partner: n.partner,
-    voice: n.voice,
-    episodes: n.debut ? [{ episode: n.debut, label: '첫 등장', plot: '' }] : [],
-    // 등급·기수는 Fandom이 못 정했을 때만 나무위키로 보완
-    grade: current.grade || gradeFromNamu(n.classification),
-    seasonKey: current.seasonKey || seasonFromDebut(n.debut),
-    source: { namuUrl: n.url },
+    nameKo: listed?.nameKo,
+    nameEn: n?.nameEn,
+    seasonKey: listed?.season,
+    grade: listed?.grade || gradeFromNamu(n?.classification),
+    gender: normalizeGender(n?.gender),
+    emotion: n?.emotion,
+    intro: n?.intro,
+    item: n?.item,
+    magic: n?.magic,
+    jewel: n?.jewel,
+    likes: n?.likes,
+    dislikes: n?.dislikes,
+    favoriteFood: n?.favoriteFood,
+    birthday: n?.birthday,
+    motif: n?.motif,
+    symbol: n?.symbol,
+    partner: n?.partner,
+    voice: n?.voice,
+    episodes: n?.debut ? [{ episode: n.debut, label: '첫 등장', plot: '' }] : [],
+    source: n ? { namuUrl: n.url } : {},
   };
 }
 
@@ -82,35 +86,34 @@ function assignDefined(target, patch = {}) {
 
 async function main() {
   const fandom = (await readJsonDir(CACHE_FANDOM)).filter((r) => r && !r.isGroup && r.nameKo);
-  const byId = new Map(fandom.map((r) => [r.id, r]));
-  const byKo = new Map(fandom.map((r) => [r.nameKo, r]));
+  const fandomById = new Map(fandom.map((r) => [r.id, r]));
+  const namuDocs = (await readJsonDir(CACHE_AUX)).filter((r) => r?.id && r.namu);
+  const namuById = new Map(namuDocs.map((r) => [r.id, r]));
+  const listed = new Map(((await readJson(path.join(CACHE_AUX, '_roster.json'))) || []).map((r) => [r.nameKo, r]));
   const rosterById = new Map(ROSTER.map((r) => [r.id, r]));
   const overrides = (await readJson(path.join(ROOT, 'content', 'overrides.json'))) || {};
 
-  // 명단 = Fandom 전체 + roster에만 있는 캐릭터
-  const entries = fandom.map((f) => ({ id: f.id, fandom: f }));
-  for (const r of ROSTER) {
-    const f = byId.get(r.id) || byKo.get(r.nameKo);
-    if (!f) entries.push({ id: r.id, fandom: null });
-    else if (f.id !== r.id) rosterById.set(f.id, r);
-  }
+  // 명단 = 나무위키 ∪ Fandom (id 기준)
+  const ids = [...new Set([...namuById.keys(), ...fandomById.keys(), ...rosterById.keys()])];
 
   const items = [];
-  for (const { id, fandom: f } of entries) {
-    const roster = rosterById.get(id);
-    const namu = (await readJson(path.join(CACHE_AUX, `${id}.json`)))?.namu;
+  const excluded = [];
+  for (const id of ids) {
+    const f = fandomById.get(id);
+    const n = namuById.get(id);
+    const nameKo = n?.nameKo || f?.nameKo || rosterById.get(id)?.nameKo;
+    const l = listed.get(nameKo);
     const rec = {
       id, nameKo: '', nameEn: '', season: '', seasonKey: '', grade: '', gender: '', emotion: '', intro: '',
-      item: '', magic: '', episodes: [], relations: [], colorHex: '', image: '', thumb: '',
-      verified: false, source: {}, updatedAt: '',
+      item: '', magic: '', episodes: [], relations: [], colorHex: '', image: '', thumb: '', source: {}, updatedAt: '',
     };
-    assignDefined(rec, fromFandom(f));
-    assignDefined(rec, fromNamu(namu, rec));
+    assignDefined(rec, fromFandom(f));              // 4순위
+    assignDefined(rec, fromNamu(n?.namu, l));       // 3순위 (나무위키가 이김)
+    if (!rec.seasonKey) rec.seasonKey = seasonFromDebut(n?.namu?.debut);
+    const roster = rosterById.get(id);
     if (roster) assignDefined(rec, { nameKo: roster.nameKo, seasonKey: roster.season, grade: roster.grade, no: roster.no });
     assignDefined(rec, overrides[id]);
 
-    // 두 위키(Fandom·나무위키)에 모두 있거나 사람이 roster에 적은 캐릭터 = 확인됨
-    rec.verified = Boolean(roster) || Boolean(f && namu);
     rec.season = seasonByKey[rec.seasonKey]?.label || '';
     if (!rec.grade) rec.grade = '일반';
     if (!rec.colorHex) rec.colorHex = fallbackColor(id);
@@ -120,25 +123,25 @@ async function main() {
     }
     rec._friends = f?.friends || [];
     rec._enemies = f?.enemies || [];
+
+    // 정보(나무위키·Fandom)도 이미지도 있어야 도감에 넣는다. overrides 의 keep: true 는 예외
+    const hasInfo = Boolean(n?.namu || f?.hasInfobox || roster);
+    const keep = overrides[id]?.keep;
+    delete rec.keep;
+    if (!keep && (!rec.image || !hasInfo || !rec.nameKo)) {
+      excluded.push({ ...rec, why: !rec.image ? '이미지 없음' : '정보 없음' });
+      continue;
+    }
     items.push(rec);
   }
 
-  // 이미지가 없거나 한쪽 위키에서만 확인된 항목(그룹 문서·정령 등)은 도감에서 뺀다.
-  // overrides 에 { "<id>": { "keep": true } } 를 주면 예외로 남긴다.
-  const excluded = [];
-  for (let i = items.length - 1; i >= 0; i--) {
-    const r = items[i];
-    if ((!r.image || !r.verified) && !overrides[r.id]?.keep) excluded.push(...items.splice(i, 1));
-  }
-  for (const r of items) delete r.keep;
-
   // 관계: Fandom 링크 대상 중 도감에 있는 캐릭터만 id 참조로 연결
-  const ids = new Set(items.map((r) => r.id));
+  const idSet = new Set(items.map((r) => r.id));
   for (const rec of items) {
     if (!overrides[rec.id]?.relations) {
       const rel = [];
-      for (const t of rec._friends) if (ids.has(slugify(t)) && slugify(t) !== rec.id) rel.push({ id: slugify(t), label: '친구' });
-      for (const t of rec._enemies) if (ids.has(slugify(t)) && slugify(t) !== rec.id) rel.push({ id: slugify(t), label: '라이벌' });
+      for (const t of rec._friends) if (idSet.has(slugify(t)) && slugify(t) !== rec.id) rel.push({ id: slugify(t), label: '친구' });
+      for (const t of rec._enemies) if (idSet.has(slugify(t)) && slugify(t) !== rec.id) rel.push({ id: slugify(t), label: '라이벌' });
       rec.relations = rel.filter((r, i, a) => a.findIndex((x) => x.id === r.id) === i);
     }
     delete rec._friends;
@@ -162,14 +165,16 @@ async function main() {
     },
     count: items.length,
     seasons: SEASONS.map(({ key, label, order }) => ({ key, label, order })),
-    grades: GRADES,
+    grades: GRADES.filter((g) => items.some((r) => r.grade === g)),
     items,
   };
   await writeJson(path.join(PUBLIC, 'data', 'teeniepings.json'), out);
 
   // ── 리포트 ──
-  console.log(`✔ public/data/teeniepings.json — ${items.length}건 (모두 이미지 있음 · 두 위키 확인)`);
-  if (excluded.length) console.log(`  제외 ${excluded.length}건 (이미지 없음 또는 미확인): ${excluded.map((r) => r.nameKo).join(', ')}`);
+  console.log(`✔ public/data/teeniepings.json — ${items.length}건 (나무위키 우선 · 이미지 있음)`);
+  if (excluded.length) console.log(`  제외 ${excluded.length}건: ${excluded.map((r) => `${r.nameKo || r.id}(${r.why})`).join(', ')}`);
+  const bySource = { 나무위키: items.filter((r) => r.source.namuUrl).length, 'Fandom만': items.filter((r) => !r.source.namuUrl).length };
+  console.log(`  출처: 나무위키 ${bySource['나무위키']}명, Fandom만 ${bySource['Fandom만']}명`);
   const fields = ['seasonKey', 'gender', 'emotion', 'item', 'magic', 'intro', 'image'];
   console.log('  빈 필드:');
   for (const k of fields) {

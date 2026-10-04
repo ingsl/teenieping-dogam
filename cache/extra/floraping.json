@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/플라핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:21:42.812Z",
+    "fetchedAt": "2026-10-04T14:09:49.299Z",
+    "nameEn": "Floraping",
     "gender": "남성",
     "classification": "큐브 티니핑\n일반 티니핑",
     "birthday": "",
@@ -38,5 +39,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "플라핑"
 }

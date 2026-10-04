@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/가면핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:56.250Z",
+    "fetchedAt": "2026-10-04T14:10:49.460Z",
+    "nameEn": "Maskping",
     "gender": "여성",
     "classification": "불명\n[ 스포일러 ]보석 티니핑\n일반 티니핑",
     "birthday": "",
@@ -35,5 +36,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "가면핑"
 }

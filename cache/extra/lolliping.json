@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/롤리핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:43.608Z",
+    "fetchedAt": "2026-10-04T14:11:57.561Z",
+    "nameEn": "",
     "gender": "",
     "classification": "",
     "birthday": "",
@@ -23,5 +24,6 @@
     "intro": "회전의 티니핑, 롤리핑 순수하고 천진난만해서 사고를 치지만 친구들을 좋아하는 따뜻한 마음씨를 지닌 티니핑",
     "imageUrl": "https://i.namu.wiki/i/yABqJkOJYIe_ZMetVUE7If-f9rEz2W-0SN-w-otrNBkLrcBEVHIJ1yDDuFDCXrGialnc8O-mMUCTDZrrXlEigGQb-ZlGMF0ODUgsRvEJpHPkfYIHoNCE4nphKJ9bUY5eoqkTICYDz-zUPRSOwjHB0g.webp",
     "labels": []
-  }
+  },
+  "nameKo": "롤리핑"
 }

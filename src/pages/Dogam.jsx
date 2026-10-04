@@ -1,16 +1,42 @@
-import { useDeferredValue, useMemo } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import CharacterCard from '../components/CharacterCard.jsx';
+import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
+import CharacterCard, { CharacterArt, GradeChip } from '../components/CharacterCard.jsx';
 import { useData, useTitle, matches } from '../lib/data.js';
 
-function Pills({ label, options, value, onChange }) {
+/** 오늘 날짜로 정해지는 "오늘의 티니핑" (하루 동안 같음) */
+function todaysPick(items) {
+  const d = new Date();
+  const seed = d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate();
+  return items[seed % items.length];
+}
+
+function Spotlight({ item }) {
   return (
-    <div className="filter-row" role="group" aria-label={`${label} 필터`}>
-      <span className="label">{label}</span>
-      {[['', '전체'], ...options].map(([v, l]) => (
-        <button key={v || 'all'} type="button" className="pill" aria-pressed={value === v} onClick={() => onChange(v)}>{l}</button>
-      ))}
-    </div>
+    <Link className="spotlight" to={`/p/${item.id}`}>
+      <div className="spotlight-art"><CharacterArt item={item} full /></div>
+      <div className="spotlight-body">
+        <span className="spotlight-label">✨ 오늘의 티니핑</span>
+        <strong className="spotlight-name">{item.nameKo}</strong>
+        <div className="chips">
+          {item.season && <span className="chip">{item.season}</span>}
+          <GradeChip grade={item.grade} />
+        </div>
+        {item.intro && <p className="spotlight-intro">{item.intro}</p>}
+        <span className="spotlight-more">자세히 보기 →</span>
+      </div>
+    </Link>
+  );
+}
+
+function BackToTop() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const on = () => setShow(window.scrollY > 900);
+    window.addEventListener('scroll', on, { passive: true });
+    return () => window.removeEventListener('scroll', on);
+  }, []);
+  return (
+    <button type="button" className={`to-top${show ? ' show' : ''}`} aria-label="맨 위로" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>↑</button>
   );
 }
 
@@ -32,33 +58,61 @@ export default function Dogam() {
   const list = useMemo(() => (data?.items || []).filter((it) =>
     (!season || it.seasonKey === season) && (!grade || it.grade === grade) && matches(it, deferredQ),
   ), [data, season, grade, deferredQ]);
+  const pick = useMemo(() => data && todaysPick(data.items.filter((i) => i.intro)), [data]);
 
   if (error) return <p className="empty">{error.message}</p>;
   const present = new Set(data?.items.map((i) => i.seasonKey));
+  const filtering = q || season || grade;
 
   return (
     <>
-      <section className="hero">
+      <section className="page-head">
         <h1>티니핑 도감</h1>
-        <p>모든 티니핑을 한눈에! 이름(한글·영문·초성)으로 찾아보세요.</p>
+        <p>{data ? `티니핑 ${data.items.length}마리를 만나 보세요!` : '티니핑 친구들을 불러오는 중…'}</p>
       </section>
+
+      {pick && !filtering && <Spotlight item={pick} />}
+
       <section className="toolbar" aria-label="검색과 필터">
-        <label className="sr-only" htmlFor="q">이름 검색</label>
-        <input id="q" className="search" type="search" placeholder="🔍 하츄핑, Heartsping, ㅎㅊㅍ …" autoComplete="off"
-          value={q} onChange={(e) => set('q', e.target.value)} />
+        <div className="search-wrap">
+          <label className="sr-only" htmlFor="q">이름 검색</label>
+          <input id="q" className="search" type="search" placeholder="이름으로 찾기 (하츄핑, Heartsping, ㅎㅊㅍ)" autoComplete="off"
+            value={q} onChange={(e) => set('q', e.target.value)} enterKeyHint="search" />
+          {q && <button type="button" className="search-clear" aria-label="검색어 지우기" onClick={() => set('q', '')}>✕</button>}
+        </div>
         {data && (
           <>
-            <Pills label="기수" value={season} onChange={(v) => set('season', v)}
-              options={data.seasons.filter((s) => present.has(s.key)).map((s) => [s.key, s.label])} />
-            <Pills label="등급" value={grade} onChange={(v) => set('grade', v)} options={data.grades.map((g) => [g, g])} />
+            <div className="chip-scroll" role="group" aria-label="기수">
+              {[['', '전체 기수'], ...data.seasons.filter((s) => present.has(s.key)).map((s) => [s.key, s.label])].map(([v, l]) => (
+                <button key={v || 'all'} type="button" className="pill" aria-pressed={season === v} onClick={() => set('season', v)}>{l}</button>
+              ))}
+            </div>
+            <div className="chip-scroll" role="group" aria-label="등급">
+              {[['', '모든 등급'], ...data.grades.map((g) => [g, g])].map(([v, l]) => (
+                <button key={v || 'all'} type="button" className="pill small" aria-pressed={grade === v} onClick={() => set('grade', v)}>{l}</button>
+              ))}
+            </div>
           </>
         )}
-        <div className="result-meta"><span aria-live="polite">{data ? `${list.length} / ${data.items.length}마리` : '불러오는 중…'}</span></div>
       </section>
-      <div className="grid">
-        {list.map((it) => <CharacterCard key={it.id} item={it} />)}
+
+      <div className="result-meta" aria-live="polite">
+        {data && <span>{filtering ? `${list.length}마리 찾았어요` : `전체 ${list.length}마리`}</span>}
+        {filtering && <button type="button" className="link-btn" onClick={() => setParams({}, { replace: true })}>필터 초기화</button>}
       </div>
-      {data && !list.length && <p className="empty">찾는 티니핑이 없어요 🥲</p>}
+
+      <div className="grid">
+        {data
+          ? list.map((it) => <CharacterCard key={it.id} item={it} />)
+          : Array.from({ length: 12 }, (_, i) => <div key={i} className="card skeleton" aria-hidden="true"><div className="art" /><div className="name" /></div>)}
+      </div>
+      {data && !list.length && (
+        <div className="empty">
+          <p>찾는 티니핑이 없어요 🥲</p>
+          <button type="button" className="btn ghost" onClick={() => setParams({}, { replace: true })}>전체 보기</button>
+        </div>
+      )}
+      <BackToTop />
     </>
   );
 }

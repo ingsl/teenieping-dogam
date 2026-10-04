@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/찰랑핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T14:02:21.703Z",
+    "fetchedAt": "2026-10-04T14:14:55.827Z",
+    "nameEn": "Wavyping",
     "gender": "여성",
     "classification": "바다 티니핑\n일반 티니핑",
     "birthday": "",
@@ -37,5 +38,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "찰랑핑"
 }

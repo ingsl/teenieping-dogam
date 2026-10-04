@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/실크핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:24:23.180Z",
+    "fetchedAt": "2026-10-04T14:13:29.013Z",
+    "nameEn": "Silkyping",
     "gender": "여성",
     "classification": "프린세스 티니핑\n일반 티니핑",
     "birthday": "",
@@ -39,5 +40,6 @@
       "성격",
       "성우"
     ]
-  }
+  },
+  "nameKo": "실크핑"
 }

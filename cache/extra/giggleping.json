@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/악동핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:19:52.077Z",
+    "fetchedAt": "2026-10-04T14:10:08.414Z",
+    "nameEn": "Giggleping",
     "gender": "여성",
     "classification": "큐브 티니핑\n일반 티니핑\n[ 스포일러 ]로열 티니핑",
     "birthday": "",
@@ -38,5 +39,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "악동핑"
 }

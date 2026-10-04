@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/하츄핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:19:54.201Z",
+    "fetchedAt": "2026-10-04T14:08:35.027Z",
+    "nameEn": "",
     "gender": "여성",
     "classification": "큐브 티니핑\n로열 티니핑",
     "birthday": "3월 6일",
@@ -44,5 +45,6 @@
       "링크",
       "프린세스 하츄핑"
     ]
-  }
+  },
+  "nameKo": "하츄핑"
 }

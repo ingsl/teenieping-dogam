@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/고쳐핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:05.533Z",
+    "fetchedAt": "2026-10-04T14:11:12.785Z",
+    "nameEn": "Handyping",
     "gender": "남성",
     "classification": "열쇠 티니핑\n일반 티니핑",
     "birthday": "",
@@ -39,5 +40,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "고쳐핑"
 }

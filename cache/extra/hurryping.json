@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/빨리핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:22.473Z",
+    "fetchedAt": "2026-10-04T14:11:02.195Z",
+    "nameEn": "Hurryping",
     "gender": "남성",
     "classification": "열쇠 티니핑\n일반 티니핑",
     "birthday": "",
@@ -40,5 +41,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "빨리핑"
 }

@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/솔찌핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:25:15.991Z",
+    "fetchedAt": "2026-10-04T14:10:57.937Z",
+    "nameEn": "Trueping",
     "gender": "남성",
     "classification": "열쇠 티니핑\n로열 티니핑",
     "birthday": "",
@@ -41,5 +42,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "솔찌핑"
 }

@@ -6,7 +6,8 @@ import Games from './pages/Games.jsx';
 import Memory from './pages/Memory.jsx';
 import Puzzle from './pages/Puzzle.jsx';
 import Quiz from './pages/Quiz.jsx';
-import Kids from './pages/Kids.jsx';
+import Shadow from './pages/Shadow.jsx';
+import Catch from './pages/Catch.jsx';
 import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
@@ -19,7 +20,8 @@ export default function App() {
         <Route path="games/memory" element={<Memory />} />
         <Route path="games/puzzle" element={<Puzzle />} />
         <Route path="games/quiz" element={<Quiz />} />
-        <Route path="games/kids/:game" element={<Kids />} />
+        <Route path="games/shadow" element={<Shadow />} />
+        <Route path="games/catch" element={<Catch />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

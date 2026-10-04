@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/새콤핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:24:59.090Z",
+    "fetchedAt": "2026-10-04T14:11:42.478Z",
+    "nameEn": "Tangyping",
     "gender": "여성",
     "classification": "디저트 티니핑\n레전드 티니핑",
     "birthday": "",
@@ -41,5 +42,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "새콤핑"
 }

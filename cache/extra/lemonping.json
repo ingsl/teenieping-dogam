@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/레몬핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:59:25.499Z",
+    "fetchedAt": "2026-10-04T14:14:00.976Z",
+    "nameEn": "Lemonping",
     "gender": "여성",
     "classification": "로열 티니핑",
     "birthday": "",
@@ -36,5 +37,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "레몬핑"
 }

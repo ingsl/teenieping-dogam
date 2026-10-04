@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, useTimer, asset, shuffle, store, formatTime, confetti, matches, characterCanvas } from '../lib/data.js';
+import { useFx, SoundToggle } from '../lib/fx.jsx';
 
 const LEVELS = [
   { n: 3, name: '쉬움' },
@@ -59,6 +60,7 @@ export default function Puzzle() {
   const [showNum, setShowNum] = useState(() => store.get('puzzle:showNum', true));
   const [peek, setPeek] = useState(false);
   const [result, setResult] = useState(null);
+  const [fx, soundOn, toggleSound] = useFx();
   const empty = mode === 'slide' && n ? n * n - 1 : -1;
   const solved = n !== null && pos.length > 0 && solvedOf(pos);
   const seconds = useTimer(n !== null && moves > 0 && !solved, round);
@@ -101,8 +103,9 @@ export default function Puzzle() {
   const move = useCallback((t) => {
     if (solved || n === null) return;
     if (mode === 'swap') {
-      if (selected === null) { setSelected(t); return; }
+      if (selected === null) { setSelected(t); fx.play('select'); return; }
       if (selected !== t) {
+        fx.play('slide');
         setPos((p) => { const next = [...p]; [next[selected], next[t]] = [next[t], next[selected]]; return next; });
         setMoves((m) => m + 1);
       }
@@ -120,7 +123,8 @@ export default function Puzzle() {
     next[empty] = cell;
     setPos(next);
     setMoves((m) => m + 1);
-  }, [solved, n, mode, selected, empty, pos]);
+    fx.play('slide'); // 조각 이동 "스윽~"
+  }, [solved, n, mode, selected, empty, pos, fx]);
 
   // 슬라이드: 방향으로 빈칸 옆 조각을 민다 (dir = 빈칸 기준으로 끌어올 조각의 칸 차이)
   const slideFrom = useCallback((dir) => {
@@ -168,6 +172,7 @@ export default function Puzzle() {
     if (isBest) store.set(key, { moves, time: seconds });
     const t = setTimeout(() => {
       confetti();
+      fx.play('win');
       setResult({ stars, isBest, text: `${n}×${n} ${mode === 'swap' ? '바꾸기' : '슬라이드'} · ${moves}번 · ${formatTime(seconds)}` });
     }, 700);
     return () => clearTimeout(t);
@@ -247,6 +252,7 @@ export default function Puzzle() {
             onKeyDown={(e) => (e.key === ' ' || e.key === 'Enter') && setPeek(true)} onKeyUp={() => setPeek(false)}>👀 정답 보기</button>
           <button className="btn ghost" type="button" onClick={() => start(n)}>다시 섞기</button>
           <button className="btn ghost" type="button" onClick={() => setN(null)}>설정</button>
+          <SoundToggle on={soundOn} toggle={toggleSound} />
         </div>
       </div>
       <div className="puzzle-wrap">

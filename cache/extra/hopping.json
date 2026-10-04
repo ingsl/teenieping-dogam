@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/깡총핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:58:56.024Z",
+    "fetchedAt": "2026-10-04T14:12:31.918Z",
+    "nameEn": "Hopping",
     "gender": "여성",
     "classification": "스타 티니핑\n일반 티니핑",
     "birthday": "8월 5일",
@@ -38,5 +39,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "깡총핑"
 }

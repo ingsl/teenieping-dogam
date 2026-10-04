@@ -36,3 +36,14 @@ test('인포박스에 여러 모습(평상시·각성…)이 있으면 첫 번�
     <tr><td><table>${row('성별', '여성')}</table></td></tr></table>`;
   assert.match(toRecord(html, '뿌뿌핑', 'Puffping').imageUrl, /normal\.webp$/);
 });
+
+test('자기 사진이 없으면 다른 티니핑 이름이 붙은 사진을 쓰지 않는다', () => {
+  const html = `${img('냐냥핑', 'nya')}${img('시고르핑', 'sigor')}<table>${row('성별', '불명')}</table>`;
+  assert.equal(toRecord(html, '뮤즈핑', 'Museping').imageUrl, '');
+});
+
+test('사진 설명의 "티니핑" 단어나 쌍둥이 이름은 남의 사진으로 보지 않는다', () => {
+  const box = (alt) => `${img('냐냥핑', 'nav')}<table><tr><td>${img(alt, 'own')}</td></tr><tr><td><table>${row('성별', '여성')}</table></td></tr></table>`;
+  assert.match(toRecord(box('티니핑 여우핑'), '여우핑', 'Foxping').imageUrl, /own\.webp$/);
+  assert.match(toRecord(box('아롱핑 다롱핑'), '아롱핑', 'Ellaping').imageUrl, /own\.webp$/);
+});

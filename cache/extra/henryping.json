@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/젠틀핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:11.936Z",
+    "fetchedAt": "2026-10-04T14:13:52.427Z",
+    "nameEn": "Henryping",
     "gender": "남성",
     "classification": "프린스 티니핑\n일반 티니핑",
     "birthday": "",
@@ -41,5 +42,6 @@
       "성격",
       "성우"
     ]
-  }
+  },
+  "nameKo": "젠틀핑"
 }

@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/사뿐핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:03.427Z",
+    "fetchedAt": "2026-10-04T14:13:12.162Z",
+    "nameEn": "",
     "gender": "여성",
     "classification": "프린세스 티니핑\n로열 티니핑",
     "birthday": "",
@@ -40,5 +41,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "사뿐핑"
 }

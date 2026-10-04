@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/주르핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:25:35.454Z",
+    "fetchedAt": "2026-10-04T14:09:00.547Z",
+    "nameEn": "Weeping",
     "gender": "여성",
     "classification": "큐브 티니핑\n일반 티니핑",
     "birthday": "",
@@ -36,5 +37,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "주르핑"
 }

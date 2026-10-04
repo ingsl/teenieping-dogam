@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/발레핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:20:17.398Z",
+    "fetchedAt": "2026-10-04T14:10:45.269Z",
+    "nameEn": "Balletping",
     "gender": "여성",
     "classification": "보석 티니핑\n일반 티니핑",
     "birthday": "",
@@ -41,5 +42,6 @@
       "작사",
       "BPM"
     ]
-  }
+  },
+  "nameKo": "발레핑"
 }

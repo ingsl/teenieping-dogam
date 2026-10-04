@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/샤샤핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:24:10.574Z",
+    "fetchedAt": "2026-10-04T14:11:36.160Z",
+    "nameEn": "Shashaping",
     "gender": "여성",
     "classification": "디저트 티니핑\n로열 티니핑",
     "birthday": "",
@@ -43,5 +44,6 @@
       "작사",
       "BPM"
     ]
-  }
+  },
+  "nameKo": "샤샤핑"
 }

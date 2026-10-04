@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/마카핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:52.036Z",
+    "fetchedAt": "2026-10-04T14:11:59.666Z",
+    "nameEn": "Macaping",
     "gender": "여성",
     "classification": "디저트 티니핑\n일반 티니핑",
     "birthday": "",
@@ -38,5 +39,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "마카핑"
 }

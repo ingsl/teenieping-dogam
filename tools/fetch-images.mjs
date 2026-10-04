@@ -4,7 +4,7 @@
 //   node tools/fetch-images.mjs           증분 (같은 원본 URL이면 스킵)
 //   node tools/fetch-images.mjs --force
 //
-// 후보 순서: Fandom 대표 이미지 → 나무위키 대표 이미지 (cache/extra/<id>.json 의 namu.imageUrl)
+// 후보 순서: 나무위키 대표 이미지(1순위) → Fandom 대표 이미지(나무위키에 없을 때)
 // 결과: cache/images/<id>.<ext> (git 제외) + cache/images-manifest.json (git 포함 → CI에서 재다운로드 방지)
 //
 // ※ 이미지 서버가 봇 확인(Cloudflare challenge)을 요구하면 그 서버는 우회하지 않고 이번 실행 동안 건너뛴다.
@@ -40,14 +40,23 @@ async function download(url) {
 async function main() {
   await mkdir(RAW_IMAGES, { recursive: true });
   const manifest = (await readJson(MANIFEST)) || {};
-  const records = (await readJsonDir(CACHE_FANDOM)).filter((r) => r && !r.isGroup);
+  // 대상 = 나무위키 수집본(cache/extra) ∪ Fandom 수집본
+  const fandom = new Map((await readJsonDir(CACHE_FANDOM)).filter((r) => r && !r.isGroup).map((r) => [r.id, r]));
+  const namuIds = (await readJsonDir(CACHE_AUX)).filter((r) => r?.id && r.namu).map((r) => r.id);
+  const records = [...new Set([...namuIds, ...fandom.keys()])].map((id) => fandom.get(id) || { id });
 
+  // 같은 나무위키 사진이 여러 캐릭터에 잡혔다면(공용 목록 사진 등) 믿을 수 없으므로 그 사진은 쓰지 않는다
+  const namuUse = {};
+  for (const r of records) {
+    const u = (await readJson(path.join(CACHE_AUX, `${r.id}.json`)))?.namu?.imageUrl;
+    if (u) namuUse[u] = (namuUse[u] || 0) + 1;
+  }
   let done = 0, skipped = 0, failed = 0, none = 0;
   for (const rec of records) {
     const namu = (await readJson(path.join(CACHE_AUX, `${rec.id}.json`)))?.namu;
     const candidates = [
+      namu?.imageUrl && namuUse[namu.imageUrl] === 1 && { url: namu.imageUrl, source: 'namu' },
       rec.imageUrl && { url: rec.imageUrl, source: 'fandom' },
-      namu?.imageUrl && { url: namu.imageUrl, source: 'namu' },
     ].filter(Boolean);
     const prev = manifest[rec.id];
     // 같은 원본이고, 원본 파일이나 변환된 webp 중 하나라도 있으면 스킵

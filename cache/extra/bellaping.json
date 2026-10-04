@@ -1,9 +1,10 @@
 {
   "id": "bellaping",
   "namu": {
-    "url": "https://namu.wiki/w/아롱핑%26다롱핑?from=다롱핑",
+    "url": "https://namu.wiki/w/아롱핑%26다롱핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:31:15.422Z",
+    "fetchedAt": "2026-10-04T14:12:51.011Z",
+    "nameEn": "Ellaping",
     "gender": "여성",
     "classification": "스타 티니핑\n일반 티니핑",
     "birthday": "",
@@ -38,5 +39,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "다롱핑"
 }

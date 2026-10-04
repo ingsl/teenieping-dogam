@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/나나핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:23:19.676Z",
+    "fetchedAt": "2026-10-04T14:10:55.805Z",
+    "nameEn": "Nanaping",
     "gender": "여성",
     "classification": "열쇠 티니핑\n로열 티니핑",
     "birthday": "",
@@ -41,5 +42,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "나나핑"
 }

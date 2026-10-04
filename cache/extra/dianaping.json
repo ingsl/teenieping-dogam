@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/다이아나핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:21:19.422Z",
+    "fetchedAt": "2026-10-04T14:13:20.600Z",
+    "nameEn": "Dianaping",
     "gender": "여성",
     "classification": "프린세스 티니핑\n레전드 티니핑",
     "birthday": "",
@@ -42,5 +43,6 @@
       "성격",
       "성우"
     ]
-  }
+  },
+  "nameKo": "다이아나핑"
 }

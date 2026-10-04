@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/트롯핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:25:13.873Z",
+    "fetchedAt": "2026-10-04T14:13:48.172Z",
+    "nameEn": "Trotping",
     "gender": "남성",
     "classification": "프린스 티니핑\n일반 티니핑",
     "birthday": "",
@@ -42,5 +43,6 @@
       "모티브 직업",
       "등장 회차"
     ]
-  }
+  },
+  "nameKo": "트롯핑"
 }

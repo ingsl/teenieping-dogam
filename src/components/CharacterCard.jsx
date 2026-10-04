@@ -21,17 +21,20 @@ export function CharacterArt({ item, full = false }) {
  *  - compact: 링크·영문명·칩 없이 그림 + 이름만
  */
 export default function CharacterCard({ item, compact = false }) {
+  const special = item.grade === '로열' || item.grade === '레전드';
   const body = (
     <>
+      {!compact && special && (
+        <span className={`badge ${GRADE_CLASS[item.grade]}`} title={item.grade}>
+          {item.grade === '로열' ? '👑' : '🌟'}<span className="sr-only">{item.grade}</span>
+        </span>
+      )}
       <div className="art"><CharacterArt item={item} /></div>
       <div className="name">{item.nameKo}</div>
       {!compact && (
         <>
           <div className="en">{item.nameEn}</div>
-          <div className="chips">
-            {item.season && <span className="chip">{item.season.replace(/^(\d+기|극장판).*/, '$1')}</span>}
-            <GradeChip grade={item.grade} />
-          </div>
+          {item.season && <div className="chips"><span className="chip">{item.season}</span></div>}
         </>
       )}
     </>

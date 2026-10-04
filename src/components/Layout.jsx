@@ -1,4 +1,4 @@
-import { NavLink, Link, Outlet, useNavigate, useLocation } from 'react-router-dom';
+import { NavLink, Link, Outlet, useNavigate, useLocation, useNavigationType } from 'react-router-dom';
 import { useEffect } from 'react';
 import { loadData } from '../lib/data.js';
 
@@ -13,8 +13,28 @@ function RandomLink() {
 }
 
 export default function Layout() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  const location = useLocation();
+  const { pathname } = location;
+  const navType = useNavigationType();
+  // 스크롤 위치: 새 페이지는 맨 위, 뒤로가기(POP)는 보던 위치로 (목록이 그려질 때까지 잠깐 재시도)
+  useEffect(() => {
+    const key = `scroll:${location.key}`;
+    const save = () => { try { sessionStorage.setItem(key, String(window.scrollY)); } catch { /* 무시 */ } };
+    if (navType === 'POP') {
+      let y = 0;
+      try { y = Number(sessionStorage.getItem(key) || 0); } catch { /* 무시 */ }
+      let tries = 0;
+      const restore = () => {
+        window.scrollTo(0, y);
+        if (Math.abs(window.scrollY - y) > 2 && tries++ < 20) setTimeout(restore, 50);
+      };
+      restore();
+    } else {
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener('scroll', save, { passive: true });
+    return () => { save(); window.removeEventListener('scroll', save); };
+  }, [location.key]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>

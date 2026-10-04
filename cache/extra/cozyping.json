@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/포근핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:21:00.171Z",
+    "fetchedAt": "2026-10-04T14:10:32.588Z",
+    "nameEn": "Cozyping",
     "gender": "여성",
     "classification": "보석 티니핑\n일반 티니핑",
     "birthday": "",
@@ -38,5 +39,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "포근핑"
 }

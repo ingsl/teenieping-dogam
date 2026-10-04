@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/라라핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:19:56.309Z",
+    "fetchedAt": "2026-10-04T14:08:43.553Z",
+    "nameEn": "Lalaping",
     "gender": "여성",
     "classification": "큐브 티니핑\n로열 티니핑",
     "birthday": "",
@@ -38,5 +39,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "라라핑"
 }

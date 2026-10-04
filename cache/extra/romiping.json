@@ -1,0 +1,38 @@
+{
+  "id": "romiping",
+  "nameKo": "로미핑",
+  "namu": {
+    "url": "https://namu.wiki/w/로미핑",
+    "license": "CC BY-NC-SA 2.0 KR",
+    "fetchedAt": "2026-10-04T14:13:10.052Z",
+    "nameEn": "",
+    "gender": "여성",
+    "classification": "인간",
+    "birthday": "7월 7일",
+    "nameOrigin": "",
+    "motif": "",
+    "emotion": "",
+    "symbol": "",
+    "item": "",
+    "jewel": "",
+    "magic": "없음",
+    "likes": "베이킹, 노래하고 춤추기, 쿠키, 마들렌(2기 2화 한정)",
+    "dislikes": "",
+    "favoriteFood": "",
+    "partner": "",
+    "debut": "",
+    "voice": "이지현",
+    "intro": "슈팅스타 캐치! 티니핑에 등장한 티니핑으로, 캐치! 티니핑 시리즈의 150화 기념 티니핑이자 주인공 로미가 티니핑이 된 모습이다.",
+    "imageUrl": "https://i.namu.wiki/i/bOxojB5yvppauqUJIsn4DBY0f-QfIH6lSjlRc3FCL32UAZ6YCOOD-dU-t3cO3SjlSK7mvMJexMo0KmdZVYFCxj7iRkuf0NskZBKeB23cwJzGaNpPthKXB0xwMGtvuINqifFglj5dvXdrWE4W0BPlCQ.webp",
+    "labels": [
+      "성별",
+      "분류",
+      "정체",
+      "생일",
+      "마법",
+      "좋아하는 것",
+      "등장 회차",
+      "성우"
+    ]
+  }
+}

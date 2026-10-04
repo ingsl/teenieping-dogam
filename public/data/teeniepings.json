@@ -5,7 +5,7 @@
     "namu": "https://namu.wiki (CC BY-NC-SA 2.0 KR)",
     "fandom": "https://catchteenieping.fandom.com (CC BY-SA 3.0)"
   },
-  "count": 158,
+  "count": 161,
   "seasons": [
     {
       "key": "emotion",
@@ -78,7 +78,6 @@
       "colorHex": "#924998",
       "image": "images/lalaping.webp",
       "thumb": "images/thumb/lalaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lalaping",
         "fandomRevId": 219789,
@@ -113,7 +112,6 @@
       "colorHex": "#0094CF",
       "image": "images/dadaping.webp",
       "thumb": "images/thumb/dadaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dadaping",
         "fandomRevId": 217039,
@@ -153,7 +151,6 @@
       "colorHex": "#E99200",
       "image": "images/gogoping.webp",
       "thumb": "images/thumb/gogoping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Gogoping",
         "fandomRevId": 214325,
@@ -197,7 +194,6 @@
       "colorHex": "#79B12A",
       "image": "images/chachaping.webp",
       "thumb": "images/thumb/chachaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Chachaping",
         "fandomRevId": 217216,
@@ -261,7 +257,6 @@
       "colorHex": "#EA73AA",
       "image": "images/heartsping.webp",
       "thumb": "images/thumb/heartsping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Heartsping",
         "fandomRevId": 221068,
@@ -321,7 +316,6 @@
       "colorHex": "#D53C72",
       "image": "images/happying.webp",
       "thumb": "images/thumb/happying.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Happying",
         "fandomRevId": 221046,
@@ -356,7 +350,6 @@
       "colorHex": "#6375AF",
       "image": "images/artping.webp",
       "thumb": "images/thumb/artping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Artping",
         "fandomRevId": 215306,
@@ -390,7 +383,6 @@
       "colorHex": "#E66902",
       "image": "images/blankping.webp",
       "thumb": "images/thumb/blankping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Blankping",
         "fandomRevId": 221154,
@@ -424,7 +416,6 @@
       "colorHex": "#04B5CC",
       "image": "images/oppoping.webp",
       "thumb": "images/thumb/oppoping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Oppoping",
         "fandomRevId": 219614,
@@ -457,7 +448,6 @@
       "colorHex": "#70C8D0",
       "image": "images/freezeping.webp",
       "thumb": "images/thumb/freezeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Freezeping",
         "fandomRevId": 218511,
@@ -491,7 +481,6 @@
       "colorHex": "#DB4F76",
       "image": "images/narrping.webp",
       "thumb": "images/thumb/narrping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Narrping",
         "fandomRevId": 219640,
@@ -525,11 +514,10 @@
       "colorHex": "#008FD5",
       "image": "images/noraping.webp",
       "thumb": "images/thumb/noraping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Noraping",
         "fandomRevId": 214357,
-        "namuUrl": "https://namu.wiki/w/노라핑%26노리핑?from=노라핑"
+        "namuUrl": "https://namu.wiki/w/노라핑%26노리핑"
       },
       "updatedAt": "2026-10-04T13:11:52.680Z",
       "likes": "놀이터, 장난감, 게임기, 노리핑",
@@ -539,7 +527,7 @@
     {
       "id": "noriping",
       "nameKo": "노리핑",
-      "nameEn": "Noriping",
+      "nameEn": "Noraping",
       "season": "1기 감정",
       "seasonKey": "emotion",
       "grade": "일반",
@@ -564,11 +552,10 @@
       "colorHex": "#E21813",
       "image": "images/noriping.webp",
       "thumb": "images/thumb/noriping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Noriping",
         "fandomRevId": 220126,
-        "namuUrl": "https://namu.wiki/w/노라핑%26노리핑?from=노리핑"
+        "namuUrl": "https://namu.wiki/w/노라핑%26노리핑"
       },
       "updatedAt": "2026-10-04T13:11:52.681Z",
       "likes": "노라핑, 우유, 단 두 개 뿐인 소중한 이빨!, 초콜릿",
@@ -598,7 +585,6 @@
       "colorHex": "#EB8F43",
       "image": "images/allmineping.webp",
       "thumb": "images/thumb/allmineping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Allmineping",
         "fandomRevId": 220663,
@@ -637,7 +623,6 @@
       "colorHex": "#BDC6E3",
       "image": "images/coolping.webp",
       "thumb": "images/thumb/coolping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Coolping",
         "fandomRevId": 218500,
@@ -671,7 +656,6 @@
       "colorHex": "#E94D1F",
       "image": "images/mimicping.webp",
       "thumb": "images/thumb/mimicping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mimicping",
         "fandomRevId": 218160,
@@ -705,7 +689,6 @@
       "colorHex": "#A9CC2B",
       "image": "images/stickping.webp",
       "thumb": "images/thumb/stickping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Stickping",
         "fandomRevId": 219678,
@@ -744,7 +727,6 @@
       "colorHex": "#7CA1D5",
       "image": "images/tweetping.webp",
       "thumb": "images/thumb/tweetping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tweetping",
         "fandomRevId": 215263,
@@ -778,7 +760,6 @@
       "colorHex": "#D85797",
       "image": "images/wannabeping.webp",
       "thumb": "images/thumb/wannabeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wannabeping",
         "fandomRevId": 214522,
@@ -812,7 +793,6 @@
       "colorHex": "#B096C4",
       "image": "images/shushping.webp",
       "thumb": "images/thumb/shushping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shushping",
         "fandomRevId": 217401,
@@ -846,7 +826,6 @@
       "colorHex": "#8DC3C5",
       "image": "images/dreamping.webp",
       "thumb": "images/thumb/dreamping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dreamping",
         "fandomRevId": 214316,
@@ -880,7 +859,6 @@
       "colorHex": "#E9412E",
       "image": "images/curieping.webp",
       "thumb": "images/thumb/curieping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Curieping",
         "fandomRevId": 221050,
@@ -914,7 +892,6 @@
       "colorHex": "#CF367E",
       "image": "images/heavyping.webp",
       "thumb": "images/thumb/heavyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Heavyping",
         "fandomRevId": 220552,
@@ -948,7 +925,6 @@
       "colorHex": "#931477",
       "image": "images/spookping.webp",
       "thumb": "images/thumb/spookping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Spookping",
         "fandomRevId": 220208,
@@ -982,7 +958,6 @@
       "colorHex": "#D92924",
       "image": "images/luvping.webp",
       "thumb": "images/thumb/luvping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Luvping",
         "fandomRevId": 215824,
@@ -1016,7 +991,6 @@
       "colorHex": "#EC87A6",
       "image": "images/bebeping.webp",
       "thumb": "images/thumb/bebeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bebeping",
         "fandomRevId": 218338,
@@ -1055,7 +1029,6 @@
       "colorHex": "#864995",
       "image": "images/shyping.webp",
       "thumb": "images/thumb/shyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shyping",
         "fandomRevId": 215775,
@@ -1089,7 +1062,6 @@
       "colorHex": "#EA65A0",
       "image": "images/dareping.webp",
       "thumb": "images/thumb/dareping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dareping",
         "fandomRevId": 218234,
@@ -1123,7 +1095,6 @@
       "colorHex": "#72C5CE",
       "image": "images/nonoping.webp",
       "thumb": "images/thumb/nonoping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Nonoping",
         "fandomRevId": 219193,
@@ -1157,7 +1128,6 @@
       "colorHex": "#40B5B4",
       "image": "images/zipping.webp",
       "thumb": "images/thumb/zipping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Zipping",
         "fandomRevId": 218404,
@@ -1196,7 +1166,6 @@
       "colorHex": "#F1988C",
       "image": "images/charmping.webp",
       "thumb": "images/thumb/charmping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Charmping",
         "fandomRevId": 218696,
@@ -1230,7 +1199,6 @@
       "colorHex": "#5BBCAA",
       "image": "images/sighping.webp",
       "thumb": "images/thumb/sighping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sighping",
         "fandomRevId": 219600,
@@ -1240,6 +1208,39 @@
       "likes": "포기, 우울한 생각하기",
       "dislikes": "즐거운 생각하기",
       "voice": "이소영"
+    },
+    {
+      "id": "egoping",
+      "nameKo": "앙대핑",
+      "nameEn": "Egoping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "이기심",
+      "intro": "제멋대로 하고 싶은, 이기심의 티니핑 귀여운 생김새와는 다르게 뭐든지 제멋대로 하는 새침데기 요정",
+      "item": "삼지창",
+      "magic": "<감정의 혼동>\n① 꽃가루를 뿌려, 꽃가루에 맞은 대상들이 서로 다투게 만들 수 있다.\n② 꽃가루의 독으로 상대를 깊은 잠에 빠지게 할 수 있다.",
+      "episodes": [
+        {
+          "episode": "로열핑의 이름으로!\n(캐치! 티니핑 51화)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#C21F63",
+      "image": "images/egoping.webp",
+      "thumb": "images/thumb/egoping.webp",
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Egoping",
+        "fandomRevId": 219150,
+        "namuUrl": "https://namu.wiki/w/앙대핑"
+      },
+      "updatedAt": "2026-10-04T13:11:52.611Z",
+      "likes": "엉망진창, 자유, 강한 것",
+      "dislikes": "질서, 봉인되는 것, 약한 것",
+      "voice": "방연지"
     },
     {
       "id": "weeping",
@@ -1264,7 +1265,6 @@
       "colorHex": "#01A485",
       "image": "images/weeping.webp",
       "thumb": "images/thumb/weeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Weeping",
         "fandomRevId": 217455,
@@ -1298,7 +1298,6 @@
       "colorHex": "#133278",
       "image": "images/sparkping.webp",
       "thumb": "images/thumb/sparkping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sparkping",
         "fandomRevId": 220406,
@@ -1332,7 +1331,6 @@
       "colorHex": "#3F6B7E",
       "image": "images/moseyping.webp",
       "thumb": "images/thumb/moseyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Moseyping",
         "fandomRevId": 217415,
@@ -1371,7 +1369,6 @@
       "colorHex": "#DD5799",
       "image": "images/goodping.webp",
       "thumb": "images/thumb/goodping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Goodping",
         "fandomRevId": 219626,
@@ -1405,7 +1402,6 @@
       "colorHex": "#62BEAA",
       "image": "images/sleeping.webp",
       "thumb": "images/thumb/sleeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sleeping",
         "fandomRevId": 218514,
@@ -1439,7 +1435,6 @@
       "colorHex": "#4EBED3",
       "image": "images/kikiping.webp",
       "thumb": "images/thumb/kikiping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Kikiping",
         "fandomRevId": 217464,
@@ -1472,7 +1467,6 @@
       "colorHex": "#68C6DB",
       "image": "images/toyping.webp",
       "thumb": "images/thumb/toyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Toyping",
         "fandomRevId": 219608,
@@ -1511,7 +1505,6 @@
       "colorHex": "#AB4895",
       "image": "images/tutuping.webp",
       "thumb": "images/thumb/tutuping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tutuping",
         "fandomRevId": 219632,
@@ -1545,7 +1538,6 @@
       "colorHex": "#5DBDA7",
       "image": "images/floraping.webp",
       "thumb": "images/thumb/floraping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Floraping",
         "fandomRevId": 220553,
@@ -1579,7 +1571,6 @@
       "colorHex": "#E2720A",
       "image": "images/aloneping.webp",
       "thumb": "images/thumb/aloneping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Aloneping",
         "fandomRevId": 219593,
@@ -1613,7 +1604,6 @@
       "colorHex": "#D80E1B",
       "image": "images/roarping.webp",
       "thumb": "images/thumb/roarping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Roarping",
         "fandomRevId": 217410,
@@ -1647,7 +1637,6 @@
       "colorHex": "#DD0B41",
       "image": "images/giggleping.webp",
       "thumb": "images/thumb/giggleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Giggleping",
         "fandomRevId": 220528,
@@ -1657,40 +1646,6 @@
       "likes": "장난치기, 골탕 먹이기",
       "dislikes": "간섭 받는 것, 명령 받는 것",
       "voice": "김은아"
-    },
-    {
-      "id": "egoping",
-      "nameKo": "앙대핑",
-      "nameEn": "Egoping",
-      "season": "1기 감정",
-      "seasonKey": "emotion",
-      "grade": "빌런",
-      "gender": "여성",
-      "emotion": "이기심",
-      "intro": "제멋대로 하고 싶은, 이기심의 티니핑 귀여운 생김새와는 다르게 뭐든지 제멋대로 하는 새침데기 요정",
-      "item": "삼지창",
-      "magic": "<감정의 혼동>\n① 꽃가루를 뿌려, 꽃가루에 맞은 대상들이 서로 다투게 만들 수 있다.\n② 꽃가루의 독으로 상대를 깊은 잠에 빠지게 할 수 있다.",
-      "episodes": [
-        {
-          "episode": "로열핑의 이름으로!\n(캐치! 티니핑 51화)",
-          "label": "첫 등장",
-          "plot": ""
-        }
-      ],
-      "relations": [],
-      "colorHex": "#C21F63",
-      "image": "images/egoping.webp",
-      "thumb": "images/thumb/egoping.webp",
-      "verified": true,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Egoping",
-        "fandomRevId": 219150,
-        "namuUrl": "https://namu.wiki/w/앙대핑"
-      },
-      "updatedAt": "2026-10-04T13:11:52.611Z",
-      "likes": "엉망진창, 자유, 강한 것",
-      "dislikes": "질서, 봉인되는 것, 약한 것",
-      "voice": "방연지"
     },
     {
       "id": "trustping",
@@ -1715,7 +1670,6 @@
       "colorHex": "#00AED8",
       "image": "images/trustping.webp",
       "thumb": "images/thumb/trustping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Trustping",
         "fandomRevId": 221120,
@@ -1751,7 +1705,6 @@
       "colorHex": "#B7599D",
       "image": "images/teeheeping.webp",
       "thumb": "images/thumb/teeheeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Teeheeping",
         "fandomRevId": 221101,
@@ -1796,7 +1749,6 @@
       "colorHex": "#F19B00",
       "image": "images/joahping.webp",
       "thumb": "images/thumb/joahping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Joahping",
         "fandomRevId": 221064,
@@ -1832,7 +1784,6 @@
       "colorHex": "#871968",
       "image": "images/ladyping.webp",
       "thumb": "images/thumb/ladyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Ladyping",
         "fandomRevId": 218355,
@@ -1867,7 +1818,6 @@
       "colorHex": "#34A081",
       "image": "images/tickleping.webp",
       "thumb": "images/thumb/tickleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tickleping",
         "fandomRevId": 219433,
@@ -1878,6 +1828,46 @@
       "likes": "간지럼 태우기",
       "dislikes": "누군가가 간지럼을 참는 것",
       "voice": "이명호"
+    },
+    {
+      "id": "onlyping",
+      "nameKo": "다해핑",
+      "nameEn": "Onlyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "헌신",
+      "intro": "제니를 너무너무 좋아하는, 헌신의 티니핑. 단짝인 제니를 위해서라면 무엇이든지 다 할 정도의 맹목적인 성격으로, 왕립 스쿨에서 늘 하츄핑과 1, 2위를 다퉜던 하츄핑의 라이벌 요정.",
+      "item": "비녀",
+      "magic": "<헌신의 만능열쇠>(2기) → <전류의 비녀>(3기)\n전류 마법을 기본으로 사용하지만,\n왕립 티니핑 스쿨 수석 졸업생인만큼 다양한 마법을 사용할 수 있다.",
+      "episodes": [
+        {
+          "episode": "또 한 명의 프린세스\n(반짝반짝 캐치! 티니핑 13화)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#7453A3",
+      "image": "images/onlyping.webp",
+      "thumb": "images/thumb/onlyping.webp",
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Onlyping",
+        "fandomRevId": 218743,
+        "namuUrl": "https://namu.wiki/w/다해핑"
+      },
+      "updatedAt": "2026-10-04T13:11:52.681Z",
+      "jewel": "흑진주",
+      "likes": "제니, 제니와 함께하는 시간",
+      "dislikes": "제니에게 무례한 사람이나 행동(2기)\n로미, 하츄핑(3기)",
+      "partner": "제니",
+      "voice": "이명희"
     },
     {
       "id": "sculptping",
@@ -1902,7 +1892,6 @@
       "colorHex": "#27879A",
       "image": "images/sculptping.webp",
       "thumb": "images/thumb/sculptping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sculptping",
         "fandomRevId": 221092,
@@ -1937,7 +1926,6 @@
       "colorHex": "#DC081A",
       "image": "images/yummyping.webp",
       "thumb": "images/thumb/yummyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Yummyping",
         "fandomRevId": 221235,
@@ -1972,7 +1960,6 @@
       "colorHex": "#009CC9",
       "image": "images/memoping.webp",
       "thumb": "images/thumb/memoping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Memoping",
         "fandomRevId": 218354,
@@ -2007,7 +1994,6 @@
       "colorHex": "#F199A2",
       "image": "images/balletping.webp",
       "thumb": "images/thumb/balletping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Balletping",
         "fandomRevId": 221048,
@@ -2051,7 +2037,6 @@
       "colorHex": "#7C5EA9",
       "image": "images/wishping.webp",
       "thumb": "images/thumb/wishping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wishping",
         "fandomRevId": 214666,
@@ -2086,7 +2071,6 @@
       "colorHex": "#DB7D00",
       "image": "images/tidyping.webp",
       "thumb": "images/thumb/tidyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tidyping",
         "fandomRevId": 217556,
@@ -2121,7 +2105,6 @@
       "colorHex": "#E62252",
       "image": "images/owwping.webp",
       "thumb": "images/thumb/owwping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Owwping",
         "fandomRevId": 216872,
@@ -2156,7 +2139,6 @@
       "colorHex": "#CA141C",
       "image": "images/wonderping.webp",
       "thumb": "images/thumb/wonderping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wonderping",
         "fandomRevId": 219514,
@@ -2191,7 +2173,6 @@
       "colorHex": "#D92438",
       "image": "images/giftping.webp",
       "thumb": "images/thumb/giftping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Giftping",
         "fandomRevId": 215185,
@@ -2226,7 +2207,6 @@
       "colorHex": "#2796D1",
       "image": "images/buddyping.webp",
       "thumb": "images/thumb/buddyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Buddyping",
         "fandomRevId": 219588,
@@ -2261,7 +2241,6 @@
       "colorHex": "#0B3977",
       "image": "images/timidping.webp",
       "thumb": "images/thumb/timidping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Timidping",
         "fandomRevId": 217550,
@@ -2296,7 +2275,6 @@
       "colorHex": "#9ACA69",
       "image": "images/patping.webp",
       "thumb": "images/thumb/patping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Patping",
         "fandomRevId": 220514,
@@ -2331,7 +2309,6 @@
       "colorHex": "#97CAEA",
       "image": "images/cozyping.webp",
       "thumb": "images/thumb/cozyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cozyping",
         "fandomRevId": 217533,
@@ -2375,54 +2352,12 @@
       "colorHex": "#3C2E3E",
       "image": "images/maskping.webp",
       "thumb": "images/thumb/maskping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Maskping",
         "fandomRevId": 217690,
         "namuUrl": "https://namu.wiki/w/가면핑"
       },
       "updatedAt": "2026-10-04T13:11:52.649Z",
-      "voice": "이명희"
-    },
-    {
-      "id": "onlyping",
-      "nameKo": "다해핑",
-      "nameEn": "Onlyping",
-      "season": "2기 반짝반짝",
-      "seasonKey": "twinkle",
-      "grade": "빌런",
-      "gender": "여성",
-      "emotion": "헌신",
-      "intro": "제니를 너무너무 좋아하는, 헌신의 티니핑. 단짝인 제니를 위해서라면 무엇이든지 다 할 정도의 맹목적인 성격으로, 왕립 스쿨에서 늘 하츄핑과 1, 2위를 다퉜던 하츄핑의 라이벌 요정.",
-      "item": "비녀",
-      "magic": "<헌신의 만능열쇠>(2기) → <전류의 비녀>(3기)\n전류 마법을 기본으로 사용하지만,\n왕립 티니핑 스쿨 수석 졸업생인만큼 다양한 마법을 사용할 수 있다.",
-      "episodes": [
-        {
-          "episode": "또 한 명의 프린세스\n(반짝반짝 캐치! 티니핑 13화)",
-          "label": "첫 등장",
-          "plot": ""
-        }
-      ],
-      "relations": [
-        {
-          "id": "heartsping",
-          "label": "친구"
-        }
-      ],
-      "colorHex": "#7453A3",
-      "image": "images/onlyping.webp",
-      "thumb": "images/thumb/onlyping.webp",
-      "verified": true,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Onlyping",
-        "fandomRevId": 218743,
-        "namuUrl": "https://namu.wiki/w/다해핑"
-      },
-      "updatedAt": "2026-10-04T13:11:52.681Z",
-      "jewel": "흑진주",
-      "likes": "제니, 제니와 함께하는 시간",
-      "dislikes": "제니에게 무례한 사람이나 행동(2기)\n로미, 하츄핑(3기)",
-      "partner": "제니",
       "voice": "이명희"
     },
     {
@@ -2461,7 +2396,6 @@
       "colorHex": "#85C2D4",
       "image": "images/okeydokeyping.webp",
       "thumb": "images/thumb/okeydokeyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Okeydokeyping",
         "fandomRevId": 221082,
@@ -2505,7 +2439,6 @@
       "colorHex": "#E6225A",
       "image": "images/nanaping.webp",
       "thumb": "images/thumb/nanaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Nanaping",
         "fandomRevId": 221080,
@@ -2548,7 +2481,6 @@
       "colorHex": "#F19C00",
       "image": "images/trueping.webp",
       "thumb": "images/thumb/trueping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Trueping",
         "fandomRevId": 221110,
@@ -2587,7 +2519,6 @@
       "colorHex": "#823E93",
       "image": "images/luckyping.webp",
       "thumb": "images/thumb/luckyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Luckyping",
         "fandomRevId": 221111,
@@ -2597,6 +2528,35 @@
       "likes": "행운 나눠주기, 산책하기, 빼빼로(3화 한정)",
       "dislikes": "불운, 좁고 답답한 곳",
       "voice": "김현심"
+    },
+    {
+      "id": "nurseping",
+      "nameKo": "간호핑",
+      "nameEn": "Nurseping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "삐뽀핑이 로미에게 먹이는 약을 보고 기겁하는 간호핑들",
+      "item": "없음",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "치료해줄게 삐뽀\n(알쏭달쏭 캐치! 티니핑 5화)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "hsl(135 70% 80%)",
+      "image": "images/nurseping.webp",
+      "thumb": "images/thumb/nurseping.webp",
+      "source": {
+        "namuUrl": "https://namu.wiki/w/간호핑"
+      },
+      "updatedAt": "",
+      "voice": "고정되어"
     },
     {
       "id": "handyping",
@@ -2621,7 +2581,6 @@
       "colorHex": "#F1AA1B",
       "image": "images/handyping.webp",
       "thumb": "images/thumb/handyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Handyping",
         "fandomRevId": 220407,
@@ -2660,7 +2619,6 @@
       "colorHex": "#2D6DAF",
       "image": "images/justiceping.webp",
       "thumb": "images/thumb/justiceping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Justiceping",
         "fandomRevId": 214500,
@@ -2694,7 +2652,6 @@
       "colorHex": "#74CCEA",
       "image": "images/styleping.webp",
       "thumb": "images/thumb/styleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Styleping",
         "fandomRevId": 214512,
@@ -2728,7 +2685,6 @@
       "colorHex": "#C2141D",
       "image": "images/hotping.webp",
       "thumb": "images/thumb/hotping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hotping",
         "fandomRevId": 219709,
@@ -2771,7 +2727,6 @@
       "colorHex": "#85CBC9",
       "image": "images/twirlping.webp",
       "thumb": "images/thumb/twirlping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Twirlping",
         "fandomRevId": 219149,
@@ -2805,7 +2760,6 @@
       "colorHex": "#60A2D8",
       "image": "images/hurryping.webp",
       "thumb": "images/thumb/hurryping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hurryping",
         "fandomRevId": 216501,
@@ -2839,7 +2793,6 @@
       "colorHex": "#E42580",
       "image": "images/cureping.webp",
       "thumb": "images/thumb/cureping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cureping",
         "fandomRevId": 214494,
@@ -2873,7 +2826,6 @@
       "colorHex": "#85559C",
       "image": "images/huffyping.webp",
       "thumb": "images/thumb/huffyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Huffyping",
         "fandomRevId": 217785,
@@ -2907,7 +2859,6 @@
       "colorHex": "#8AC3E9",
       "image": "images/wizping.webp",
       "thumb": "images/thumb/wizping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wizping",
         "fandomRevId": 216470,
@@ -2941,7 +2892,6 @@
       "colorHex": "#B787B9",
       "image": "images/ariaping.webp",
       "thumb": "images/thumb/ariaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Ariaping",
         "fandomRevId": 216938,
@@ -2975,7 +2925,6 @@
       "colorHex": "#59BDAB",
       "image": "images/yumyumping.webp",
       "thumb": "images/thumb/yumyumping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Yumyumping",
         "fandomRevId": 221236,
@@ -3009,7 +2958,6 @@
       "colorHex": "#6D4295",
       "image": "images/partyping.webp",
       "thumb": "images/thumb/partyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Partyping",
         "fandomRevId": 216462,
@@ -3043,7 +2991,6 @@
       "colorHex": "#E9223C",
       "image": "images/fashionping.webp",
       "thumb": "images/thumb/fashionping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Fashionping",
         "fandomRevId": 216427,
@@ -3077,7 +3024,6 @@
       "colorHex": "#EF8DB5",
       "image": "images/splashping.webp",
       "thumb": "images/thumb/splashping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Splashping",
         "fandomRevId": 219147,
@@ -3091,7 +3037,7 @@
     {
       "id": "cheerupping",
       "nameKo": "힘내핑",
-      "nameEn": "Cheerupping",
+      "nameEn": "Cheeryping",
       "season": "3기 비밀",
       "seasonKey": "secret",
       "grade": "일반",
@@ -3111,7 +3057,6 @@
       "colorHex": "#BD1920",
       "image": "images/cheerupping.webp",
       "thumb": "images/thumb/cheerupping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cheerupping",
         "fandomRevId": 217753,
@@ -3150,7 +3095,6 @@
       "colorHex": "#AC58A2",
       "image": "images/jellyping.webp",
       "thumb": "images/thumb/jellyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Jellyping",
         "fandomRevId": 221063,
@@ -3193,7 +3137,6 @@
       "colorHex": "#57B0E3",
       "image": "images/shashaping.webp",
       "thumb": "images/thumb/shashaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shashaping",
         "fandomRevId": 221093,
@@ -3240,7 +3183,6 @@
       "colorHex": "#79C5BF",
       "image": "images/fluffyping.webp",
       "thumb": "images/thumb/fluffyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Fluffyping",
         "fandomRevId": 221052,
@@ -3282,7 +3224,6 @@
       "colorHex": "#EB6760",
       "image": "images/sweetping.webp",
       "thumb": "images/thumb/sweetping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sweetping",
         "fandomRevId": 216115,
@@ -3325,7 +3266,6 @@
       "colorHex": "#8BC043",
       "image": "images/tangyping.webp",
       "thumb": "images/thumb/tangyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tangyping",
         "fandomRevId": 216116,
@@ -3359,7 +3299,6 @@
       "colorHex": "#009ADA",
       "image": "images/iceflakeping.webp",
       "thumb": "images/thumb/iceflakeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Iceflakeping",
         "fandomRevId": 216863,
@@ -3402,7 +3341,6 @@
       "colorHex": "#E97CAE",
       "image": "images/donutping.webp",
       "thumb": "images/thumb/donutping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Donutping",
         "fandomRevId": 215903,
@@ -3430,7 +3368,6 @@
       "colorHex": "#32B0D8",
       "image": "images/lolliping.webp",
       "thumb": "images/thumb/lolliping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lolliping",
         "fandomRevId": 216312,
@@ -3461,7 +3398,6 @@
       "colorHex": "#3FA99F",
       "image": "images/macaping.webp",
       "thumb": "images/thumb/macaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Macaping",
         "fandomRevId": 218713,
@@ -3495,7 +3431,6 @@
       "colorHex": "#E186A6",
       "image": "images/meringueping.webp",
       "thumb": "images/thumb/meringueping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Meringueping",
         "fandomRevId": 215852,
@@ -3509,7 +3444,7 @@
     {
       "id": "muffping",
       "nameKo": "머핑",
-      "nameEn": "Muffping",
+      "nameEn": "Cupping",
       "season": "4기 디저트",
       "seasonKey": "dessert",
       "grade": "일반",
@@ -3534,11 +3469,10 @@
       "colorHex": "#E88EB8",
       "image": "images/muffping.webp",
       "thumb": "images/thumb/muffping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Muffping",
         "fandomRevId": 220855,
-        "namuUrl": "https://namu.wiki/w/커핑%26머핑?from=머핑"
+        "namuUrl": "https://namu.wiki/w/커핑%26머핑"
       },
       "updatedAt": "2026-10-04T13:11:52.659Z",
       "likes": "쪽쪽이, 둘이 함께 있기, 술래잡기, 우스꽝스러운 상황",
@@ -3568,7 +3502,6 @@
       "colorHex": "#D7A2CB",
       "image": "images/mallowping.webp",
       "thumb": "images/thumb/mallowping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mallowping",
         "fandomRevId": 216086,
@@ -3578,6 +3511,39 @@
       "likes": "폭신한 것, 상냥한 사람",
       "dislikes": "딱딱한 것, 차가운 것, 높은 곳",
       "voice": "사문영"
+    },
+    {
+      "id": "puffping",
+      "nameKo": "뿌뿌핑",
+      "nameEn": "Puffping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "흥미",
+      "intro": "흥미의 티니핑, 뿌뿌핑 뿌뿌뿌뿌! 아주 재밌겠어 뿌뿌! 흥미로운 걸 찾아다니는 장난꾸러기",
+      "item": "풍선껌 디스펜서",
+      "magic": "<뿌뿌 풍선껌>\n풍선껌을 활용한 다양한 마법(공격, 회피, 이동)\n스스로를 풍선껌처럼 부풀릴 수 있고,\n특정 부분(ex.귀)만 부풀릴 수도 있다.",
+      "episodes": [
+        {
+          "episode": "새콤달콤 디저트티니핑\n(새콤달콤 캐치! 티니핑 1화)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E41A54",
+      "image": "images/puffping.webp",
+      "thumb": "images/thumb/puffping.webp",
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Puffping",
+        "fandomRevId": 220003,
+        "namuUrl": "https://namu.wiki/w/뿌뿌핑"
+      },
+      "updatedAt": "2026-10-04T13:11:52.693Z",
+      "likes": "매직슈가볼, 골탕 먹이기, 장난치기, 남을 속이기, 강해지는 것, 외롭지 않은 것",
+      "dislikes": "자기만 빼고 즐거운 것, 자기 것을 빼앗기는 것, 외로움, 자기만 빼고 친하게 지내는 친구들, 고독감, 자신의 속마음을 들키는 것",
+      "voice": "양정화"
     },
     {
       "id": "sandping",
@@ -3607,7 +3573,6 @@
       "colorHex": "#623F27",
       "image": "images/sandping.webp",
       "thumb": "images/thumb/sandping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sandping",
         "fandomRevId": 220022,
@@ -3641,7 +3606,6 @@
       "colorHex": "#CE2C24",
       "image": "images/waffleping.webp",
       "thumb": "images/thumb/waffleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Waffleping",
         "fandomRevId": 214993,
@@ -3675,7 +3639,6 @@
       "colorHex": "#95BF22",
       "image": "images/yogurtping.webp",
       "thumb": "images/thumb/yogurtping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Yogurtping",
         "fandomRevId": 216093,
@@ -3709,7 +3672,6 @@
       "colorHex": "#A5594A",
       "image": "images/chocoping.webp",
       "thumb": "images/thumb/chocoping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Chocoping",
         "fandomRevId": 214961,
@@ -3743,7 +3705,6 @@
       "colorHex": "#F27D94",
       "image": "images/candyping.webp",
       "thumb": "images/thumb/candyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Candyping",
         "fandomRevId": 215869,
@@ -3782,11 +3743,10 @@
       "colorHex": "#3EB8D5",
       "image": "images/cupping.webp",
       "thumb": "images/thumb/cupping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cupping",
         "fandomRevId": 221079,
-        "namuUrl": "https://namu.wiki/w/커핑%26머핑?from=커핑"
+        "namuUrl": "https://namu.wiki/w/커핑%26머핑"
       },
       "updatedAt": "2026-10-04T13:11:52.619Z",
       "likes": "쪽쪽이, 둘이 함께 있기, 술래잡기, 우스꽝스러운 상황",
@@ -3816,7 +3776,6 @@
       "colorHex": "#5C2012",
       "image": "images/puddingping.webp",
       "thumb": "images/thumb/puddingping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Puddingping",
         "fandomRevId": 216029,
@@ -3850,7 +3809,6 @@
       "colorHex": "#E99200",
       "image": "images/pancakeping.webp",
       "thumb": "images/thumb/pancakeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Pancakeping",
         "fandomRevId": 216598,
@@ -3860,75 +3818,6 @@
       "likes": "쌓기, 남을 돕는 것, 노력하는 사람",
       "dislikes": "마구잡이로 흩어져 있는 것",
       "voice": "원에스더"
-    },
-    {
-      "id": "puffping",
-      "nameKo": "뿌뿌핑",
-      "nameEn": "Puffping",
-      "season": "4기 디저트",
-      "seasonKey": "dessert",
-      "grade": "빌런",
-      "gender": "남성",
-      "emotion": "흥미",
-      "intro": "흥미의 티니핑, 뿌뿌핑 뿌뿌뿌뿌! 아주 재밌겠어 뿌뿌! 흥미로운 걸 찾아다니는 장난꾸러기",
-      "item": "풍선껌 디스펜서",
-      "magic": "<뿌뿌 풍선껌>\n풍선껌을 활용한 다양한 마법(공격, 회피, 이동)\n스스로를 풍선껌처럼 부풀릴 수 있고,\n특정 부분(ex.귀)만 부풀릴 수도 있다.",
-      "episodes": [
-        {
-          "episode": "새콤달콤 디저트티니핑\n(새콤달콤 캐치! 티니핑 1화)",
-          "label": "첫 등장",
-          "plot": ""
-        }
-      ],
-      "relations": [],
-      "colorHex": "#E41A54",
-      "image": "images/puffping.webp",
-      "thumb": "images/thumb/puffping.webp",
-      "verified": true,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Puffping",
-        "fandomRevId": 220003,
-        "namuUrl": "https://namu.wiki/w/뿌뿌핑"
-      },
-      "updatedAt": "2026-10-04T13:11:52.693Z",
-      "likes": "매직슈가볼, 골탕 먹이기, 장난치기, 남을 속이기, 강해지는 것, 외롭지 않은 것",
-      "dislikes": "자기만 빼고 즐거운 것, 자기 것을 빼앗기는 것, 외로움, 자기만 빼고 친하게 지내는 친구들, 고독감, 자신의 속마음을 들키는 것",
-      "voice": "양정화"
-    },
-    {
-      "id": "petitping",
-      "nameKo": "나그네핑",
-      "nameEn": "Petitping",
-      "season": "5기 스타",
-      "seasonKey": "star",
-      "grade": "로열",
-      "gender": "남성",
-      "emotion": "낭만",
-      "intro": "낭만의 티니핑, 나그네핑 유유자적하며 느긋한 성격의 티니핑. 안 좋은 건 빨리 잊는 게 낫다고 생각하는데, 무슨 사연이 있는 걸까?",
-      "item": "종이배",
-      "magic": "<아픔은 종이배에 실어 흘려보내리>\n나그네핑의 종이배를 만진 대상은 안 좋은 기억을 잊게 된다.",
-      "episodes": [
-        {
-          "episode": "떠돌이 나그네핑\n(슈팅스타 캐치! 티니핑 7화)",
-          "label": "첫 등장",
-          "plot": ""
-        }
-      ],
-      "relations": [],
-      "colorHex": "#73C3AA",
-      "image": "images/petitping.webp",
-      "thumb": "images/thumb/petitping.webp",
-      "verified": true,
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Petitping",
-        "fandomRevId": 220234,
-        "namuUrl": "https://namu.wiki/w/나그네핑"
-      },
-      "updatedAt": "2026-10-04T13:11:52.699Z",
-      "likes": "떠돌아 다니며 별 낚기, 배 타기",
-      "dislikes": "얽매이는 것",
-      "motif": "페르세우스자리 (추정), 어린 왕자",
-      "voice": "여민정"
     },
     {
       "id": "shimmerping",
@@ -3966,7 +3855,6 @@
       "colorHex": "#A7C4E3",
       "image": "images/shimmerping.webp",
       "thumb": "images/thumb/shimmerping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shimmerping",
         "fandomRevId": 215058,
@@ -4017,7 +3905,6 @@
       "colorHex": "#47829D",
       "image": "images/twinkleping.webp",
       "thumb": "images/thumb/twinkleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Twinkleping",
         "fandomRevId": 218460,
@@ -4076,7 +3963,6 @@
       "colorHex": "#0D579D",
       "image": "images/princeping.webp",
       "thumb": "images/thumb/princeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Princeping",
         "fandomRevId": 221086,
@@ -4125,7 +4011,6 @@
       "colorHex": "#66C4D2",
       "image": "images/sparkleping.webp",
       "thumb": "images/thumb/sparkleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sparkleping",
         "fandomRevId": 220979,
@@ -4159,7 +4044,6 @@
       "colorHex": "#ED7BB0",
       "image": "images/auroraping.webp",
       "thumb": "images/thumb/auroraping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Auroraping",
         "fandomRevId": 221047,
@@ -4194,7 +4078,6 @@
       "colorHex": "#64B7DC",
       "image": "images/dazzleping.webp",
       "thumb": "images/thumb/dazzleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dazzleping",
         "fandomRevId": 215037,
@@ -4228,7 +4111,6 @@
       "colorHex": "#E2829E",
       "image": "images/mightyping.webp",
       "thumb": "images/thumb/mightyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mightyping",
         "fandomRevId": 215050,
@@ -4263,7 +4145,6 @@
       "colorHex": "#DAACCC",
       "image": "images/hopping.webp",
       "thumb": "images/thumb/hopping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hopping",
         "fandomRevId": 220815,
@@ -4274,6 +4155,40 @@
       "dislikes": "넘어지고 안 일어나는 것, 포기",
       "birthday": "8월 5일",
       "voice": "이은조"
+    },
+    {
+      "id": "petitping",
+      "nameKo": "나그네핑",
+      "nameEn": "Petitping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "낭만",
+      "intro": "낭만의 티니핑, 나그네핑 유유자적하며 느긋한 성격의 티니핑. 안 좋은 건 빨리 잊는 게 낫다고 생각하는데, 무슨 사연이 있는 걸까?",
+      "item": "종이배",
+      "magic": "<아픔은 종이배에 실어 흘려보내리>\n나그네핑의 종이배를 만진 대상은 안 좋은 기억을 잊게 된다.",
+      "episodes": [
+        {
+          "episode": "떠돌이 나그네핑\n(슈팅스타 캐치! 티니핑 7화)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#73C3AA",
+      "image": "images/petitping.webp",
+      "thumb": "images/thumb/petitping.webp",
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Petitping",
+        "fandomRevId": 220234,
+        "namuUrl": "https://namu.wiki/w/나그네핑"
+      },
+      "updatedAt": "2026-10-04T13:11:52.699Z",
+      "likes": "떠돌아 다니며 별 낚기, 배 타기",
+      "dislikes": "얽매이는 것",
+      "motif": "페르세우스자리 (추정), 어린 왕자",
+      "voice": "여민정"
     },
     {
       "id": "giverping",
@@ -4298,7 +4213,6 @@
       "colorHex": "#90C6C6",
       "image": "images/giverping.webp",
       "thumb": "images/thumb/giverping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Giverping",
         "fandomRevId": 215043,
@@ -4312,7 +4226,7 @@
     {
       "id": "bellaping",
       "nameKo": "다롱핑",
-      "nameEn": "Bellaping",
+      "nameEn": "Ellaping",
       "season": "5기 스타",
       "seasonKey": "star",
       "grade": "일반",
@@ -4332,11 +4246,10 @@
       "colorHex": "#745DA7",
       "image": "images/bellaping.webp",
       "thumb": "images/thumb/bellaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bellaping",
         "fandomRevId": 220758,
-        "namuUrl": "https://namu.wiki/w/아롱핑%26다롱핑?from=다롱핑"
+        "namuUrl": "https://namu.wiki/w/아롱핑%26다롱핑"
       },
       "updatedAt": "2026-10-04T13:11:52.621Z",
       "likes": "언니, 자그마한 물건, 놀이터, 공",
@@ -4367,7 +4280,6 @@
       "colorHex": "#E99424",
       "image": "images/swayping.webp",
       "thumb": "images/thumb/swayping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Swayping",
         "fandomRevId": 215818,
@@ -4402,7 +4314,6 @@
       "colorHex": "#B16AA6",
       "image": "images/dingdongping.webp",
       "thumb": "images/thumb/dingdongping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dingdongping",
         "fandomRevId": 220849,
@@ -4413,6 +4324,31 @@
       "dislikes": "배달 실수, 비 오는 날",
       "motif": "고양이자리 또는 우주인 (추정)",
       "voice": "전해리"
+    },
+    {
+      "id": "romiping",
+      "nameKo": "로미핑",
+      "nameEn": "",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "슈팅스타 캐치! 티니핑에 등장한 티니핑으로, 캐치! 티니핑 시리즈의 150화 기념 티니핑이자 주인공 로미가 티니핑이 된 모습이다.",
+      "item": "",
+      "magic": "없음",
+      "episodes": [],
+      "relations": [],
+      "colorHex": "hsl(11 70% 80%)",
+      "image": "images/romiping.webp",
+      "thumb": "images/thumb/romiping.webp",
+      "source": {
+        "namuUrl": "https://namu.wiki/w/로미핑"
+      },
+      "updatedAt": "",
+      "likes": "베이킹, 노래하고 춤추기, 쿠키, 마들렌(2기 2화 한정)",
+      "birthday": "7월 7일",
+      "voice": "이지현"
     },
     {
       "id": "doremiping",
@@ -4437,7 +4373,6 @@
       "colorHex": "#EA8DB6",
       "image": "images/doremiping.webp",
       "thumb": "images/thumb/doremiping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Doremiping",
         "fandomRevId": 215518,
@@ -4472,7 +4407,6 @@
       "colorHex": "#59BBCF",
       "image": "images/sneakyping.webp",
       "thumb": "images/thumb/sneakyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sneakyping",
         "fandomRevId": 217697,
@@ -4511,7 +4445,6 @@
       "colorHex": "#EBB6D3",
       "image": "images/kissyping.webp",
       "thumb": "images/thumb/kissyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Kissyping",
         "fandomRevId": 221071,
@@ -4545,7 +4478,6 @@
       "colorHex": "#7BB864",
       "image": "images/snuggyping.webp",
       "thumb": "images/thumb/snuggyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Snuggyping",
         "fandomRevId": 221099,
@@ -4580,7 +4512,6 @@
       "colorHex": "#E67CAD",
       "image": "images/stickerping.webp",
       "thumb": "images/thumb/stickerping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Stickerping",
         "fandomRevId": 215067,
@@ -4615,11 +4546,10 @@
       "colorHex": "#AD7EB6",
       "image": "images/ellaping.webp",
       "thumb": "images/thumb/ellaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Ellaping",
         "fandomRevId": 220757,
-        "namuUrl": "https://namu.wiki/w/아롱핑%26다롱핑?from=아롱핑"
+        "namuUrl": "https://namu.wiki/w/아롱핑%26다롱핑"
       },
       "updatedAt": "2026-10-04T13:11:52.626Z",
       "likes": "여동생, 커다란 물건, 거울 보기",
@@ -4650,7 +4580,6 @@
       "colorHex": "#E5A8CA",
       "image": "images/allureping.webp",
       "thumb": "images/thumb/allureping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Allureping",
         "fandomRevId": 215033,
@@ -4685,7 +4614,6 @@
       "colorHex": "#83D5EC",
       "image": "images/lucyping.webp",
       "thumb": "images/thumb/lucyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lucyping",
         "fandomRevId": 216464,
@@ -4720,7 +4648,6 @@
       "colorHex": "#F19BC7",
       "image": "images/togetherping.webp",
       "thumb": "images/thumb/togetherping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Togetherping",
         "fandomRevId": 215070,
@@ -4755,7 +4682,6 @@
       "colorHex": "#4EBFED",
       "image": "images/hulaping.webp",
       "thumb": "images/thumb/hulaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hulaping",
         "fandomRevId": 215111,
@@ -4806,7 +4732,6 @@
       "colorHex": "#9AC891",
       "image": "images/bonnyping.webp",
       "thumb": "images/thumb/bonnyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bonnyping",
         "fandomRevId": 218316,
@@ -4857,7 +4782,6 @@
       "colorHex": "#92D9F5",
       "image": "images/graceping.webp",
       "thumb": "images/thumb/graceping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Graceping",
         "fandomRevId": 218834,
@@ -4908,7 +4832,6 @@
       "colorHex": "#EE9FC2",
       "image": "images/claireping.webp",
       "thumb": "images/thumb/claireping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Claireping",
         "fandomRevId": 218315,
@@ -4951,7 +4874,6 @@
       "colorHex": "#D09EC8",
       "image": "images/dianaping.webp",
       "thumb": "images/thumb/dianaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dianaping",
         "fandomRevId": 218325,
@@ -5003,7 +4925,6 @@
       "colorHex": "#241B38",
       "image": "images/eclipseping.webp",
       "thumb": "images/thumb/eclipseping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Eclipseping",
         "fandomRevId": 220735,
@@ -5046,7 +4967,6 @@
       "colorHex": "#009376",
       "image": "images/frogping.webp",
       "thumb": "images/thumb/frogping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Frogping",
         "fandomRevId": 215229,
@@ -5080,7 +5000,6 @@
       "colorHex": "#94D5F0",
       "image": "images/flitterping.webp",
       "thumb": "images/thumb/flitterping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Flitterping",
         "fandomRevId": 215228,
@@ -5114,7 +5033,6 @@
       "colorHex": "#E09BC2",
       "image": "images/glossyping.webp",
       "thumb": "images/thumb/glossyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Glossyping",
         "fandomRevId": 215230,
@@ -5148,7 +5066,6 @@
       "colorHex": "#0DB7E5",
       "image": "images/scrubping.webp",
       "thumb": "images/thumb/scrubping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Scrubping",
         "fandomRevId": 220017,
@@ -5195,7 +5112,6 @@
       "colorHex": "#025297",
       "image": "images/charlesping.webp",
       "thumb": "images/thumb/charlesping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Charlesping",
         "fandomRevId": 216962,
@@ -5229,7 +5145,6 @@
       "colorHex": "#75A8D9",
       "image": "images/rellaping.webp",
       "thumb": "images/thumb/rellaping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Rellaping",
         "fandomRevId": 221087,
@@ -5263,7 +5178,6 @@
       "colorHex": "#64C5E7",
       "image": "images/snowping.webp",
       "thumb": "images/thumb/snowping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Snowping",
         "fandomRevId": 215247,
@@ -5297,7 +5211,6 @@
       "colorHex": "#E65EA1",
       "image": "images/silkyping.webp",
       "thumb": "images/thumb/silkyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Silkyping",
         "fandomRevId": 220210,
@@ -5331,7 +5244,6 @@
       "colorHex": "#6AA4AD",
       "image": "images/kittyping.webp",
       "thumb": "images/thumb/kittyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Kittyping",
         "fandomRevId": 220988,
@@ -5365,7 +5277,6 @@
       "colorHex": "#5ABDAD",
       "image": "images/dewping.webp",
       "thumb": "images/thumb/dewping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dewping",
         "fandomRevId": 215224,
@@ -5416,7 +5327,6 @@
       "colorHex": "#41B79D",
       "image": "images/henryping.webp",
       "thumb": "images/thumb/henryping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Henryping",
         "fandomRevId": 215232,
@@ -5448,7 +5358,6 @@
       "colorHex": "#07A6E0",
       "image": "images/charmingping.webp",
       "thumb": "images/thumb/charmingping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Charmingping",
         "fandomRevId": 218298,
@@ -5482,7 +5391,6 @@
       "colorHex": "#9A81BB",
       "image": "images/dozyping.webp",
       "thumb": "images/thumb/dozyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dozyping",
         "fandomRevId": 215226,
@@ -5516,7 +5424,6 @@
       "colorHex": "#EAA1C4",
       "image": "images/cupidping.webp",
       "thumb": "images/thumb/cupidping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cupidping",
         "fandomRevId": 216953,
@@ -5563,7 +5470,6 @@
       "colorHex": "#119AD5",
       "image": "images/trotping.webp",
       "thumb": "images/thumb/trotping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Trotping",
         "fandomRevId": 216466,
@@ -5597,7 +5503,6 @@
       "colorHex": "#6EBFCD",
       "image": "images/limeping.webp",
       "thumb": "images/thumb/limeping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Limeping",
         "fandomRevId": 220981,
@@ -5628,7 +5533,6 @@
       "colorHex": "#64BE99",
       "image": "images/lemonping.webp",
       "thumb": "images/thumb/lemonping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lemonping",
         "fandomRevId": 220756,
@@ -5659,7 +5563,6 @@
       "colorHex": "#B08DC1",
       "image": "images/cherryping.webp",
       "thumb": "images/thumb/cherryping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cherryping",
         "fandomRevId": 220755,
@@ -5690,7 +5593,6 @@
       "colorHex": "#C2B2D7",
       "image": "images/meowping.webp",
       "thumb": "images/thumb/meowping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Meowping",
         "fandomRevId": 220798,
@@ -5721,13 +5623,40 @@
       "colorHex": "#76CAED",
       "image": "images/bowwowping.webp",
       "thumb": "images/thumb/bowwowping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bowwowping",
         "fandomRevId": 220857,
         "namuUrl": "https://namu.wiki/w/시고르핑"
       },
       "updatedAt": "2026-10-04T13:11:52.638Z"
+    },
+    {
+      "id": "angangping",
+      "nameKo": "앙앙핑",
+      "nameEn": "",
+      "season": "7기 쥬얼스타",
+      "seasonKey": "jewelstar",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "",
+      "intro": "쥬얼스타 캐치! 티니핑에 나오는 티니핑이다.",
+      "item": "",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "○○○○\n(쥬얼스타 캐치! 티니핑 ?화)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "hsl(74 70% 80%)",
+      "image": "images/angangping.webp",
+      "thumb": "images/thumb/angangping.webp",
+      "source": {
+        "namuUrl": "https://namu.wiki/w/앙앙핑"
+      },
+      "updatedAt": ""
     },
     {
       "id": "bouncyping",
@@ -5752,7 +5681,6 @@
       "colorHex": "#E490BB",
       "image": "images/bouncyping.webp",
       "thumb": "images/thumb/bouncyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bouncyping",
         "fandomRevId": 220813,
@@ -5790,7 +5718,6 @@
       "colorHex": "#79CED6",
       "image": "images/bubbleping.webp",
       "thumb": "images/thumb/bubbleping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bubbleping",
         "fandomRevId": 216417,
@@ -5830,7 +5757,6 @@
       "colorHex": "#F481B4",
       "image": "images/shellyping.webp",
       "thumb": "images/thumb/shellyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shellyping",
         "fandomRevId": 216416,
@@ -5876,7 +5802,6 @@
       "colorHex": "#DD536F",
       "image": "images/wavyping.webp",
       "thumb": "images/thumb/wavyping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wavyping",
         "fandomRevId": 216415,
@@ -5909,7 +5834,6 @@
       "colorHex": "#46BFEC",
       "image": "images/truthping.webp",
       "thumb": "images/thumb/truthping.webp",
-      "verified": true,
       "source": {
         "fandomUrl": "https://catchteenieping.fandom.com/wiki/Truthping",
         "fandomRevId": 216305,

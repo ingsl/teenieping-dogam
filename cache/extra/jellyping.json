@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/말랑핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:26.697Z",
+    "fetchedAt": "2026-10-04T14:11:40.375Z",
+    "nameEn": "Jellyping",
     "gender": "여성",
     "classification": "디저트 티니핑\n로열 티니핑",
     "birthday": "",
@@ -46,5 +47,6 @@
       "연출",
       "작화감독"
     ]
-  }
+  },
+  "nameKo": "말랑핑"
 }

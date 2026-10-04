@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { CharacterArt, GradeChip } from '../components/CharacterCard.jsx';
 import { useData, useTitle, asset, store } from '../lib/data.js';
 import { CONFIG } from '../config.js';
@@ -35,9 +35,36 @@ function LikeButton({ id }) {
 
 export default function Detail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { data, error } = useData();
-  const it = data?.items.find((i) => i.id === id);
+  const index = data ? data.items.findIndex((i) => i.id === id) : -1;
+  const it = data?.items[index];
+  const prev = data && index > 0 ? data.items[index - 1] : null;
+  const next = data && index >= 0 && index < data.items.length - 1 ? data.items[index + 1] : null;
   useTitle(it?.nameKo || '');
+
+  // 키보드 ←/→ 와 손가락으로 옆으로 쓸기 → 이전/다음 티니핑
+  const touch = useRef(null);
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.target.closest('input, textarea')) return;
+      if (e.key === 'ArrowLeft' && prev) navigate(`/p/${prev.id}`, { replace: true });
+      if (e.key === 'ArrowRight' && next) navigate(`/p/${next.id}`, { replace: true });
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [prev, next, navigate]);
+  const onTouchStart = (e) => { touch.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }; };
+  const onTouchEnd = (e) => {
+    const t = touch.current;
+    if (!t) return;
+    const dx = e.changedTouches[0].clientX - t.x, dy = e.changedTouches[0].clientY - t.y;
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      const to = dx < 0 ? next : prev;
+      if (to) navigate(`/p/${to.id}`, { replace: true });
+    }
+  };
+  const goBack = () => (window.history.state?.idx > 0 ? navigate(-1) : navigate('/'));
 
   if (error) return <p className="empty">{error.message}</p>;
   if (!data) return <p className="empty">불러오는 중…</p>;
@@ -48,7 +75,15 @@ export default function Detail() {
   const src = it.source || {};
 
   return (
-    <>
+    <div onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+      <nav className="detail-nav" aria-label="티니핑 이동">
+        <button type="button" className="btn ghost" onClick={goBack}>← 도감</button>
+        <div className="detail-step">
+          {prev ? <Link className="icon-btn" to={`/p/${prev.id}`} replace aria-label={`이전: ${prev.nameKo}`} title={prev.nameKo}>‹</Link> : <span className="icon-btn disabled" aria-hidden="true">‹</span>}
+          <span className="detail-pos">{index + 1} / {data.items.length}</span>
+          {next ? <Link className="icon-btn" to={`/p/${next.id}`} replace aria-label={`다음: ${next.nameKo}`} title={next.nameKo}>›</Link> : <span className="icon-btn disabled" aria-hidden="true">›</span>}
+        </div>
+      </nav>
       <article className="detail">
         <div className="portrait"><CharacterArt item={it} full /></div>
         <div>
@@ -96,6 +131,6 @@ export default function Detail() {
         {src.fandomUrl && <><a href={src.fandomUrl} rel="noopener">Fandom 위키 문서</a> (CC BY-SA 3.0)</>}
         . 위키 내용을 자동으로 모은 것이라 틀린 부분이 있을 수 있어요.
       </p>
-    </>
+    </div>
   );
 }

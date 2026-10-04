@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/메모핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:58.372Z",
+    "fetchedAt": "2026-10-04T14:10:34.689Z",
+    "nameEn": "Memoping",
     "gender": "여성",
     "classification": "보석 티니핑\n일반 티니핑",
     "birthday": "",
@@ -39,5 +40,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "메모핑"
 }

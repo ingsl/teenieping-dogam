@@ -44,18 +44,18 @@ worker/                  Cloudflare Worker (좋아요/랭크, 선택)
 
 | 단계 | 명령 | 설명 |
 |---|---|---|
-| 명단·분류 | `npm run fetch` | Fandom API `Category:Teeniepings` → `cache/fandom/`. 영문명·기수/등급 분류·대표색·관계. revid 증분, `-- --force` 전량 |
-| 한국어 상세 | `npm run fetch:namu` | 나무위키 문서(한글명) → `cache/extra/`. 성별·감정·소품·마법·좋아하는 것·첫 등장·소개·이미지 주소. 7일 지난 문서만 다시 받음 |
-| 이미지 | `npm run images` | Fandom → (차단 시) 나무위키 순으로 받기 → 배경 있는 원본은 자동 배경 제거(`tools/remove-bg.mjs`) → webp(640) / 썸네일(240) / OG(1200×630) |
+| 명단·상세 (1순위) | `npm run fetch:namu` | 나무위키 「티니핑」 문서의 기수별·등급별 분류 → 명단 (`cache/extra/_roster.json`), 캐릭터 문서 → 성별·감정·소품·마법·좋아하는 것·첫 등장·소개·이미지 주소. 7일 지난 문서만 다시 받음 |
+| 보충 (2순위) | `npm run fetch` | Fandom API `Category:Teeniepings` → `cache/fandom/`. 나무위키에 없는 캐릭터·값만 보충 (영문명·대표색·관계 등). revid 증분 |
+| 이미지 | `npm run images` | 나무위키(인포박스 첫 사진 = 기본 모습) → 없으면 Fandom 순으로 받기 → 배경 있는 원본은 자동 배경 제거(`tools/remove-bg.mjs`) → webp(640) / 썸네일(240) / OG(1200×630) |
 | 빌드 | `npm run build` | 병합 → `public/data/teeniepings.json` (이미지 없거나 미확인인 항목 제외) → `vite build` → `tools/prerender.mjs` 가 주소별 `index.html`(캐릭터별 OG) + `404.html` 생성 |
 
-한 번에: `npm run update`
+한 번에: `npm run update` (Fandom → 나무위키 → 이미지 → 빌드)
 
-**병합 우선순위** (아래가 이김): Fandom → 나무위키 → `content/roster.js`(선택) → `content/overrides.json`(선택)
+**우선순위**: `overrides.json` > `roster.js` > **나무위키** > Fandom. 나무위키·Fandom 어디에도 정보가 없거나 이미지가 없으면 도감에서 뺍니다.
 
 - 화면에는 **한국어만** 나옵니다. Fandom 영문 설명은 쓰지 않고 영문명만 씁니다.
 - 기수: Fandom 분류로 정하고, 못 정하면 나무위키 "첫 등장" 문구(예: `쥬얼스타 캐치! 티니핑 1화`)로 정합니다. 설정은 `content/seasons.js`.
-- Fandom·나무위키 **양쪽에 다 있는 캐릭터는 자동으로 "확인됨"**, 한쪽에만 있으면 "미확인" 배지가 붙습니다.
+- 명단은 나무위키 ∪ Fandom 합집합입니다. 나무위키에만 있는 새 캐릭터의 id 는 나무위키 영문 번안명, 없으면 한글 로마자로 만듭니다(`cache/extra/_index.json` 에 고정).
 - `roster.js` / `overrides.json` 은 **손댈 필요 없습니다.** 자동 수집 값이 틀렸을 때만 쓰는 비상용입니다.
 - 이미지 서버가 봇 확인(Cloudflare challenge)을 요구하면 우회하지 않고 다음 후보로 넘어갑니다. (현재 Fandom CDN이 그 상태라 나무위키 이미지를 씁니다.)
 
@@ -66,10 +66,18 @@ worker/                  Cloudflare Worker (좋아요/랭크, 선택)
 
 ## 게임
 
-- **메모리 게임** (`/games/memory`): 카드 앞면은 도감 카드와 같은 모양.: 3×4 · 4×4 · 5×5(가운데 보너스 칸) · 6×6 · 8×8. 기수별 카드 선택, 이동 수·시간·별점, 최고 기록(브라우저 저장).
-- **퍼즐 게임** (`/games/puzzle`): 바꾸기(두 조각 교환, 어린이용) / 슬라이드(15퍼즐식) × 쉬움 3×3 · 보통 4×4 · 어려움 5×5 · 고수 6×6.
-  캐릭터 선택 또는 내 사진 업로드(기기 밖으로 전송 안 됨), 번호 힌트, 정답 미리보기, 키보드 화살표 지원.
-  슬라이드는 완성 상태에서 빈칸을 무작위로 움직여 섞기 때문에 항상 풀 수 있습니다.
+| 게임 | 주소 | 내용 |
+|---|---|---|
+| 누구일까? | `/games/quiz` | 사진·그림자·확대 사진 보고 이름 맞히기. 전체/기수별, 쉬움(3지선다)·보통(4지선다 12초)·어려움(6초), 10문제 |
+| 그림자 찾기 | `/games/shadow` | 티니핑을 보고 그림자 5개 중 같은 모양 찾기, 10문제 |
+| 티니핑을 캐치! | `/games/catch` | 9개 구멍에서 나오는 티니핑 중 찾는 티니핑만 콕 (30초, 천천히/보통/빠르게) |
+| 메모리 게임 | `/games/memory` | 3×4 ~ 8×8, 카드 앞면 = 도감 카드 |
+| 퍼즐 | `/games/puzzle` | 바꾸기/슬라이드 × 3×3 ~ 6×6, 스와이프 지원 |
+
+- 효과음은 Web Audio 로 만든 실로폰·종소리(파일 없음). 퍼즐 이동 "스윽", 메모리 짝 맞음/틀림, 클리어 팡파르.
+- **목소리**: 브라우저 기계음(TTS)은 쓰지 않습니다. 사람 목소리 녹음을 `public/voice/` 에 넣으면 재생됩니다:
+  `start.mp3`(시작) · `correct.mp3`(정답) · `wrong.mp3`(오답) · `win.mp3`(완료)
+- 안내 문구의 조사(이/가, 을/를, 이에요/예요…)는 `src/lib/korean.js` 의 `josa()` 로 받침에 맞게 자동 선택.
 
 ## 배포
 

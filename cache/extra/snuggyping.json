@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/뽀송핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:24:31.614Z",
+    "fetchedAt": "2026-10-04T14:12:53.112Z",
+    "nameEn": "Snuggyping",
     "gender": "여성",
     "classification": "스타 티니핑\n일반 티니핑",
     "birthday": "",
@@ -39,5 +40,6 @@
       "성우",
       "소환 전"
     ]
-  }
+  },
+  "nameKo": "뽀송핑"
 }

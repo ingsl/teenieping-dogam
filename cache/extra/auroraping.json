@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/오로라핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:56:49.735Z",
+    "fetchedAt": "2026-10-04T14:12:29.730Z",
+    "nameEn": "Auroraping",
     "gender": "여성",
     "classification": "스타 티니핑\n레전드 티니핑",
     "birthday": "",
@@ -42,5 +43,6 @@
       "노래",
       "작사"
     ]
-  }
+  },
+  "nameKo": "오로라핑"
 }

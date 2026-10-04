@@ -57,11 +57,16 @@ export function overview(html) {
  *  2) 인포박스 표 안의 첫 이미지 — 여러 모습(평상시/변신/각성…)이 탭으로 있으면 첫 탭이 기본 모습
  *  3) 인포박스("성별" 칸) 바로 위의 이미지
  *  4) alt 에 이름이 들어간 이미지
+ * 다른 티니핑 이름이 붙은 이미지(문서 위 시리즈 목록의 사진 등)는 절대 쓰지 않는다.
+ * 자기 사진이 없는 문서(미공개 캐릭터)는 '' → Fandom 으로 넘어가고, 거기도 없으면 도감에서 빠진다.
  */
 export function mainImage(html, nameKo) {
+  // 사진 설명(alt)에 다른 티니핑 이름만 있고 자기 이름은 없으면 남의 사진. ("티니핑" 이라는 단어 자체는 이름이 아님)
+  const otherPing = (alt) => !alt.includes(nameKo)
+    && (alt.match(/[가-힣]+핑/g) || []).some((n) => !n.endsWith('티니핑') && !nameKo.includes(n));
   const imgs = [...html.matchAll(/<img[^>]*?src='(\/\/i\.namu\.wiki\/[^']+)'[^>]*?alt='([^']*)'/g)]
     .map((m) => ({ url: `https:${m[1]}`, alt: decode(m[2]).replace(/\[\d+\]/g, '').trim(), at: m.index }))
-    .filter((i) => !/\.svg$/i.test(i.url) && !/로고|아이콘|logo/i.test(i.alt));
+    .filter((i) => !/\.svg$/i.test(i.url) && !/로고|아이콘|logo/i.test(i.alt) && !otherPing(i.alt));
   const profileAt = html.search(/>\s*(?:<strong[^>]*>)?성별(?:<\/strong>)?\s*</);
   const boxAt = profileAt > -1 ? infoboxStart(html, profileAt) : -1;
   const firstInBox = boxAt > -1 ? imgs.find((i) => i.at > boxAt && i.at < profileAt) : null;
@@ -133,3 +138,46 @@ export function toRecord(html, nameKo, nameEn = '') {
     labels: Object.keys(box),
   };
 }
+
+// ── 나무위키 「티니핑」 문서 → 전체 명단 ──────────────────────────────
+const SEASON_BY_NO = { 1: 'emotion', 2: 'twinkle', 3: 'secret', 4: 'dessert', 5: 'star', 6: 'princess', 7: 'jewelstar' };
+
+/**
+ * 「애니메이션 기수별 티니핑 분류」의 소제목별 목록을 읽는다.
+ *  - "N기 ○○ 티니핑"(종류 목록) → 기수
+ *  - "N기 로열/레전드/일반 티니핑" → 등급
+ *  - "극장판 시즌별 등장 티니핑" 아래 → 극장판 (이미 TV 기수가 있으면 그쪽 유지)
+ * 반환: [{ nameKo, season, grade, page }]  page = 링크가 가리키는 문서 제목(없으면 null)
+ */
+export function parseRoster(html) {
+  const heads = [...html.matchAll(/<h[2-6][^>]*>[\s\S]*?<span id='([^']+)'/g)].map((m) => ({ id: decode(m[1]), at: m.index }));
+  const from = heads.findIndex((h) => h.id === '애니메이션 기수별 티니핑 분류');
+  const to = heads.findIndex((h) => h.id === '그 외 티니핑');
+  if (from === -1) throw new Error('「애니메이션 기수별 티니핑 분류」 절을 찾지 못했습니다 (문서 구조 변경?)');
+  const byName = new Map();
+  const get = (name) => byName.get(name) || byName.set(name, { nameKo: name, season: '', grade: '', page: null, order: 99 }).get(name);
+  let movie = false;
+  for (let i = from + 1; i < (to === -1 ? heads.length : to); i++) {
+    const title = heads[i].id;
+    if (title.startsWith('극장판')) movie = true;
+    const seg = html.slice(heads[i].at, heads[i + 1]?.at);
+    const m = title.match(/^(\d)기 (.+) 티니핑$/);
+    const gradeMatch = m && m[2].match(/^(로열|레전드|일반)$/);
+    for (const a of seg.matchAll(/<a class='wiki-link-internal' href='\/w\/([^'#]+)[^']*'[^>]*>([\s\S]*?)<\/a>/g)) {
+      const page = decodeURIComponent(a[1]);
+      const text = htmlToText(a[2]).replace(/\s*\(.*?\)\s*/g, '');
+      for (const name of text.split('&').map((s) => s.trim())) {
+        if (!/^[가-힣]+핑$/.test(name) || name.includes('티니핑')) continue; // "다이아 하츄핑" 같은 변신 이름·작품명 제외
+        const r = get(name);
+        if (!r.page && page !== '티니핑' && page.includes(name)) r.page = page;
+        if (m && !gradeMatch && Number(m[1]) < r.order) { r.order = Number(m[1]); r.season = SEASON_BY_NO[m[1]] || ''; }
+        if (gradeMatch && !r.grade) r.grade = gradeMatch[1];
+        if (movie && !r.season) r.season = 'movie';
+      }
+    }
+  }
+  return [...byName.values()].filter((r) => r.season).map(({ order, ...r }) => r);
+}
+
+/** 인포박스 "한국 외 국가 번안명" 의 첫 영문 이름 (예: "Heartsping") */
+export const englishName = (box) => (box['한국 외 국가 번안명'] || '').match(/\b[A-Z][A-Za-z]*ping\b/)?.[0] || ''; // "…ping" 형태만 영문명으로 인정

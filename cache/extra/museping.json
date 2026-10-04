@@ -1,0 +1,41 @@
+{
+  "id": "museping",
+  "nameKo": "뮤즈핑",
+  "namu": {
+    "url": "https://namu.wiki/w/뮤즈핑",
+    "license": "CC BY-NC-SA 2.0 KR",
+    "fetchedAt": "2026-10-04T14:23:26.326Z",
+    "nameEn": "Museping",
+    "gender": "불명",
+    "classification": "",
+    "birthday": "",
+    "nameOrigin": "뮤즈",
+    "motif": "",
+    "emotion": "",
+    "symbol": "",
+    "item": "",
+    "jewel": "",
+    "magic": "",
+    "likes": "",
+    "dislikes": "",
+    "favoriteFood": "",
+    "partner": "",
+    "debut": "○○○○\n(쥬얼스타 캐치! 티니핑 1화)",
+    "voice": "",
+    "intro": "쥬얼스타 캐치! 티니핑에 등장하는 티니핑. 음악 혹은 지휘자 모티브 티니핑으로 추정된다. 현재 거론되는 레전드 티니핑 후보 중 한 명이다.",
+    "imageUrl": "",
+    "labels": [
+      "성별",
+      "분류",
+      "한국 외 국가 번안명",
+      "이름의 유래",
+      "소품",
+      "마법",
+      "좋아하는 것",
+      "싫어하는 것",
+      "첫 등장",
+      "마지막 등장",
+      "성우"
+    ]
+  }
+}

@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/깨굴핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:21:50.762Z",
+    "fetchedAt": "2026-10-04T14:13:50.281Z",
+    "nameEn": "Frogping",
     "gender": "남성",
     "classification": "프린스 티니핑\n일반 티니핑",
     "birthday": "",
@@ -42,5 +43,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "깨굴핑"
 }

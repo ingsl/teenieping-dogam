@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/방울핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:57:07.036Z",
+    "fetchedAt": "2026-10-04T14:14:53.735Z",
+    "nameEn": "Bubbleping",
     "gender": "여성",
     "classification": "바다 티니핑\n일반 티니핑",
     "birthday": "",
@@ -35,5 +36,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "방울핑"
 }

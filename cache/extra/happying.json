@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/해핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:22:07.645Z",
+    "fetchedAt": "2026-10-04T14:18:05.903Z",
+    "nameEn": "",
     "gender": "여성",
     "classification": "큐브 티니핑\n로열 티니핑",
     "birthday": "",
@@ -39,5 +40,6 @@
       "성우",
       "뮤지컬판 배우"
     ]
-  }
+  },
+  "nameKo": "해핑"
 }

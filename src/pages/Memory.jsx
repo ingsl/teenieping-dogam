@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import CharacterCard from '../components/CharacterCard.jsx';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, useTimer, shuffle, store, formatTime, confetti } from '../lib/data.js';
+import { useFx, SoundToggle } from '../lib/fx.jsx';
 
 const LEVELS = [
   { cols: 4, rows: 3, name: '아기', desc: '6쌍 · 처음이라면' },
@@ -39,6 +40,7 @@ export default function Memory() {
   const done = level && matched.size === totalPairs * 2;
   const seconds = useTimer(Boolean(level) && started && !done, round);
   const lockRef = useRef(false);
+  const [fx, soundOn, toggleSound] = useFx();
 
   const start = (lv) => {
     const c = deal(data.items, season, Math.floor((lv.cols * lv.rows) / 2));
@@ -50,6 +52,7 @@ export default function Memory() {
 
   const flip = (i) => {
     if (lockRef.current || open.includes(i) || matched.has(i) || cards[i].free) return;
+    fx.play('flip');
     if (open.length === 0) { setOpen([i]); return; }
     const [a] = open;
     setOpen([a, i]);
@@ -57,8 +60,10 @@ export default function Memory() {
     if (cards[a].key === cards[i].key) {
       setMatched((s) => new Set([...s, a, i]));
       setOpen([]);
+      setTimeout(() => fx.play('good'), 250); // 짝 맞음 "띠리링"
     } else {
       lockRef.current = true;
+      setTimeout(() => fx.play('bad'), 350); // 틀림 "뿌웅"
       setTimeout(() => {
         setOpen([]);
         setShake([a, i]);
@@ -78,6 +83,7 @@ export default function Memory() {
     if (isBest) store.set(keyOf(level), { moves, time: seconds });
     const t = setTimeout(() => {
       confetti();
+      fx.play('win');
       setResult({ stars, text: `${level.cols}×${level.rows} · ${moves}번 만에 · ${formatTime(seconds)}`, isBest });
     }, 500);
     return () => clearTimeout(t);
@@ -128,6 +134,7 @@ export default function Memory() {
         <div className="actions">
           <button className="btn ghost" type="button" onClick={() => start(level)}>다시 섞기</button>
           <button className="btn ghost" type="button" onClick={() => setLevel(null)}>난이도 선택</button>
+          <SoundToggle on={soundOn} toggle={toggleSound} />
         </div>
       </div>
       <div className={`memory-board${level.cols >= 8 ? ' tiny' : ''}`} style={{ '--cols': level.cols, '--rows': level.rows }} role="grid" aria-label="메모리 카드판">

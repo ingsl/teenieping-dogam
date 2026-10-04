@@ -3,7 +3,8 @@
   "namu": {
     "url": "https://namu.wiki/w/왕자핑",
     "license": "CC BY-NC-SA 2.0 KR",
-    "fetchedAt": "2026-10-04T13:23:53.621Z",
+    "fetchedAt": "2026-10-04T14:25:20.608Z",
+    "nameEn": "Princeping",
     "gender": "남성",
     "classification": "스타 티니핑\n로열 티니핑",
     "birthday": "",
@@ -43,5 +44,6 @@
       "마지막 등장",
       "성우"
     ]
-  }
+  },
+  "nameKo": "왕자핑"
 }
