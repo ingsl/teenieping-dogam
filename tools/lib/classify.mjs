@@ -1,5 +1,5 @@
-// 기수·등급 판정 (src/seasons.js 설정 기반). 빌드 때마다 다시 계산하므로 설정만 바꾸면 재수집 없이 반영된다.
-import { SEASONS, GRADE_CATEGORIES, DEBUT_PATTERNS } from '../../src/seasons.js';
+// 기수·등급 판정 (content/seasons.js 설정 기반). 빌드 때마다 다시 계산하므로 설정만 바꾸면 재수집 없이 반영된다.
+import { SEASONS, GRADE_CATEGORIES, DEBUT_PATTERNS } from '../../content/seasons.js';
 
 /** Fandom 분류 → 기수. "종류" 분류 우선, 없으면 "작품" 분류. 여러 개면 가장 이른 시즌. */
 export function seasonFromCategories(categories = []) {

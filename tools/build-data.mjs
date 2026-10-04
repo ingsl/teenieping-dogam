@@ -6,8 +6,8 @@
 // 소스와 우선순위 (아래가 이김)
 //   1. Fandom 캐시 (cache/fandom)  — 명단, 영문명, 기수·등급 분류, 대표색, 관계
 //   2. 나무위키 캐시 (cache/extra) — 한국어 상세: 성별·감정·소품·마법·좋아하는 것·첫 등장·소개, 등급 보조
-//   3. src/roster.js               — (선택) 사람이 확정한 이름·기수·등급
-//   4. src/overrides.json          — (선택) 사람이 고친 값. 모든 소스를 이김
+//   3. content/roster.js               — (선택) 사람이 확정한 이름·기수·등급
+//   4. content/overrides.json          — (선택) 사람이 고친 값. 모든 소스를 이김
 // 화면에는 한국어만 보인다. Fandom의 영문 설명 문장은 쓰지 않는다 (영문명 제외).
 // 출력 파일은 빌드 산출물이므로 직접 수정하지 말 것.
 
@@ -15,8 +15,8 @@ import path from 'node:path';
 import { existsSync } from 'node:fs';
 import { PUBLIC, CACHE_FANDOM, CACHE_AUX, ROOT, readJson, readJsonDir, writeJson, slugify } from './lib/common.mjs';
 import { seasonFromCategories, seasonFromDebut, gradeFromCategories, gradeFromNamu } from './lib/classify.mjs';
-import { ROSTER } from '../src/roster.js';
-import { SEASONS, GRADES, seasonByKey } from '../src/seasons.js';
+import { ROSTER } from '../content/roster.js';
+import { SEASONS, GRADES, seasonByKey } from '../content/seasons.js';
 
 const GENDER_WORDS = { female: '여성', male: '남성', unknown: '불명', 여자: '여성', 남자: '남성' };
 function normalizeGender(raw = '') {
@@ -85,7 +85,7 @@ async function main() {
   const byId = new Map(fandom.map((r) => [r.id, r]));
   const byKo = new Map(fandom.map((r) => [r.nameKo, r]));
   const rosterById = new Map(ROSTER.map((r) => [r.id, r]));
-  const overrides = (await readJson(path.join(ROOT, 'src', 'overrides.json'))) || {};
+  const overrides = (await readJson(path.join(ROOT, 'content', 'overrides.json'))) || {};
 
   // 명단 = Fandom 전체 + roster에만 있는 캐릭터
   const entries = fandom.map((f) => ({ id: f.id, fandom: f }));
@@ -154,7 +154,7 @@ async function main() {
   );
 
   const out = {
-    _notice: '빌드 산출물입니다. 직접 수정하지 마세요. 값 수정은 src/overrides.json 에서. (npm run build)',
+    _notice: '빌드 산출물입니다. 직접 수정하지 마세요. 값 수정은 content/overrides.json 에서. (npm run build)',
     _credits: {
       characters: '캐릭터 이름·이미지 © SAMG엔터테인먼트. 비공식·비영리 팬 페이지.',
       namu: 'https://namu.wiki (CC BY-NC-SA 2.0 KR)',

@@ -34,16 +34,14 @@ jobs:
       - name: 이미지 수집·처리
         run: |
           node tools/fetch-images.mjs
-          node tools/process-images.mjs
-      - name: 빌드
-        run: npm run build
-        env:
-          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          node tools/process-images.mjs   # 배경 있는 원본은 자동으로 배경 제거
+      - name: 데이터 조립
+        run: npm run build:data
       - name: 변경분 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add -A cache public src
+          git add -A cache public content
           if git diff --cached --quiet; then
             echo "변경 없음"
           else

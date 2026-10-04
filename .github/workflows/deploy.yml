@@ -29,13 +29,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: 페이지 재생성 (OG 절대주소 반영)
+          cache: npm
+      - run: npm ci --omit=optional
+      - name: React 빌드 (+ 주소별 index.html, OG 메타)
         run: npm run build
         env:
+          BASE_PATH: /${{ github.event.repository.name }}/
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4

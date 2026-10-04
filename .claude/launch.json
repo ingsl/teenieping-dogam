@@ -1,6 +1,16 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "dogam", "runtimeExecutable": "node", "runtimeArgs": ["tools/serve.mjs", "--port=5173"], "port": 5173 }
+    {
+      "name": "dogam",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "vite",
+        "--port",
+        "5173",
+        "--strictPort"
+      ],
+      "port": 5173
+    }
   ]
 }

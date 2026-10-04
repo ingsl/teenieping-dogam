@@ -1,5 +1,5 @@
 {
-  "_notice": "빌드 산출물입니다. 직접 수정하지 마세요. 값 수정은 src/overrides.json 에서. (npm run build)",
+  "_notice": "빌드 산출물입니다. 직접 수정하지 마세요. 값 수정은 content/overrides.json 에서. (npm run build)",
   "_credits": {
     "characters": "캐릭터 이름·이미지 © SAMG엔터테인먼트. 비공식·비영리 팬 페이지.",
     "namu": "https://namu.wiki (CC BY-NC-SA 2.0 KR)",
