@@ -4,7 +4,7 @@
 수집·빌드 파이프라인도 전부 Node.js(ES 모듈)로 작성했습니다.
 
 > **비공식·비영리 팬 페이지**입니다. 캐릭터 이름·이미지 등 모든 권리는 **SAMG엔터테인먼트**에 있습니다.
-> 광고·후원·판매 등 수익화를 하지 않습니다. 캐릭터 정보 일부는 [Catch! Teenieping Wiki (Fandom)](https://catchteenieping.fandom.com/) — CC BY-SA 3.0.
+> 광고·후원·판매 등 수익화를 하지 않습니다. 캐릭터 정보 출처: [나무위키](https://namu.wiki/) (CC BY-NC-SA 2.0 KR), [Catch! Teenieping Wiki (Fandom)](https://catchteenieping.fandom.com/) (CC BY-SA 3.0).
 
 ## 빠른 시작
 
@@ -27,44 +27,39 @@ public/                  ← GitHub Pages로 배포되는 정적 사이트 (이 
   data/ping-ids.json     ★ 생성물
   p/<id>.html            ★ 생성물: 캐릭터 상세 페이지
 src/                     ← 사람이 고치는 소스
-  roster.js              공식 도감 전사 명단 (정본: 이름·기수·등급)
+  roster.js              (선택) 사람이 확정한 이름·기수·등급
   overrides.json         수동 보정 (모든 소스를 이김, 재수집해도 유지)
   seasons.js             기수 정의 · Fandom 분류 매핑
 assets/images/           ← 사람이 직접 넣는 캐릭터 이미지 (<id>.png), 자동 수집본보다 우선
 cache/fandom/            Fandom API 수집 캐시 (문서별 JSON, revid 증분)
-cache/extra/               보조 소스 후보(나무위키 등) — 사람이 selected 에 고른 값만 반영
+cache/extra/             나무위키 수집 캐시 (aux 는 Windows 예약어라 extra)
 tools/                   수집·빌드 스크립트 (Node)
 worker/                  Cloudflare Worker (좋아요/랭크, 선택)
 .github/workflows/       update.yml(주 1회 수집) · deploy.yml(Pages 배포)
 ```
 
-## 데이터 파이프라인
+## 데이터 파이프라인 (전부 자동)
 
 | 단계 | 명령 | 설명 |
 |---|---|---|
-| 수집 | `npm run fetch` | Fandom API `Category:Teeniepings` → `cache/fandom/`. revid 같으면 스킵, `-- --force` 전량, `-- --limit=10` 시범 |
-| 이미지 | `npm run images` | 대표 이미지 다운로드 → webp(640) / 썸네일(240) / OG(1200×630) |
-| 보조 | `npm run fetch:namu -- --ids=a,b` | (옵션) 나무위키 후보 수집. 자동 병합 안 함 |
-| 빌드 | `npm run build` | roster + 캐시 + 보조 selected + overrides 병합 → JSON + 상세 페이지, 빈 필드 리포트 출력 |
+| 명단·분류 | `npm run fetch` | Fandom API `Category:Teeniepings` → `cache/fandom/`. 영문명·기수/등급 분류·대표색·관계. revid 증분, `-- --force` 전량 |
+| 한국어 상세 | `npm run fetch:namu` | 나무위키 문서(한글명) → `cache/extra/`. 성별·감정·소품·마법·좋아하는 것·첫 등장·소개·이미지 주소. 7일 지난 문서만 다시 받음 |
+| 이미지 | `npm run images` | Fandom → (차단 시) 나무위키 순으로 받아 webp(640) / 썸네일(240) / OG(1200×630) 생성 |
+| 빌드 | `npm run build` | 병합 → `public/data/teeniepings.json` + 상세 페이지 + 빈 필드 리포트 |
 
-**병합 우선순위** (아래가 이김): Fandom 캐시 → 보조 `selected` → `roster` (이름·기수·등급) → `overrides.json`
+한 번에: `npm run update`
 
-- `roster.js`에 있는 캐릭터는 "검증됨", Fandom에만 있는 캐릭터는 **미검증** 배지로 표시됩니다.
-  `npm run build:data -- --strict` 로 빌드하면 roster에 있는 캐릭터만 나옵니다.
-- 값을 지어내지 않습니다. 소스에 없으면 비워 두고, 빌드 리포트를 보고 `overrides.json`으로 채웁니다.
+**병합 우선순위** (아래가 이김): Fandom → 나무위키 → `src/roster.js`(선택) → `src/overrides.json`(선택)
 
-### 해야 할 일 (사람)
-
-1. **`src/roster.js` 채우기** — 공식 도감을 보고 직접 전사. (현재 형식 예시 3건뿐)
-   다른 저장소(예: elsewon/TeeniepingCompendium)의 명단을 복사하지 마세요.
-2. **이미지** — Fandom 이미지 CDN이 봇 확인(Cloudflare challenge)을 요구해서 자동 다운로드가 막혀 있습니다.
-   스크립트는 우회하지 않고 멈춥니다. 이미지는 `assets/images/<id>.png`(투명 배경 권장)로 직접 넣고
-   `node tools/process-images.mjs && npm run build` 하세요. 이미지가 없으면 대표색 플레이스홀더로 표시됩니다.
-3. **한국어 보정** — 감정·소품·마법 일부는 영문 위키 원문입니다. `overrides.json`에서 한국어로 덮어쓰세요.
+- 화면에는 **한국어만** 나옵니다. Fandom 영문 설명은 쓰지 않고 영문명만 씁니다.
+- 기수: Fandom 분류로 정하고, 못 정하면 나무위키 "첫 등장" 문구(예: `쥬얼스타 캐치! 티니핑 1화`)로 정합니다. 설정은 `src/seasons.js`.
+- Fandom·나무위키 **양쪽에 다 있는 캐릭터는 자동으로 "확인됨"**, 한쪽에만 있으면 "미확인" 배지가 붙습니다.
+- `roster.js` / `overrides.json` 은 **손댈 필요 없습니다.** 자동 수집 값이 틀렸을 때만 쓰는 비상용입니다.
+- 이미지 서버가 봇 확인(Cloudflare challenge)을 요구하면 우회하지 않고 다음 후보로 넘어갑니다. (현재 Fandom CDN이 그 상태라 나무위키 이미지를 씁니다.)
 
 ```jsonc
-// src/overrides.json
-{ "heartsping": { "emotion": "사랑", "item": "손거울", "intro": "..." } }
+// src/overrides.json — 필요할 때만
+{ "heartsping": { "emotion": "사랑" } }
 ```
 
 ## 게임
@@ -78,7 +73,7 @@ worker/                  Cloudflare Worker (좋아요/랭크, 선택)
 
 1. GitHub 저장소 → Settings → Pages → Source: **GitHub Actions**
 2. `main`에 push하면 `deploy.yml`이 `public/`을 배포합니다.
-3. `update.yml`이 매주 월요일 03:00(KST) Fandom을 증분 수집해 변경분만 커밋 → 배포가 이어서 실행됩니다. Actions 탭에서 수동 실행도 가능.
+3. `update.yml`이 매주 월요일 03:00(KST) Fandom·나무위키·이미지를 증분 수집해 변경분만 커밋 → 배포가 이어서 실행됩니다. Actions 탭에서 수동 실행도 가능.
 
 ### 좋아요 (선택)
 

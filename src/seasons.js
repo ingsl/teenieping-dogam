@@ -13,7 +13,21 @@ export const SEASONS = [
   { key: 'dessert',  order: 4,  label: '4기 디저트',   fandomCategories: ['Dessert Teeniepings'], fandomSeries: ['Dessert Catch! Teenieping'] },
   { key: 'star',     order: 5,  label: '5기 스타',     fandomCategories: ['Star Teeniepings'], fandomSeries: ['Star Catch! Teenieping'] },
   { key: 'princess', order: 6,  label: '6기 프린세스', fandomCategories: ['Princess Teeniepings', 'Prince Teeniepings'], fandomSeries: ['Princess Catch! Teenieping'] },
+  { key: 'jewelstar', order: 7, label: '7기 쥬얼스타', fandomCategories: [], fandomSeries: ['Jewel Catch! Teenieping'] },
   { key: 'movie',    order: 90, label: '극장판',       fandomCategories: ['Movie Teeniepings'], fandomSeries: [] },
+];
+
+// 나무위키 "첫 등장" 문구(예: "…(쥬얼스타 캐치! 티니핑 1화)") → 기수. Fandom으로 못 정할 때의 보조 판단.
+// 위에서부터 먼저 맞는 것. 마지막 줄은 접두어 없는 1기 "캐치! 티니핑 N화".
+export const DEBUT_PATTERNS = [
+  [/쥬얼스타/, 'jewelstar'],
+  [/프린세스/, 'princess'],
+  [/스타 캐치/, 'star'],
+  [/디저트/, 'dessert'],
+  [/비밀/, 'secret'],
+  [/반짝반짝/, 'twinkle'],
+  [/극장판/, 'movie'],
+  [/\(캐치! 티니핑 \d+화/, 'emotion'],
 ];
 
 export const GRADES = ['로열', '레전드', '일반', '빌런'];

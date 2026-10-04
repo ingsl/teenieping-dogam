@@ -52,7 +52,7 @@ ${body}
     <div class="inner">
       <p><strong>비공식·비영리 팬 페이지</strong>입니다. 광고·후원·판매 등 어떠한 수익화도 하지 않습니다.</p>
       <p>'캐치! 티니핑' 캐릭터의 이름·이미지 등 모든 권리는 <strong>SAMG엔터테인먼트</strong>에 있습니다.</p>
-      <p>캐릭터 정보 일부 출처: <a href="https://catchteenieping.fandom.com/" rel="noopener">Catch! Teenieping Wiki (Fandom)</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener license">CC BY-SA 3.0</a>.</p>
+      <p>캐릭터 정보 출처: <a href="https://namu.wiki/" rel="noopener">나무위키</a> (<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/" rel="noopener license">CC BY-NC-SA 2.0 KR</a>), <a href="https://catchteenieping.fandom.com/" rel="noopener">Catch! Teenieping Wiki (Fandom)</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener license">CC BY-SA 3.0</a>). 각 상세 페이지에 원문 링크가 있습니다.</p>
     </div>
   </footer>
   <script type="module" src="../js/detail.js"></script>
@@ -91,12 +91,14 @@ function detailBody(it, byId) {
         <div class="chips" style="display:flex;gap:6px;flex-wrap:wrap">
           ${it.season ? `<span class="chip">${esc(it.season)}</span>` : ''}
           ${it.grade ? `<span class="chip ${GRADE_CLASS[it.grade] || ''}">${esc(it.grade)}</span>` : ''}
-          ${it.verified ? '' : '<span class="chip unverified" title="공식 도감 대조 전 (Fandom 자동 수집)">미검증</span>'}
+          ${it.verified ? '' : '<span class="chip unverified" title="한쪽 위키에서만 확인된 캐릭터">미확인</span>'}
         </div>
-        ${it.intro ? `<p>${esc(it.intro)}</p>` : ''}
+        ${it.intro ? `<p class="intro">${esc(it.intro)}</p>` : ''}
         <dl class="facts">
-          ${fact('기수', it.season)}${fact('등급', it.grade)}${fact('성별', it.gender)}${fact('감정·컨셉', it.emotion)}
-          ${fact('소품', it.item)}${fact('보석', it.jewel)}${fact('좋아하는 것', it.likes)}${fact('싫어하는 것', it.dislikes)}
+          ${fact('기수', it.season)}${fact('등급', it.grade)}${fact('성별', it.gender)}${fact('감정·상징', it.emotion)}
+          ${fact('생일', it.birthday)}${fact('모티브', it.motif)}${fact('심볼', it.symbol)}${fact('소품', it.item)}${fact('보석', it.jewel)}
+          ${fact('파트너', it.partner)}${fact('좋아하는 것', it.likes)}${fact('싫어하는 것', it.dislikes)}${fact('좋아하는 음식', it.favoriteFood)}
+          ${fact('성우', it.voice)}
         </dl>
         <button class="btn like-btn" type="button" data-id="${esc(it.id)}" hidden>💗 좋아요 <span class="like-count"></span></button>
       </div>
@@ -104,7 +106,7 @@ function detailBody(it, byId) {
     ${it.magic ? `<section class="section"><h2>✨ 마법</h2><p style="white-space:pre-line;margin:0">${esc(it.magic)}</p></section>` : ''}
     ${episodes ? `<section class="section"><h2>📺 에피소드</h2><ul>${episodes}</ul></section>` : ''}
     ${relations ? `<section class="section"><h2>🤝 관계</h2><div class="relations">${relations}</div></section>` : ''}
-    <p class="source-note">출처: ${sources || '공식 도감 전사'}. 일부 항목은 영문 위키 원문 그대로이며 번역·보정 중입니다.</p>`;
+    <p class="source-note">출처: ${sources || '직접 입력'}. 위키 내용을 자동으로 모은 것이라 틀린 부분이 있을 수 있어요.</p>`;
 }
 
 async function main() {
@@ -120,7 +122,7 @@ async function main() {
     const html = layout({
       title: `${it.nameKo} — 티니핑 도감`,
       description: `${it.nameKo}${description ? ` (${description})` : ''} — 비공식 팬 도감`,
-      ogImage: existsSync(path.join(PUBLIC, 'images', 'og', `${it.id}.png`)) ? `images/og/${it.id}.png` : '',
+      ogImage: existsSync(path.join(PUBLIC, 'images', 'og', `${it.id}.jpg`)) ? `images/og/${it.id}.jpg` : '',
       body: detailBody(it, byId),
       current: 'dogam',
     });

@@ -1,0 +1,41 @@
+{
+  "id": "kittyping",
+  "namu": {
+    "url": "https://namu.wiki/w/야옹핑",
+    "license": "CC BY-NC-SA 2.0 KR",
+    "fetchedAt": "2026-10-04T13:22:37.255Z",
+    "gender": "여성",
+    "classification": "프린세스 티니핑\n일반 티니핑",
+    "birthday": "",
+    "nameOrigin": "고양이 울음소리\nKitty(새끼 고양이)",
+    "motif": "",
+    "emotion": "",
+    "symbol": "",
+    "item": "고양이 얼굴 모양 실뭉치",
+    "jewel": "",
+    "magic": "실뭉치로 뭔가를 낚을 수 있다.\n그림자를 통해 다른 곳으로 숨어들 수 있다.",
+    "likes": "신선한 생선, 종이박스, 장난감, 사뿐핑의 깃털",
+    "dislikes": "쓰레기통, 배고픈 것",
+    "favoriteFood": "",
+    "partner": "",
+    "debut": "출발! 프린세스 회담행 열차\n(프린세스 캐치! 티니핑 1화)",
+    "voice": "김진아",
+    "intro": "프린세스 캐치! 티니핑의 등장 티니핑.",
+    "imageUrl": "https://i.namu.wiki/i/aQqfeHOSffBHKs4E0ymFEWlCxYmqns2AIchDIBAt_LYuHd3FYq3z8-y-G9Yu3AC_xQOzcVFNi0P2lvtvrN60NQ.gif",
+    "labels": [
+      "성별",
+      "분류",
+      "이름의 유래",
+      "출신 국가",
+      "단서",
+      "소품",
+      "마법",
+      "좋아하는 것",
+      "싫어하는 것",
+      "첫 등장",
+      "마지막 등장",
+      "성격",
+      "성우"
+    ]
+  }
+}

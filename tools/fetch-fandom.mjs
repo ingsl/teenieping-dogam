@@ -16,7 +16,7 @@ import {
 import {
   findTemplate, parseTemplateParams, toPlain, linkTargets, imageFiles, countryName,
 } from './lib/wikitext.mjs';
-import { SEASONS, GRADE_CATEGORIES } from '../src/seasons.js';
+import { seasonFromCategories as deriveSeason, gradeFromCategories as deriveGrade } from './lib/classify.mjs';
 
 const WIKI = 'https://catchteenieping.fandom.com';
 const API = `${WIKI}/api.php`;
@@ -91,18 +91,8 @@ async function fetchPages(titles) {
   return Object.values(pages);
 }
 
-function deriveSeason(categories) {
-  const earliest = (field) =>
-    SEASONS.filter((s) => s[field].some((c) => categories.includes(c))).sort((a, b) => a.order - b.order)[0];
-  return (earliest('fandomCategories') || earliest('fandomSeries'))?.key || '';
-}
-
 // "Royal Teeniepings", "Unknown Teenieping" 처럼 캐릭터 개인이 아닌 묶음/목록 문서
 const isGroupPage = (title) => /Teeniepings$|^Unknown Teenieping$/.test(title);
-
-function deriveGrade(categories) {
-  return GRADE_CATEGORIES.find((g) => g.categories.some((c) => categories.includes(c)))?.grade || '';
-}
 
 const GENDER = { female: '여성', male: '남성' };
 

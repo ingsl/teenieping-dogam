@@ -6,7 +6,7 @@
 //   node tools/process-images.mjs --force
 //
 // - 투명 배경 PNG를 유지한 채 여백(trim)을 정리하고 webp로 변환
-// - 본 이미지 최대 640px, 썸네일 240px, 공유용 OG 1200x630 PNG
+// - 본 이미지 최대 640px, 썸네일 240px, 공유용 OG 1200x630 JPEG
 // - sharp 미설치 시 안내 후 종료 (npm install 로 설치됨)
 
 import path from 'node:path';
@@ -33,7 +33,7 @@ const newer = async (out, src) => existsSync(out) && (await stat(out)).mtimeMs >
 async function processOne(id, src) {
   const main = path.join(OUT, `${id}.webp`);
   const thumb = path.join(OUT, 'thumb', `${id}.webp`);
-  const og = path.join(OUT, 'og', `${id}.png`);
+  const og = path.join(OUT, 'og', `${id}.jpg`);
   if (!FORCE && (await newer(main, src)) && (await newer(thumb, src)) && (await newer(og, src))) return false;
 
   // 가장자리 여백 제거 → 정사각 캔버스 중앙 배치(투명)
@@ -54,7 +54,8 @@ async function processOne(id, src) {
       { input: Buffer.from(`<svg width="1200" height="630"><circle cx="600" cy="315" r="290" fill="${bg}" fill-opacity="0.35"/></svg>`) },
       { input: character, left: 320, top: 35 },
     ])
-    .png({ compressionLevel: 9 })
+    .flatten({ background: '#FFF5FA' })
+    .jpeg({ quality: 80, mozjpeg: true })
     .toFile(og);
   return true;
 }
@@ -62,8 +63,10 @@ async function processOne(id, src) {
 async function main() {
   await Promise.all(['', 'thumb', 'og'].map((d) => mkdir(path.join(OUT, d), { recursive: true })));
   const sources = {};
-  const manifest = (await readJson(path.join(RAW_IMAGES, 'manifest.json'))) || {};
-  for (const [id, { file }] of Object.entries(manifest)) sources[id] = path.join(RAW_IMAGES, file);
+  const manifest = (await readJson(path.join(RAW_IMAGES, '..', 'images-manifest.json'))) || {};
+  for (const [id, { file }] of Object.entries(manifest)) {
+    if (existsSync(path.join(RAW_IMAGES, file))) sources[id] = path.join(RAW_IMAGES, file);
+  }
   if (existsSync(MANUAL)) {
     for (const f of await readdir(MANUAL)) {
       const m = f.match(/^([\w-]+)\.(png|jpe?g|webp)$/i);

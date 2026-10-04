@@ -29,6 +29,8 @@ jobs:
       - run: npm ci
       - name: Fandom 수집 (증분)
         run: node tools/fetch-fandom.mjs ${{ inputs.force && '--force' || '' }}
+      - name: 나무위키 수집 (한국어 상세·이미지 주소, 7일 지난 문서만)
+        run: node tools/fetch-namu.mjs ${{ inputs.force && '--force' || '' }}
       - name: 이미지 수집·처리
         run: |
           node tools/fetch-images.mjs

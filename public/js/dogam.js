@@ -1,9 +1,9 @@
 // 도감 목록: 검색 · 기수/등급 필터 · 랜덤핑
 import './random.js';
-import { loadData, escapeHtml, pageUrl, gradeChip, artHtml, matches, store } from './data.js';
+import { loadData, escapeHtml, pageUrl, gradeChip, artHtml, matches } from './data.js';
 
 const $ = (s) => document.querySelector(s);
-const state = { q: '', season: '', grade: '', verifiedOnly: false, ...readHash() };
+const state = { q: '', season: '', grade: '', ...readHash() };
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -38,7 +38,7 @@ function card(item) {
   const chips = [
     item.season ? `<span class="chip">${escapeHtml(item.season.replace(/^(\d+기).*/, '$1'))}</span>` : '',
     gradeChip(item.grade),
-    item.verified ? '' : '<span class="chip unverified" title="공식 도감 대조 전 (Fandom 자동 수집)">미검증</span>',
+    item.verified ? '' : '<span class="chip unverified" title="한쪽 위키에서만 확인된 캐릭터">미확인</span>',
   ].join('');
   return `<a class="card" href="${pageUrl(item.id)}" style="--c:${escapeHtml(item.colorHex)}">
     <div class="art">${artHtml(item)}</div>
@@ -52,7 +52,6 @@ function render() {
   const list = DATA.items.filter((it) =>
     (!state.season || it.seasonKey === state.season || (state.season === '_none' && !it.seasonKey)) &&
     (!state.grade || it.grade === state.grade) &&
-    (!state.verifiedOnly || it.verified) &&
     matches(it, state.q),
   );
   $('#grid').innerHTML = list.map(card).join('');
@@ -81,9 +80,6 @@ async function main() {
     clearTimeout(t);
     t = setTimeout(() => { state.q = q.value; render(); }, 120);
   });
-  const vo = $('#verified-only');
-  vo.checked = state.verifiedOnly = store.get('dogam:verifiedOnly', false);
-  vo.addEventListener('change', () => { state.verifiedOnly = vo.checked; store.set('dogam:verifiedOnly', vo.checked); render(); });
 
   render();
 }

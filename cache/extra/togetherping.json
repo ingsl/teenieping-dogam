@@ -1,0 +1,42 @@
+{
+  "id": "togetherping",
+  "namu": {
+    "url": "https://namu.wiki/w/함께핑",
+    "license": "CC BY-NC-SA 2.0 KR",
+    "fetchedAt": "2026-10-04T13:25:09.651Z",
+    "gender": "여성",
+    "classification": "스타 티니핑\n일반 티니핑",
+    "birthday": "",
+    "nameOrigin": "함께(Together)",
+    "motif": "무지개",
+    "emotion": "협동심",
+    "symbol": "",
+    "item": "무지개 핸드 롤러",
+    "jewel": "",
+    "magic": "<함께해요, 모두! 함께!>\n대상이 무조건 협동하게 만든다.",
+    "likes": "다 같이 하기, 친구들, 왁자지껄한 분위기",
+    "dislikes": "혼자인 것, 협동하지 않는 것",
+    "favoriteFood": "",
+    "partner": "",
+    "debut": "별을 타고 온 소녀\n(슈팅스타 캐치! 티니핑 1화)",
+    "voice": "김예령",
+    "intro": "협동심의 티니핑, 함께핑 초면에도 바로 친구가 될 만큼 엄청난 친화력의 외향성 티니핑 협동심이 강해 뭐든 다 같이 해주고, 타인의 일도 다 함께 하길 좋아해!",
+    "imageUrl": "https://i.namu.wiki/i/85XP3hSlpH064shAzMq9T4XER0ZT557VQRojjjSD9OHoWME87ZmBT3beLOkB5giP330PF8zCPJZZ72lwYlCTIhWNgDJDISiX6Ham3OWWsulxOIaSmu0z4KqoT3Pe1o71ln15Hwuh1i2qCxnXHQhzhg.webp",
+    "labels": [
+      "성별",
+      "분류",
+      "한국 외 국가 번안명",
+      "이름의 유래",
+      "모티브",
+      "출신 국가",
+      "소품",
+      "숨은 장소",
+      "마법",
+      "좋아하는 것",
+      "싫어하는 것",
+      "첫 등장",
+      "마지막 등장",
+      "성우"
+    ]
+  }
+}
