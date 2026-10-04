@@ -55,13 +55,54 @@ function swoosh(dur = 0.22, gain = 0.18) {
   } catch { /* 무시 */ }
 }
 
+/** 음 높이가 미끄러지는 소리 (뿅~, 뾰로롱) */
+function glide(from, to, start = 0, dur = 0.2, type = 'triangle', gain = 0.12) {
+  try {
+    const a = audio();
+    const t = a.currentTime + start;
+    const o = a.createOscillator();
+    const v = a.createGain();
+    o.type = type;
+    o.frequency.setValueAtTime(from, t);
+    o.frequency.exponentialRampToValueAtTime(to, t + dur);
+    v.gain.setValueAtTime(0.0001, t);
+    v.gain.exponentialRampToValueAtTime(gain, t + 0.015);
+    v.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+    o.connect(v).connect(a.destination);
+    o.start(t);
+    o.stop(t + dur + 0.05);
+  } catch { /* 무시 */ }
+}
+
+/** 반짝이 소리: 아주 높은 음을 빠르게 흩뿌림 */
+function sparkle(start = 0, count = 6) {
+  for (let i = 0; i < count; i++) bell(2200 + Math.random() * 1800, start + i * 0.035, 0.18, 0.025);
+}
+
 // 도레미… (C5 기준)
-const N = { C5: 523, D5: 587, E5: 659, G5: 784, A5: 880, C6: 1047, E6: 1319, G4: 392, E4: 330 };
+const N = { C5: 523, D5: 587, E5: 659, F5: 698, G5: 784, A5: 880, B5: 988, C6: 1047, D6: 1175, E6: 1319, G6: 1568, C7: 2093, G4: 392, E4: 330 };
 const SOUNDS = {
-  good: () => { bell(N.E5, 0, 0.35); bell(N.G5, 0.09, 0.35); bell(N.C6, 0.18, 0.6); },
-  bad: () => { bell(N.E4, 0, 0.35, 0.06); bell(N.G4 * 0.9, 0.12, 0.45, 0.05); },
-  pop: () => bell(N.A5 + Math.random() * 200, 0, 0.18, 0.07),
-  win: () => [N.C5, N.E5, N.G5, N.C6, N.E6].forEach((f, i) => bell(f, i * 0.11, 0.7, 0.08)),
+  // 정답: "뾰로롱~ 딩동댕!" 빠르게 올라가는 아르페지오 + 반짝이
+  good: () => {
+    glide(N.C5, N.C6, 0, 0.12, 'sine', 0.08);
+    [N.C6, N.E6, N.G6].forEach((f, i) => bell(f, 0.1 + i * 0.07, 0.4, 0.09));
+    bell(N.C7, 0.33, 0.6, 0.06);
+    sparkle(0.3, 7);
+  },
+  // 오답: 슬프지 않게 "뿅~ 뿅" 장난스러운 미끄럼 소리
+  bad: () => {
+    glide(620, 260, 0, 0.22, 'triangle', 0.13);
+    glide(420, 200, 0.2, 0.26, 'triangle', 0.1);
+  },
+  pop: () => { glide(500, 1400, 0, 0.08, 'sine', 0.09); bell(N.G6, 0.06, 0.15, 0.04); },
+  // 클리어: 신나는 팡파르 "빠바바밤~♪" + 반짝이
+  win: () => {
+    [N.C5, N.E5, N.G5].forEach((f, i) => bell(f, i * 0.1, 0.25, 0.09));
+    [N.C6, N.E6].forEach((f) => bell(f, 0.32, 0.25, 0.08));
+    [N.D6, N.F5].forEach((f) => bell(f, 0.5, 0.2, 0.07));
+    [N.C6, N.E6, N.G6].forEach((f) => bell(f, 0.68, 1.1, 0.08));
+    sparkle(0.68, 12);
+  },
   tick: () => bell(N.C6, 0, 0.08, 0.03),
   flip: () => swoosh(0.12, 0.08),          // 카드 뒤집기 "착"
   slide: () => swoosh(0.22, 0.18),         // 퍼즐 조각 "스윽~"
