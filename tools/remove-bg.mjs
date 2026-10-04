@@ -11,7 +11,7 @@
 //   그래서 "배경이 있는지" 판정은 process-images 가 cache/cutout/needs.json 으로 넘겨준다.
 
 import path from 'node:path';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, stat } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { ROOT, RAW_IMAGES, args, argValue, readJson } from './lib/common.mjs';
 
@@ -39,7 +39,8 @@ async function main() {
     const src = file && path.join(RAW_IMAGES, file);
     const out = path.join(CUTOUT, `${id}.png`);
     if (!src || !existsSync(src)) continue;
-    if (!FORCE && existsSync(out)) continue;
+    // 원본이 바뀌었으면(원본이 더 새로우면) 다시 자른다
+    if (!FORCE && existsSync(out) && (await stat(out)).mtimeMs >= (await stat(src)).mtimeMs) continue;
     const ext = path.extname(src).slice(1).toLowerCase();
     const blob = new Blob([await readFile(src)], { type: MIME[ext] || 'image/png' });
     const result = await removeBackground(blob, { model: 'medium', output: { format: 'image/png' } });

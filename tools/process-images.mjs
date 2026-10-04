@@ -99,7 +99,8 @@ async function main() {
   for (const [id, src] of Object.entries(sources)) if (!(await hasTransparency(src))) needs.push(id);
   await mkdir(CUTOUT, { recursive: true });
   await writeFile(path.join(CUTOUT, 'needs.json'), JSON.stringify(needs, null, 2) + '\n');
-  if (needs.some((id) => !existsSync(path.join(CUTOUT, `${id}.png`)))) {
+  const stale = async (id) => { const c = path.join(CUTOUT, `${id}.png`); return !existsSync(c) || (await stat(c)).mtimeMs < (await stat(sources[id])).mtimeMs; };
+  if ((await Promise.all(needs.map(stale))).some(Boolean)) {
     // 배경 제거 라이브러리는 다른 버전의 sharp 를 써서 별도 프로세스로 실행
     spawnSync(process.execPath, [path.join(ROOT, 'tools', 'remove-bg.mjs')], { stdio: 'inherit' });
   }

@@ -1,5 +1,5 @@
 // 퍼즐 게임: 바꾸기(swap) / 슬라이드(slide) × 난이도 3~6
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, useTimer, asset, shuffle, store, formatTime, confetti, matches, characterCanvas } from '../lib/data.js';
 
@@ -122,20 +122,41 @@ export default function Puzzle() {
     setMoves((m) => m + 1);
   }, [solved, n, mode, selected, empty, pos]);
 
+  // 슬라이드: 방향으로 빈칸 옆 조각을 민다 (dir = 빈칸 기준으로 끌어올 조각의 칸 차이)
+  const slideFrom = useCallback((dir) => {
+    const e0 = pos[empty], from = e0 + dir;
+    if (from < 0 || from >= n * n || (Math.abs(dir) === 1 && Math.floor(from / n) !== Math.floor(e0 / n))) return false;
+    move(pos.findIndex((c) => c === from));
+    return true;
+  }, [pos, empty, n, move]);
+
   // 키보드 화살표 (슬라이드)
   useEffect(() => {
     if (n === null || mode !== 'slide') return undefined;
     const onKey = (e) => {
       const dir = { ArrowUp: n, ArrowDown: -n, ArrowLeft: 1, ArrowRight: -1 }[e.key];
-      if (!dir) return;
-      const e0 = pos[empty], from = e0 + dir;
-      if (from < 0 || from >= n * n || (Math.abs(dir) === 1 && Math.floor(from / n) !== Math.floor(e0 / n))) return;
-      e.preventDefault();
-      move(pos.findIndex((c) => c === from));
+      if (dir && slideFrom(dir)) e.preventDefault();
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
-  }, [n, mode, pos, empty, move]);
+  }, [n, mode, slideFrom]);
+
+  // 손가락 스와이프 (슬라이드): 밀고 싶은 방향으로 쓸면 빈칸 옆 조각이 그쪽으로 이동
+  const swipe = useRef(null);
+  const onPointerDown = (e) => { swipe.current = { x: e.clientX, y: e.clientY, used: false }; };
+  const onPointerUp = (e) => {
+    const s = swipe.current;
+    if (!s || mode !== 'slide') return;
+    const dx = e.clientX - s.x, dy = e.clientY - s.y;
+    if (Math.max(Math.abs(dx), Math.abs(dy)) < 28) return; // 탭은 click 으로 처리
+    s.used = true;
+    if (Math.abs(dx) > Math.abs(dy)) slideFrom(dx < 0 ? 1 : -1);
+    else slideFrom(dy < 0 ? n : -n);
+  };
+  const onTileClick = (t) => {
+    if (swipe.current?.used) { swipe.current = null; return; } // 스와이프 끝의 클릭은 무시
+    move(t);
+  };
 
   useEffect(() => {
     if (!solved || result) return undefined;
@@ -229,9 +250,10 @@ export default function Puzzle() {
         </div>
       </div>
       <div className="puzzle-wrap">
-        <div className={['puzzle-board', !showNum && 'hide-num', solved && 'solved', peek && 'peek'].filter(Boolean).join(' ')} style={{ '--n': n }} aria-label="퍼즐판">
+        <div className={['puzzle-board', !showNum && 'hide-num', solved && 'solved', peek && 'peek'].filter(Boolean).join(' ')} style={{ '--n': n }} aria-label="퍼즐판"
+          onPointerDown={onPointerDown} onPointerUp={onPointerUp}>
           {pos.map((cell, t) => (t === empty ? null : (
-            <button key={t} type="button" onClick={() => move(t)}
+            <button key={t} type="button" onClick={() => onTileClick(t)}
               className={['tile', selected === t && 'selected', mode === 'swap' && cell === t && 'correct-hint'].filter(Boolean).join(' ')}
               aria-label={`${t + 1}번 조각, ${Math.floor(cell / n) + 1}행 ${(cell % n) + 1}열`}
               style={{
@@ -245,7 +267,7 @@ export default function Puzzle() {
           <div className="full" style={{ backgroundImage: `url(${image})` }} />
         </div>
         <p className="hint">
-          {mode === 'swap' ? '두 조각을 차례로 누르면 자리가 바뀌어요. 제자리에 온 조각은 초록 테두리!' : '빈칸 옆(같은 줄) 조각을 누르면 밀려요. 키보드 화살표도 돼요.'}
+          {mode === 'swap' ? '두 조각을 차례로 누르면 자리가 바뀌어요. 제자리에 온 조각은 초록 테두리!' : '빈칸 옆(같은 줄) 조각을 누르거나, 손가락으로 쓱 밀어요. 키보드 화살표도 돼요.'}
         </p>
       </div>
       <ResultDialog result={result} title="완성!" onAgain={() => start(n)} onMenu={() => setN(null)} menuLabel="다른 그림·난이도" />

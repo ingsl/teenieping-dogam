@@ -30,3 +30,9 @@ test('쌍둥이 문서: 영문명으로 자기 인포박스와 이미지를 고�
   assert.match(a.imageUrl, /a\.webp$/);
   assert.match(b.imageUrl, /b\.webp$/);
 });
+
+test('인포박스에 여러 모습(평상시·각성…)이 있으면 첫 번째(기본 모습)를 고른다', () => {
+  const html = `${img('다른핑', 'nav')}<table><tr><td>${img('풍선껌부는뿌뿌핑', 'normal')}${img('뿌뿌핑1단계각성', 'awake')}${img('뿌뿌핑3단괴수', 'monster')}</td></tr>
+    <tr><td><table>${row('성별', '여성')}</table></td></tr></table>`;
+  assert.match(toRecord(html, '뿌뿌핑', 'Puffping').imageUrl, /normal\.webp$/);
+});

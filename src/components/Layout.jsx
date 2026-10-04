@@ -9,7 +9,7 @@ function RandomLink() {
     const { items } = await loadData();
     navigate(`/p/${items[Math.floor(Math.random() * items.length)].id}`);
   };
-  return <a href="#random" onClick={go}>랜덤핑</a>;
+  return <a href="#random" onClick={go}><span className="ico" aria-hidden="true">🎲</span>랜덤핑</a>;
 }
 
 export default function Layout() {
@@ -22,8 +22,8 @@ export default function Layout() {
         <div className="inner">
           <Link className="logo" to="/"><span className="heart">💖</span>티니핑 도감</Link>
           <nav className="site-nav" aria-label="주 메뉴">
-            <NavLink to="/" end className={({ isActive }) => (isActive || pathname.startsWith('/p/') ? 'active' : '')}>도감</NavLink>
-            <NavLink to="/games">게임</NavLink>
+            <NavLink to="/" end className={({ isActive }) => (isActive || pathname.startsWith('/p/') ? 'active' : '')}><span className="ico" aria-hidden="true">📖</span>도감</NavLink>
+            <NavLink to="/games"><span className="ico" aria-hidden="true">🎮</span>게임</NavLink>
             <RandomLink />
           </nav>
         </div>

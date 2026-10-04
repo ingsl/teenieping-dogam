@@ -54,16 +54,29 @@ export function overview(html) {
 /**
  * 대표 이미지 (svg·로고 제외)
  *  1) alt 가 캐릭터 이름과 정확히 같은 이미지
- *  2) 인포박스(첫 "성별" 칸) 바로 위의 이미지
- *  3) alt 에 이름이 들어간 이미지
+ *  2) 인포박스 표 안의 첫 이미지 — 여러 모습(평상시/변신/각성…)이 탭으로 있으면 첫 탭이 기본 모습
+ *  3) 인포박스("성별" 칸) 바로 위의 이미지
+ *  4) alt 에 이름이 들어간 이미지
  */
 export function mainImage(html, nameKo) {
   const imgs = [...html.matchAll(/<img[^>]*?src='(\/\/i\.namu\.wiki\/[^']+)'[^>]*?alt='([^']*)'/g)]
     .map((m) => ({ url: `https:${m[1]}`, alt: decode(m[2]).replace(/\[\d+\]/g, '').trim(), at: m.index }))
     .filter((i) => !/\.svg$/i.test(i.url) && !/로고|아이콘|logo/i.test(i.alt));
   const profileAt = html.search(/>\s*(?:<strong[^>]*>)?성별(?:<\/strong>)?\s*</);
+  const boxAt = profileAt > -1 ? infoboxStart(html, profileAt) : -1;
+  const firstInBox = boxAt > -1 ? imgs.find((i) => i.at > boxAt && i.at < profileAt) : null;
   const beforeProfile = profileAt > -1 ? imgs.filter((i) => i.at < profileAt).pop() : null;
-  return (imgs.find((i) => i.alt === nameKo) || beforeProfile || imgs.find((i) => i.alt.includes(nameKo)))?.url || '';
+  return (imgs.find((i) => i.alt === nameKo) || firstInBox || beforeProfile || imgs.find((i) => i.alt.includes(nameKo)))?.url || '';
+}
+
+/** pos 를 감싸고 있는 가장 바깥 <table> 의 시작 위치 (= 인포박스 표) */
+export function infoboxStart(html, pos) {
+  const stack = [];
+  for (const m of html.slice(0, pos).matchAll(/<(\/?)table\b/g)) {
+    if (m[1]) stack.pop();
+    else stack.push(m.index);
+  }
+  return stack.length ? stack[0] : -1;
 }
 
 /** 티니핑 문서가 맞는지 대략 확인 */
