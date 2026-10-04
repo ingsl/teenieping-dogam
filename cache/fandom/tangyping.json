@@ -1,0 +1,65 @@
+{
+  "id": "tangyping",
+  "title": "Tangyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Tangyping",
+  "revid": 216116,
+  "fetchedAt": "2026-10-04T13:11:52.720Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Tangyping",
+  "nameKo": "새콤핑",
+  "gender": "여성",
+  "concept": "Refreshment",
+  "prop": "Star-shaped staff",
+  "jewel": "",
+  "abilities": "Transform Romi into Princess Harmonious",
+  "likes": "Sour things\nWriting notes\nMaking cakes",
+  "dislikes": "People who hate sour things",
+  "catchphrase": "",
+  "debut": "Romi goes to Dessert Town (Cake House)\nSweet Tangy Legend Teeniepings (debut)",
+  "colorHex": "#8BC043",
+  "friends": [
+    "Sweetping",
+    "Romi",
+    "Dessert Teeniepings"
+  ],
+  "enemies": [
+    "Puffping"
+  ],
+  "categories": [
+    "Characters",
+    "Dessert Catch! Teenieping",
+    "Dessert Teeniepings",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Green Teeniepings",
+    "Heroes",
+    "Legend Teeniepings",
+    "Main characters",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that do not have catchphrases",
+    "Teeniepings that do not have tails",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear earrings",
+    "Teeniepings who can fly",
+    "Teeniepings who wear a tiara or crown",
+    "Teeniepings who wear capes",
+    "Yellow Teeniepings"
+  ],
+  "seasonKey": "dessert",
+  "grade": "레전드",
+  "images": [
+    {
+      "file": "Tangyping Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Tangyping's Cake House Render 1.png",
+      "caption": "Cake house"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/9/9a/Tangyping_Render_1.png/revision/latest?cb=20260202075315"
+}

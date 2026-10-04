@@ -1,0 +1,46 @@
+{
+  "id": "teeniepings",
+  "title": "Teeniepings",
+  "url": "https://catchteenieping.fandom.com/wiki/Teeniepings",
+  "revid": 221069,
+  "fetchedAt": "2026-10-04T13:11:52.707Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": true,
+  "nameEn": "Teeniepings",
+  "nameKo": "티니핑",
+  "gender": "",
+  "concept": "",
+  "prop": "",
+  "jewel": "",
+  "abilities": "",
+  "likes": "",
+  "dislikes": "",
+  "catchphrase": "",
+  "debut": "",
+  "colorHex": "",
+  "friends": [
+    "Romi",
+    "Sarah",
+    "Maya",
+    "Marylou"
+  ],
+  "enemies": [],
+  "categories": [
+    "Browse",
+    "Characters",
+    "Females",
+    "Males",
+    "Star articles",
+    "Teeniepings"
+  ],
+  "seasonKey": "",
+  "grade": "",
+  "images": [
+    {
+      "file": "S1E52 - the Royalpings are sad that Romi must leave.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/c/c8/S1E52_-_the_Royalpings_are_sad_that_Romi_must_leave.png/revision/latest?cb=20210821134102"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "hotping",
+  "title": "Hotping",
+  "url": "https://catchteenieping.fandom.com/wiki/Hotping",
+  "revid": 219709,
+  "fetchedAt": "2026-10-04T13:11:52.655Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Hotping",
+  "nameKo": "뜨거핑",
+  "gender": "여성",
+  "concept": "Thoroughness",
+  "prop": "Fire extinguisher",
+  "jewel": "",
+  "abilities": "Extinguish fire",
+  "likes": "Putting out fires\nSafety",
+  "dislikes": "Fire\nThings that produce heat",
+  "catchphrase": "",
+  "debut": "Hot, Hot, Camping Commotion",
+  "colorHex": "#C2141D",
+  "friends": [],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Key Teeniepings",
+    "Minor characters",
+    "Red Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear shoes"
+  ],
+  "seasonKey": "secret",
+  "grade": "",
+  "images": [
+    {
+      "file": "Hotping Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Hotping Dwarf Render 1.png",
+      "caption": "Dwarf"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/6/60/Hotping_Render_1.png/revision/latest?cb=20260217090102"
+}

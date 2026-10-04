@@ -1,0 +1,52 @@
+{
+  "id": "wishping",
+  "title": "Wishping",
+  "url": "https://catchteenieping.fandom.com/wiki/Wishping",
+  "revid": 214666,
+  "fetchedAt": "2026-10-04T13:11:52.713Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Wishping",
+  "nameKo": "소원핑",
+  "gender": "여성",
+  "concept": "Desire",
+  "prop": "Magic lamp",
+  "jewel": "Spinel",
+  "abilities": "Grant wishes to others",
+  "likes": "Friends\nGranting wishes",
+  "dislikes": "Lying\nHurting others",
+  "catchphrase": "",
+  "debut": "Wishping's Three Wishes",
+  "colorHex": "#7C5EA9",
+  "friends": [
+    "Lena"
+  ],
+  "enemies": [
+    "Lena",
+    "Onlyping",
+    "Maskping"
+  ],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Jewel Teeniepings",
+    "Minor characters",
+    "Star articles",
+    "Teal Teeniepings",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Twinkle Catch! Teenieping"
+  ],
+  "seasonKey": "twinkle",
+  "grade": "",
+  "images": [
+    {
+      "file": "Wishping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/2/2d/Wishping_Render_1.png/revision/latest?cb=20260130145149"
+}

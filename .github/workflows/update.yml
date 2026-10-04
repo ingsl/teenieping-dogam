@@ -1,0 +1,50 @@
+name: 데이터 갱신
+
+on:
+  schedule:
+    - cron: '0 18 * * 0' # 매주 월요일 03:00 KST
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Fandom 전량 재수집 (--force)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fandom 수집 (증분)
+        run: node tools/fetch-fandom.mjs ${{ inputs.force && '--force' || '' }}
+      - name: 이미지 수집·처리
+        run: |
+          node tools/fetch-images.mjs
+          node tools/process-images.mjs
+      - name: 빌드
+        run: npm run build
+        env:
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+      - name: 변경분 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add -A cache public src
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "chore(data): 자동 갱신 $(date -u +%Y-%m-%d)"
+            git push
+          fi

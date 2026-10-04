@@ -1,0 +1,61 @@
+{
+  "id": "nursepings",
+  "title": "Nursepings",
+  "url": "https://catchteenieping.fandom.com/wiki/Nursepings",
+  "revid": 221081,
+  "fetchedAt": "2026-10-04T13:11:52.687Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Nursepings",
+  "nameKo": "간호핑들",
+  "gender": "여성",
+  "concept": "",
+  "prop": "N/A",
+  "jewel": "",
+  "abilities": "",
+  "likes": "Treating patients",
+  "dislikes": "Cureping's syringe",
+  "catchphrase": "",
+  "debut": "I'll Treat You, Cure!",
+  "colorHex": "#017DAC",
+  "friends": [
+    "Cureping"
+  ],
+  "enemies": [],
+  "categories": [
+    "Blue Teeniepings",
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Key Teeniepings",
+    "Minor characters",
+    "Pink Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that wear clothes"
+  ],
+  "seasonKey": "secret",
+  "grade": "",
+  "images": [
+    {
+      "file": "Green Nurseping Render 1.png",
+      "caption": "Green Nurseping"
+    },
+    {
+      "file": "Pink Nurseping Render 1.png",
+      "caption": "Pink Nurseping"
+    },
+    {
+      "file": "Blue Nurseping Render 1.png",
+      "caption": "Blue Nurseping"
+    },
+    {
+      "file": "Orange Nurseping Render 1.png",
+      "caption": "Orange Nurseping"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/f/fc/Green_Nurseping_Render_1.png/revision/latest?cb=20260210214248"
+}

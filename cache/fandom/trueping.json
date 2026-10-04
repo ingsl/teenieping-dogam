@@ -1,0 +1,58 @@
+{
+  "id": "trueping",
+  "title": "Trueping",
+  "url": "https://catchteenieping.fandom.com/wiki/Trueping",
+  "revid": 221110,
+  "fetchedAt": "2026-10-04T13:11:52.717Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Trueping",
+  "nameKo": "솔찌핑",
+  "gender": "남성",
+  "concept": "Honesty",
+  "prop": "Cotton candy",
+  "jewel": "",
+  "abilities": "Transform Romi into Princess Gloria\nSummon clouds to jump on\nCreate cotton candy clouds to stick to surfaces",
+  "likes": "Playing\nEating\nSleeping\nRainy days\nCloudy skies",
+  "dislikes": "Lies\nStuffy and uncomfortable places",
+  "catchphrase": "",
+  "debut": "Secret Catch! Key Teeniepings",
+  "colorHex": "#F19C00",
+  "friends": [
+    "Royal Key Teeniepings",
+    "Key Teeniepings",
+    "Luckyping"
+  ],
+  "enemies": [
+    "Jenny",
+    "Onlyping"
+  ],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Heroes",
+    "Key Teeniepings",
+    "Main characters",
+    "Males",
+    "Royal Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings who wear glasses",
+    "White Teeniepings",
+    "Yellow Teeniepings"
+  ],
+  "seasonKey": "secret",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Trueping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/8/85/Trueping_Render_1.png/revision/latest?cb=20220812150351"
+}

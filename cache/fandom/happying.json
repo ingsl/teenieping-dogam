@@ -1,0 +1,82 @@
+{
+  "id": "happying",
+  "title": "Happying",
+  "url": "https://catchteenieping.fandom.com/wiki/Happying",
+  "revid": 221046,
+  "fetchedAt": "2026-10-04T13:11:52.641Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Happying",
+  "nameKo": "해핑",
+  "gender": "여성",
+  "concept": "Happiness",
+  "prop": "Bubble gun",
+  "jewel": "",
+  "abilities": "Transform Romi into Princess Sunshine\nCreate bubbles to trap anyone and anything\nMake others happy\nUse her energy to defeat someone\nReceive energy from Romi",
+  "likes": "Playing with bubbles\nBubble baths\nScribbling\nCopying other Teeniepings' actions",
+  "dislikes": "Feeling tired\nNeeding to sleep whenever she gets tired",
+  "catchphrase": "",
+  "debut": "Don't Look At The Mirror! (cameo)\nHappying's Back (debut)",
+  "colorHex": "#D53C72",
+  "friends": [
+    "Royal Emotion Teeniepings",
+    "Sighping",
+    "Fluffyping"
+  ],
+  "enemies": [
+    "Egoping",
+    "Maskping",
+    "Eclipseping"
+  ],
+  "categories": [
+    "Catch! Teenieping",
+    "Characters",
+    "Emotion Teenieping",
+    "Emotion Teeniepings",
+    "Emotions Kingdom residents",
+    "Females",
+    "Heartsping: Teenieping of Love",
+    "Heroes",
+    "Main characters",
+    "Princess Catch! Teenieping",
+    "Red Teeniepings",
+    "Royal Teeniepings",
+    "Spoiler articles",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear shoes",
+    "Teeniepings who wear a tiara or crown",
+    "Teeniepings who wear capes"
+  ],
+  "seasonKey": "emotion",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Happying S1 Render 1.png",
+      "caption": "Season 1"
+    },
+    {
+      "file": "Happying S6 Render 1.png",
+      "caption": "Season 6"
+    },
+    {
+      "file": "S1E52 - Happying not responding to Romi magic.png",
+      "caption": "Powerless"
+    },
+    {
+      "file": "S2E15 - Happying demanding Maskping to take the mask off.png",
+      "caption": "Investigator"
+    },
+    {
+      "file": "S6E10 - Happying greeting Romi and the Royal Princess Teeniepings.png",
+      "caption": "Spy"
+    },
+    {
+      "file": "Happying Monster Render 1.png",
+      "caption": "Monster"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/5/58/Happying_S1_Render_1.png/revision/latest?cb=20260404181109"
+}

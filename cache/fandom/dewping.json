@@ -1,0 +1,54 @@
+{
+  "id": "dewping",
+  "title": "Dewping",
+  "url": "https://catchteenieping.fandom.com/wiki/Dewping",
+  "revid": 215224,
+  "fetchedAt": "2026-10-04T13:11:52.633Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Dewping",
+  "nameKo": "이슬핑",
+  "gender": "여성",
+  "concept": "Innocence",
+  "prop": "Dewy flower",
+  "jewel": "",
+  "abilities": "Give dewdrops from flowers to others to make them energized",
+  "likes": "Flowers\nFlower buds",
+  "dislikes": "Pests",
+  "catchphrase": "",
+  "debut": "A Single Drop of Dew From Dewping",
+  "colorHex": "#5ABDAD",
+  "friends": [
+    "Prince Teeniepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotions Kingdom residents",
+    "Females",
+    "Green Teeniepings",
+    "Minor characters",
+    "Princess Catch! Teenieping",
+    "Princess Teeniepings",
+    "Spoiler articles",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear shoes"
+  ],
+  "seasonKey": "princess",
+  "grade": "",
+  "images": [
+    {
+      "file": "Dewping Render 3.png",
+      "caption": "With clothes"
+    },
+    {
+      "file": "S6E11 - Dewping tearing up since her magic didn't work on the cactus.png",
+      "caption": "Without clothes"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/5/5e/Dewping_Render_3.png/revision/latest?cb=20260516161518"
+}

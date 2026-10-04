@@ -1,0 +1,60 @@
+{
+  "id": "bonnyping",
+  "title": "Bonnyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Bonnyping",
+  "revid": 218316,
+  "fetchedAt": "2026-10-04T13:11:52.630Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Bonnyping",
+  "nameKo": "뽀니핑",
+  "gender": "여성",
+  "concept": "Confidence",
+  "prop": "Magic wand",
+  "jewel": "",
+  "abilities": "Transform Romi into Princess Bonita\nShoot jolts of electricity at others",
+  "likes": "Creating hairstyles\nLeadership\nHanging out with her friends\nHair magazines\nBeauty tools\nHair dryer breeze\nInstant noodles\nLemon pie",
+  "dislikes": "Messy hair\nUnproper dyeing\nGreen onions\nOverworking\nSelfishness\nGetting trapped",
+  "catchphrase": "",
+  "debut": "All Aboard! The Train to the Princess Summit",
+  "colorHex": "#9AC891",
+  "friends": [
+    "Romi",
+    "Heartsping",
+    "Graceping",
+    "Claireping"
+  ],
+  "enemies": [
+    "Eclipseping",
+    "Lena",
+    "Miroir"
+  ],
+  "categories": [
+    "Characters",
+    "Emotions Kingdom residents",
+    "Females",
+    "Heroes",
+    "Main characters",
+    "Princess Catch! Teenieping",
+    "Princess Teeniepings",
+    "Royal Teeniepings",
+    "Spoiler articles",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear shoes",
+    "Teeniepings who wear a tiara or crown",
+    "Yellow Teeniepings"
+  ],
+  "seasonKey": "princess",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Bonnyping Render 5.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/e/ed/Bonnyping_Render_5.png/revision/latest?cb=20260304185421"
+}

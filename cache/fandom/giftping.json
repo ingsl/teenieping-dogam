@@ -1,0 +1,44 @@
+{
+  "id": "giftping",
+  "title": "Giftping",
+  "url": "https://catchteenieping.fandom.com/wiki/Giftping",
+  "revid": 215185,
+  "fetchedAt": "2026-10-04T13:11:52.651Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Giftping",
+  "nameKo": "주네핑",
+  "gender": "여성",
+  "concept": "Sharing",
+  "prop": "Gift box",
+  "jewel": "Topaz",
+  "abilities": "Give anyone what they desire on their birthdays",
+  "likes": "Giving gifts to people on their birthdays",
+  "dislikes": "Not being able to give a gift",
+  "catchphrase": "",
+  "debut": "Find the Gift Box!",
+  "colorHex": "#D92438",
+  "friends": [],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Jewel Teeniepings",
+    "Red Teeniepings",
+    "Star articles",
+    "Teeniepings",
+    "Twinkle Catch! Teenieping"
+  ],
+  "seasonKey": "twinkle",
+  "grade": "",
+  "images": [
+    {
+      "file": "Giftping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/e/e3/Giftping_Render_1.png/revision/latest?cb=20260814142206"
+}

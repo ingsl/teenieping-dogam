@@ -1,0 +1,54 @@
+{
+  "id": "lalaping",
+  "title": "Lalaping",
+  "url": "https://catchteenieping.fandom.com/wiki/Lalaping",
+  "revid": 219789,
+  "fetchedAt": "2026-10-04T13:11:52.642Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Lalaping",
+  "nameKo": "라라핑",
+  "gender": "여성",
+  "concept": "Joy",
+  "prop": "Microphone",
+  "jewel": "",
+  "abilities": "Make a person or an object dance on their own",
+  "likes": "Singing and dancing\nJoyful games\nChatting",
+  "dislikes": "Seriousness\nBoring things",
+  "catchphrase": "",
+  "debut": "Let's Sing With Joy",
+  "colorHex": "#924998",
+  "friends": [
+    "Royal Emotion Teeniepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Catch! Teenieping",
+    "Characters",
+    "Emotion Teenieping",
+    "Emotion Teeniepings",
+    "Emotions Kingdom residents",
+    "Females",
+    "Heartsping: Teenieping of Love",
+    "Heroes",
+    "Main characters",
+    "Purple Teeniepings",
+    "Royal Teeniepings",
+    "Star articles",
+    "Teeniepings"
+  ],
+  "seasonKey": "emotion",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Lalaping Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Lalaping Monster Render 1.png",
+      "caption": "Monster"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/5/58/Lalaping_Render_1.png/revision/latest?cb=20220114163745"
+}

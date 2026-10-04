@@ -1,0 +1,55 @@
+{
+  "id": "splashping",
+  "title": "Splashping",
+  "url": "https://catchteenieping.fandom.com/wiki/Splashping",
+  "revid": 219147,
+  "fetchedAt": "2026-10-04T13:11:52.684Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Splashping",
+  "nameKo": "퐁당핑",
+  "gender": "여성",
+  "concept": "Freedom",
+  "prop": "Conch",
+  "jewel": "",
+  "abilities": "Make sea animals help her",
+  "likes": "Swimming\nPink Dolphin",
+  "dislikes": "Nets\nBeing oppressed",
+  "catchphrase": "",
+  "debut": "Splash, Splashping!",
+  "colorHex": "#EF8DB5",
+  "friends": [
+    "Pink Dolphin"
+  ],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Key Teeniepings",
+    "Mermaid Teeniepings",
+    "Minor characters",
+    "Pink Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that play instruments",
+    "Teeniepings that wear clothes"
+  ],
+  "seasonKey": "secret",
+  "grade": "",
+  "images": [
+    {
+      "file": "Splashping Normal Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Splashping Mermaid Render 1.png",
+      "caption": "Mermaid"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/2/2f/Splashping_Normal_Render_1.png/revision/latest?cb=20260202195422"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "teenieping-dogam",
+  "version": "0.1.0",
+  "private": true,
+  "description": "비공식·비영리 '캐치! 티니핑' 팬 도감 (정적 사이트 + JS 수집/빌드 파이프라인)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "node tools/fetch-fandom.mjs",
+    "fetch:namu": "node tools/fetch-namu.mjs",
+    "images": "node tools/fetch-images.mjs && node tools/process-images.mjs",
+    "build:data": "node tools/build-data.mjs",
+    "build:pages": "node tools/build-pages.mjs",
+    "build": "npm run build:data && npm run build:pages",
+    "update": "npm run fetch && npm run images && npm run build",
+    "dev": "node tools/serve.mjs",
+    "test": "node --test \"tools/test/*.test.mjs\""
+  },
+  "optionalDependencies": {
+    "sharp": "^0.34.0"
+  }
+}

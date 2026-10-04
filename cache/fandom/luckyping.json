@@ -1,0 +1,65 @@
+{
+  "id": "luckyping",
+  "title": "Luckyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Luckyping",
+  "revid": 221111,
+  "fetchedAt": "2026-10-04T13:11:52.654Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Luckyping",
+  "nameKo": "행운핑",
+  "gender": "여성",
+  "concept": "Luck",
+  "prop": "Staff",
+  "jewel": "",
+  "abilities": "Transform Romi into Princess Twilight\nFly\nMake objects lucky or unlucky\nAbsorb material representations of luck\nUndo powerful magic\nCreate a protective shield\nCreate a portal to the Mystic Town\nCreate a Tinkle Puff shower\nUse the Breath of Luck",
+  "likes": "Handing out good luck\nTaking a walk",
+  "dislikes": "Misfortune\nNarrow and stuffy places",
+  "catchphrase": "",
+  "debut": "Secret Catch! Key Teeniepings (box form)\nLuckyping Unboxed! (full debut)",
+  "colorHex": "#823E93",
+  "friends": [
+    "Key Teeniepings",
+    "Dr. Monziu"
+  ],
+  "enemies": [
+    "Jenny",
+    "Onlyping"
+  ],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Heroes",
+    "Key Teeniepings",
+    "Legend Teeniepings",
+    "Luck-themed Teeniepings",
+    "Main characters",
+    "Purple Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that do not have catchphrases",
+    "Teeniepings that do not have tails",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear earrings",
+    "Teeniepings who can fly",
+    "Teeniepings who wear a tiara or crown",
+    "Teeniepings who wear capes"
+  ],
+  "seasonKey": "secret",
+  "grade": "레전드",
+  "images": [
+    {
+      "file": "Luckyping Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Luckyping's Box Render 1.png",
+      "caption": "Box"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/f/fd/Luckyping_Render_1.png/revision/latest?cb=20260505071255"
+}

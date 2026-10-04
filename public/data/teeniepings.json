@@ -1,0 +1,5783 @@
+{
+  "_notice": "빌드 산출물입니다. 직접 수정하지 마세요. 값 수정은 src/overrides.json, 명단은 src/roster.js 에서. (npm run build)",
+  "_credits": {
+    "characters": "캐릭터 이름·이미지 © SAMG엔터테인먼트. 비공식·비영리 팬 페이지.",
+    "fandom": "https://catchteenieping.fandom.com (CC-BY-SA 3.0)"
+  },
+  "count": 162,
+  "seasons": [
+    {
+      "key": "emotion",
+      "label": "1기 감정",
+      "order": 1
+    },
+    {
+      "key": "twinkle",
+      "label": "2기 반짝반짝",
+      "order": 2
+    },
+    {
+      "key": "secret",
+      "label": "3기 비밀",
+      "order": 3
+    },
+    {
+      "key": "dessert",
+      "label": "4기 디저트",
+      "order": 4
+    },
+    {
+      "key": "star",
+      "label": "5기 스타",
+      "order": 5
+    },
+    {
+      "key": "princess",
+      "label": "6기 프린세스",
+      "order": 6
+    },
+    {
+      "key": "movie",
+      "label": "극장판",
+      "order": 90
+    }
+  ],
+  "grades": [
+    "로열",
+    "레전드",
+    "일반",
+    "빌런"
+  ],
+  "items": [
+    {
+      "id": "heartsping",
+      "nameKo": "하츄핑",
+      "nameEn": "Heartsping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Love",
+      "intro": "",
+      "item": "Handheld mirror (Season 1)\nHarp (Season 2)\nPerfume bottle (Season 3)\nHand bell (Season 4)\nBunny plush (Prequel/Movie)\nGlowpuff star pillow (Season 5)\nMagic wand (Season 6)\nMicrophone (Season 7)",
+      "magic": "Transform Romi into Princess Heart (Season 1)\nBlind others (Season 1)\nHealing tears\nTransform Romi into Princess Diaheart (Season 2)\nCreate a magic melody staff to trap people or block a path (Season 2)\nTransform Romi into Princess Floraheart (Season 3)\nAttack and hurt her opponent (Season 3)\nResuscitate others\nDestroy her opponent's magic\nTransform Romi into Princess Berryheart (Season 4)\nTransform Romi into Princess Brightheart (Season 5)\nTransform Romi into the Unnamed Princess (Movie 1)\nTransform Romi into Princess Fancyheart (Season 6)",
+      "episodes": [
+        {
+          "episode": "The Cookie Mess",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "truthping",
+          "label": "친구"
+        },
+        {
+          "id": "onlyping",
+          "label": "친구"
+        },
+        {
+          "id": "giggleping",
+          "label": "라이벌"
+        },
+        {
+          "id": "egoping",
+          "label": "라이벌"
+        },
+        {
+          "id": "maskping",
+          "label": "라이벌"
+        },
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#EA73AA",
+      "image": "",
+      "thumb": "",
+      "verified": true,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Heartsping",
+        "fandomRevId": 221068
+      },
+      "updatedAt": "2026-10-04T13:11:52.640Z",
+      "jewel": "Pink Diamond",
+      "likes": "Practicing expressions in her hand mirror\nDrinking tea\nPlaying the harp\nCreamy strawberry cake\nStrawberries\nFairy tales",
+      "dislikes": "Being forced to wake up\nBeing surprised\nAnything that tastes sour\nFighting"
+    },
+    {
+      "id": "lalaping",
+      "nameKo": "라라핑",
+      "nameEn": "Lalaping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Joy",
+      "intro": "",
+      "item": "Microphone",
+      "magic": "Make a person or an object dance on their own",
+      "episodes": [
+        {
+          "episode": "Let's Sing With Joy",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#924998",
+      "image": "",
+      "thumb": "",
+      "verified": true,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lalaping",
+        "fandomRevId": 219789
+      },
+      "updatedAt": "2026-10-04T13:11:52.642Z",
+      "likes": "Singing and dancing\nJoyful games\nChatting",
+      "dislikes": "Seriousness\nBoring things"
+    },
+    {
+      "id": "giggleping",
+      "nameKo": "악동핑",
+      "nameEn": "Giggleping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "빌런",
+      "gender": "여성 / 남성",
+      "emotion": "",
+      "intro": "",
+      "item": "Toy hammer",
+      "magic": "Feed trouble\nMess around with others",
+      "episodes": [
+        {
+          "episode": "The Arrow Of Luvping (cameo)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#DD0B41",
+      "image": "",
+      "thumb": "",
+      "verified": true,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Giggleping",
+        "fandomRevId": 220528
+      },
+      "updatedAt": "2026-10-04T13:11:52.643Z",
+      "likes": "Playing pranks\nFeeding trouble\nStealing the Magic Catcher",
+      "dislikes": "Being interfered\nTaking orders"
+    },
+    {
+      "id": "dadaping",
+      "nameKo": "바로핑",
+      "nameEn": "Dadaping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "로열",
+      "gender": "남성",
+      "emotion": "Rightness",
+      "intro": "",
+      "item": "Book",
+      "magic": "Help Romi transform into Princess Cloudia\nCreate books that can grab or pursue anyone and anything\nCreate post-its and crosses to mute people\nMake someone more productive",
+      "episodes": [
+        {
+          "episode": "Dadaping The Smart One",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#0094CF",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dadaping",
+        "fandomRevId": 217039
+      },
+      "updatedAt": "2026-10-04T13:11:52.597Z",
+      "likes": "Reading\nStudying\nTeaching something",
+      "dislikes": "Oversleeping\nLaziness\nDirty environments"
+    },
+    {
+      "id": "gogoping",
+      "nameKo": "아자핑",
+      "nameEn": "Gogoping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "로열",
+      "gender": "남성",
+      "emotion": "Courage",
+      "intro": "",
+      "item": "Camera",
+      "magic": "Transforms with Romi into Princess Star\n(With his camera) Sprinkle Tinkle Puff to immobilize someone\nGive courage to someone (Flash of Courage/Courage Flash)",
+      "episodes": [
+        {
+          "episode": "You Can Do It, Maya!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heavyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#E99200",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Gogoping",
+        "fandomRevId": 214325
+      },
+      "updatedAt": "2026-10-04T13:11:52.641Z",
+      "likes": "Physical training\nMartial arts and action movies\nTaking pictures",
+      "dislikes": "Fear\nRunning away\nGiving up"
+    },
+    {
+      "id": "chachaping",
+      "nameKo": "차차핑",
+      "nameEn": "Chachaping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Hope",
+      "intro": "",
+      "item": "Watering can",
+      "magic": "Transform into Princess Clover with Romi\nSprinkle water to dispel any kind of magic (Water of Hope)\nGrow\nMake someone hopeful\nEnchant objects\nMerge her powers with another object by putting it in the watering can",
+      "episodes": [
+        {
+          "episode": "Welcome, Dear Hope",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "tweetping",
+          "label": "라이벌"
+        },
+        {
+          "id": "roarping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#79B12A",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Chachaping",
+        "fandomRevId": 217216
+      },
+      "updatedAt": "2026-10-04T13:11:52.600Z",
+      "likes": "Caring for plants\nSmelling flowers",
+      "dislikes": "Bad actions\nSorrow\nPlants dying"
+    },
+    {
+      "id": "happying",
+      "nameKo": "해핑",
+      "nameEn": "Happying",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Happiness",
+      "intro": "",
+      "item": "Bubble gun",
+      "magic": "Transform Romi into Princess Sunshine\nCreate bubbles to trap anyone and anything\nMake others happy\nUse her energy to defeat someone\nReceive energy from Romi",
+      "episodes": [
+        {
+          "episode": "Don't Look At The Mirror! (cameo)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "sighping",
+          "label": "친구"
+        },
+        {
+          "id": "fluffyping",
+          "label": "친구"
+        },
+        {
+          "id": "egoping",
+          "label": "라이벌"
+        },
+        {
+          "id": "maskping",
+          "label": "라이벌"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#D53C72",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Happying",
+        "fandomRevId": 221046
+      },
+      "updatedAt": "2026-10-04T13:11:52.641Z",
+      "likes": "Playing with bubbles\nBubble baths\nScribbling\nCopying other Teeniepings' actions",
+      "dislikes": "Feeling tired\nNeeding to sleep whenever she gets tired"
+    },
+    {
+      "id": "artping",
+      "nameKo": "그림핑",
+      "nameEn": "Artping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Art",
+      "intro": "",
+      "item": "Paintbrush",
+      "magic": "Create anyone and anything by painting",
+      "episodes": [
+        {
+          "episode": "The Art Is Alive!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#6375AF",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Artping",
+        "fandomRevId": 215306
+      },
+      "updatedAt": "2026-10-04T13:11:52.604Z",
+      "likes": "Painting\nBeautiful things",
+      "dislikes": "Others calling his artistic works \"doodles\""
+    },
+    {
+      "id": "blankping",
+      "nameKo": "깜빡핑",
+      "nameEn": "Blankping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Obliviousness",
+      "intro": "",
+      "item": "Eraser",
+      "magic": "Make others forget what they're doing",
+      "episodes": [
+        {
+          "episode": "Oops, I Forgot!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E66902",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Blankping",
+        "fandomRevId": 221154
+      },
+      "updatedAt": "2026-10-04T13:11:52.603Z",
+      "likes": "Being relaxed",
+      "dislikes": "Rules\nDisciplines\nDadaping's nagging"
+    },
+    {
+      "id": "oppoping",
+      "nameKo": "꺼꿀핑",
+      "nameEn": "Oppoping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Opposition",
+      "intro": "",
+      "item": "Magnet",
+      "magic": "Make things turn upside down",
+      "episodes": [
+        {
+          "episode": "The Upside Down World",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#04B5CC",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Oppoping",
+        "fandomRevId": 219614
+      },
+      "updatedAt": "2026-10-04T13:11:52.674Z",
+      "likes": "Vegetables\nThings upside down",
+      "dislikes": "Sweets\nThings right side up"
+    },
+    {
+      "id": "freezeping",
+      "nameKo": "꽁꽁핑",
+      "nameEn": "Freezeping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Coldness",
+      "intro": "",
+      "item": "Ice cream cone",
+      "magic": "Give others ice masks\nFreeze stuff\nCreate a tornado\nMake ice cream",
+      "episodes": [
+        {
+          "episode": "The Coolest Friendship",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#70C8D0",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Freezeping",
+        "fandomRevId": 218511
+      },
+      "updatedAt": "2026-10-04T13:11:52.648Z",
+      "likes": "Winter\nIce cream\nCoolping\nPlaying with Coolping",
+      "dislikes": "Warm things\nSummer\nHot places\nFire places\nPeople that get along (formerly)"
+    },
+    {
+      "id": "narrping",
+      "nameKo": "나르핑",
+      "nameEn": "Narrping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Narcissism",
+      "intro": "",
+      "item": "Lipstick",
+      "magic": "Give others mirrors that makes them appear beautiful",
+      "episodes": [
+        {
+          "episode": "Don't Look At The Mirror!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#DB4F76",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Narrping",
+        "fandomRevId": 219640
+      },
+      "updatedAt": "2026-10-04T13:11:52.645Z",
+      "likes": "Beauty\nBeautiful things",
+      "dislikes": "Ugly things"
+    },
+    {
+      "id": "noraping",
+      "nameKo": "노라핑",
+      "nameEn": "Noraping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Naiveness",
+      "intro": "",
+      "item": "Game console",
+      "magic": "Make others start playing",
+      "episodes": [
+        {
+          "episode": "Baby Noriping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#008FD5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Noraping",
+        "fandomRevId": 214357
+      },
+      "updatedAt": "2026-10-04T13:11:52.680Z",
+      "likes": "Playgrounds\nToys\nPlaying games",
+      "dislikes": "Studying\nGoing to bed early\nTaking care of Noriping (formerly)"
+    },
+    {
+      "id": "noriping",
+      "nameKo": "노리핑",
+      "nameEn": "Noriping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Innocence",
+      "intro": "",
+      "item": "Baby bottle",
+      "magic": "Drag anyone or anything",
+      "episodes": [
+        {
+          "episode": "Baby Noriping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "giggleping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#E21813",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Noriping",
+        "fandomRevId": 220126
+      },
+      "updatedAt": "2026-10-04T13:11:52.681Z",
+      "likes": "Noraping\n5-star milk\nChocolate milk",
+      "dislikes": "Non 5-star milk"
+    },
+    {
+      "id": "allmineping",
+      "nameKo": "다조핑",
+      "nameEn": "Allmineping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Greed",
+      "intro": "",
+      "item": "Picnic basket",
+      "magic": "Steal objects by plunging her hand into her basket",
+      "episodes": [
+        {
+          "episode": "Greedy Allmineping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#EB8F43",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Allmineping",
+        "fandomRevId": 220663
+      },
+      "updatedAt": "2026-10-04T13:11:52.609Z",
+      "likes": "Stealing\nDelicious food\nSparkly objects",
+      "dislikes": "Sharing\nDull and gloomy things\nThe colors black and gray"
+    },
+    {
+      "id": "coolping",
+      "nameKo": "덜덜핑",
+      "nameEn": "Coolping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Coldness",
+      "intro": "",
+      "item": "Popsicle",
+      "magic": "Make others feel cold\nFreeze things",
+      "episodes": [
+        {
+          "episode": "Too Cold, Coolping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "freezeping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#BDC6E3",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Coolping",
+        "fandomRevId": 218500
+      },
+      "updatedAt": "2026-10-04T13:11:52.606Z",
+      "likes": "Everything cold",
+      "dislikes": "Everything warm\nFreezeping being better than him (formerly)\nFreezeping bragging about how great he is (formerly)"
+    },
+    {
+      "id": "mimicping",
+      "nameKo": "따라핑",
+      "nameEn": "Mimicping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Imitation",
+      "intro": "",
+      "item": "Binoculars",
+      "magic": "Make anyone imitate anything\nMake others dance to Hye-joo's song \"Hi\"",
+      "episodes": [
+        {
+          "episode": "Mimicping Is A Fan",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E94D1F",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mimicping",
+        "fandomRevId": 218160
+      },
+      "updatedAt": "2026-10-04T13:11:52.645Z",
+      "likes": "Making someone to have fun\nHye-joo",
+      "dislikes": "When someone says something bad about Hye-joo"
+    },
+    {
+      "id": "stickping",
+      "nameKo": "딱풀핑",
+      "nameEn": "Stickping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Bond",
+      "intro": "",
+      "item": "Glue stick",
+      "magic": "Make two or more things stick together",
+      "episodes": [
+        {
+          "episode": "Stuck With Lena",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#A9CC2B",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Stickping",
+        "fandomRevId": 219678
+      },
+      "updatedAt": "2026-10-04T13:11:52.676Z",
+      "likes": "Seeing others getting along",
+      "dislikes": "Seeing others fighting or arguing"
+    },
+    {
+      "id": "tweetping",
+      "nameKo": "떠벌핑",
+      "nameEn": "Tweetping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Chatter",
+      "intro": "",
+      "item": "Megaphone",
+      "magic": "Make others to reveal their secrets",
+      "episodes": [
+        {
+          "episode": "Gonna Tweet It All!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "chachaping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#7CA1D5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tweetping",
+        "fandomRevId": 215263
+      },
+      "updatedAt": "2026-10-04T13:11:52.707Z",
+      "likes": "Chatting\nTelling other's secrets",
+      "dislikes": "Silence\nLibraries\nKeeping secrets"
+    },
+    {
+      "id": "wannabeping",
+      "nameKo": "또까핑",
+      "nameEn": "Wannabeping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Disguise",
+      "intro": "",
+      "item": "Masquerade mask",
+      "magic": "Transform into others",
+      "episodes": [
+        {
+          "episode": "A Strange Guest At Heartrose",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#D85797",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wannabeping",
+        "fandomRevId": 214522
+      },
+      "updatedAt": "2026-10-04T13:11:52.709Z",
+      "likes": "Twins\nVocal imitations\nDisguising as others",
+      "dislikes": "Others imitating her"
+    },
+    {
+      "id": "shushping",
+      "nameKo": "똑똑핑",
+      "nameEn": "Shushping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Intelligence",
+      "intro": "",
+      "item": "Pencil and book",
+      "magic": "Summon a desk and a chair to study\nMake others paralyze and recite the multiplication table",
+      "episodes": [
+        {
+          "episode": "Trouble In The Library",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#B096C4",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shushping",
+        "fandomRevId": 217401
+      },
+      "updatedAt": "2026-10-04T13:11:52.678Z",
+      "likes": "Studying\nQuiet places\nDadaping",
+      "dislikes": "Playing\nNoisy places"
+    },
+    {
+      "id": "dreamping",
+      "nameKo": "띠용핑",
+      "nameEn": "Dreamping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Imagination",
+      "intro": "",
+      "item": "Magician's hat\nMagician's wand",
+      "magic": "Make others start to see things\nTransform and hide into different objects",
+      "episodes": [
+        {
+          "episode": "Marylou's Tummy Ache",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#8DC3C5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dreamping",
+        "fandomRevId": 214316
+      },
+      "updatedAt": "2026-10-04T13:11:52.603Z",
+      "likes": "Magic tricks\nPranking\nImagining something fun",
+      "dislikes": "Her illusions getting ruined\nAnything that limits the imagination"
+    },
+    {
+      "id": "curieping",
+      "nameKo": "모야핑",
+      "nameEn": "Curieping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Curiosity",
+      "intro": "",
+      "item": "Magnifying glass",
+      "magic": "Make anyone and anything bigger",
+      "episodes": [
+        {
+          "episode": "The Funny Monster",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E9412E",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Curieping",
+        "fandomRevId": 221050
+      },
+      "updatedAt": "2026-10-04T13:11:52.610Z",
+      "likes": "Looking at things\nAnything that piques her curiosity",
+      "dislikes": "Undoing looking at things\nHer curiosity not being answered"
+    },
+    {
+      "id": "heavyping",
+      "nameKo": "무거핑",
+      "nameEn": "Heavyping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Heaviness",
+      "intro": "",
+      "item": "Dumbbell",
+      "magic": "Make anyone and anything heavy",
+      "episodes": [
+        {
+          "episode": "Phew, Too Heavy!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#CF367E",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Heavyping",
+        "fandomRevId": 220552
+      },
+      "updatedAt": "2026-10-04T13:11:52.646Z",
+      "likes": "Taking a cool pose\nBeing mean at times",
+      "dislikes": "Light movements\nPeople who talk too much"
+    },
+    {
+      "id": "spookping",
+      "nameKo": "무셔핑",
+      "nameEn": "Spookping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Fear",
+      "intro": "",
+      "item": "Flashlight",
+      "magic": "Show others' greatest fears",
+      "episodes": [
+        {
+          "episode": "Spooky Picture Time",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#931477",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Spookping",
+        "fandomRevId": 220208
+      },
+      "updatedAt": "2026-10-04T13:11:52.673Z",
+      "likes": "Halloween pumpkins\nPictures of people's scared faces",
+      "dislikes": "People finding out he is a coward\nSpiders"
+    },
+    {
+      "id": "luvping",
+      "nameKo": "바네핑",
+      "nameEn": "Luvping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Attraction",
+      "intro": "",
+      "item": "Bow and love arrows",
+      "magic": "Make people fall in love",
+      "episodes": [
+        {
+          "episode": "The Arrow Of Luvping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#D92924",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Luvping",
+        "fandomRevId": 215824
+      },
+      "updatedAt": "2026-10-04T13:11:52.647Z",
+      "likes": "Love\nHeart shapes\nThe color red",
+      "dislikes": "Hate\nPeople who complain and fight with each other\nBreakups"
+    },
+    {
+      "id": "bebeping",
+      "nameKo": "베베핑",
+      "nameEn": "Bebeping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Childishness",
+      "intro": "",
+      "item": "Rattle\nBaby walker",
+      "magic": "Turn others into babies",
+      "episodes": [
+        {
+          "episode": "Do You Wanna Be A Baby?",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#EC87A6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bebeping",
+        "fandomRevId": 218338
+      },
+      "updatedAt": "2026-10-04T13:11:52.608Z",
+      "likes": "Being young\nCausing mischief\nBabies\nLullabies",
+      "dislikes": "Anyone who makes fun of babies\nHaving to grow old\nAdults\nWaking up from her sleep"
+    },
+    {
+      "id": "shyping",
+      "nameKo": "부끄핑",
+      "nameEn": "Shyping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Shyness",
+      "intro": "",
+      "item": "Carrot cushion",
+      "magic": "Make others act shy",
+      "episodes": [
+        {
+          "episode": "A Shy New Classmate",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#864995",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shyping",
+        "fandomRevId": 215775
+      },
+      "updatedAt": "2026-10-04T13:11:52.672Z",
+      "likes": "Hiding from others",
+      "dislikes": "Getting noticed"
+    },
+    {
+      "id": "dareping",
+      "nameKo": "부투핑",
+      "nameEn": "Dareping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Competitiveness",
+      "intro": "",
+      "item": "Flag",
+      "magic": "Make anyone compete against each other",
+      "episodes": [
+        {
+          "episode": "Who's The Best?",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#EA65A0",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dareping",
+        "fandomRevId": 218234
+      },
+      "updatedAt": "2026-10-04T13:11:52.601Z",
+      "likes": "Confrontations\nCompetitions\nMatches",
+      "dislikes": "Being slow\nBeing relaxed"
+    },
+    {
+      "id": "nonoping",
+      "nameKo": "시러핑",
+      "nameEn": "Nonoping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Rejection",
+      "intro": "",
+      "item": "Cross Sign",
+      "magic": "Make others say the opposite\nThe sign can act as a shield and block physical approaches",
+      "episodes": [
+        {
+          "episode": "That's a No, Nonoping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#72C5CE",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Nonoping",
+        "fandomRevId": 219193
+      },
+      "updatedAt": "2026-10-04T13:11:52.673Z",
+      "likes": "Opposing what the other person says\nBroccoli",
+      "dislikes": "Anything he sees (with some exceptions)"
+    },
+    {
+      "id": "zipping",
+      "nameKo": "씽씽핑",
+      "nameEn": "Zipping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Speed",
+      "intro": "",
+      "item": "Scooter",
+      "magic": "Go super fast\nChange the speed of someone",
+      "episodes": [
+        {
+          "episode": "Zipping Likes It Fast",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#40B5B4",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Zipping",
+        "fandomRevId": 218404
+      },
+      "updatedAt": "2026-10-04T13:11:52.710Z",
+      "likes": "Going fast",
+      "dislikes": "Being slow"
+    },
+    {
+      "id": "charmping",
+      "nameKo": "아잉핑",
+      "nameEn": "Charmping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Cuteness",
+      "intro": "",
+      "item": "Ribbon wand",
+      "magic": "Make others act cute",
+      "episodes": [
+        {
+          "episode": "A Very Charming Teenieping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#F1988C",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Charmping",
+        "fandomRevId": 218696
+      },
+      "updatedAt": "2026-10-04T13:11:52.602Z",
+      "likes": "Cotton candy\nBows and ribbons\nActing cute",
+      "dislikes": "Serious situations"
+    },
+    {
+      "id": "sighping",
+      "nameKo": "아휴핑",
+      "nameEn": "Sighping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Premonition",
+      "intro": "",
+      "item": "Bugle",
+      "magic": "Make others feel depressed and unlucky",
+      "episodes": [
+        {
+          "episode": "Princess Sunshine",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#5BBCAA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sighping",
+        "fandomRevId": 219600
+      },
+      "updatedAt": "2026-10-04T13:11:52.677Z",
+      "likes": "Giving up (formerly)\nFeeling depressed (formerly)\nThinking happy thoughts (currently)",
+      "dislikes": "Feeling happy (formerly)\nGiving up (currently)\nFeeling depressed (currently)"
+    },
+    {
+      "id": "weeping",
+      "nameKo": "주르핑",
+      "nameEn": "Weeping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Sadness",
+      "intro": "",
+      "item": "Leaf umbrella",
+      "magic": "Transform tears into Tear Candies",
+      "episodes": [
+        {
+          "episode": "What Does A Tear Candy Taste Like?",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#01A485",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Weeping",
+        "fandomRevId": 217455
+      },
+      "updatedAt": "2026-10-04T13:11:52.709Z",
+      "likes": "Eating Tear Candies\nRain",
+      "dislikes": "Loud noises"
+    },
+    {
+      "id": "sparkping",
+      "nameKo": "찌릿핑",
+      "nameEn": "Sparkping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Thrill",
+      "intro": "",
+      "item": "Lightning staff",
+      "magic": "Control and travel through electricity",
+      "episodes": [
+        {
+          "episode": "The Electric Touch",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#133278",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sparkping",
+        "fandomRevId": 220406
+      },
+      "updatedAt": "2026-10-04T13:11:52.678Z",
+      "likes": "Electricity\nLight bulbs\nThunder\nLightning",
+      "dislikes": "Power outages\nBroken light bulbs\nBoredom"
+    },
+    {
+      "id": "moseyping",
+      "nameKo": "차나핑",
+      "nameEn": "Moseyping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Laziness",
+      "intro": "",
+      "item": "Pillow",
+      "magic": "Make himself invisible\nMake others lazy",
+      "episodes": [
+        {
+          "episode": "Find Moseyping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#3F6B7E",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Moseyping",
+        "fandomRevId": 217415
+      },
+      "updatedAt": "2026-10-04T13:11:52.644Z",
+      "likes": "Being sleepy\nNaptime\nWeekends\nFast cars",
+      "dislikes": "Dadaping's nagging\nAsking people to say something when it's not a big deal"
+    },
+    {
+      "id": "goodping",
+      "nameKo": "차캐핑",
+      "nameEn": "Goodping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Wholesomeness\nGoodness",
+      "intro": "",
+      "item": "Stamp",
+      "magic": "Give others a lucky stamp to make them lucky for the day",
+      "episodes": [
+        {
+          "episode": "Find The Lucky Stamp",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#DD5799",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Goodping",
+        "fandomRevId": 219626
+      },
+      "updatedAt": "2026-10-04T13:11:52.647Z",
+      "likes": "Helping others\nGood children\nPeople doing good things",
+      "dislikes": "Turning away from others in need of help\nBad children"
+    },
+    {
+      "id": "sleeping",
+      "nameKo": "코자핑",
+      "nameEn": "Sleeping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성 / Female (English dub)",
+      "emotion": "Drowsiness",
+      "intro": "",
+      "item": "Vacuum cleaner",
+      "magic": "Make others fall asleep to look at their dreams and transform them into jellies",
+      "episodes": [
+        {
+          "episode": "The Sleeping Beauty Of Heartrose",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#62BEAA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sleeping",
+        "fandomRevId": 218514
+      },
+      "updatedAt": "2026-10-04T13:11:52.675Z",
+      "likes": "Dream jelly beans",
+      "dislikes": "Nightmares"
+    },
+    {
+      "id": "kikiping",
+      "nameKo": "키키핑",
+      "nameEn": "Kikiping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Playfulness",
+      "intro": "",
+      "item": "Lollipop",
+      "magic": "Make others act mischievous",
+      "episodes": [
+        {
+          "episode": "The Cookie Mess",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#4EBED3",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Kikiping",
+        "fandomRevId": 217464
+      },
+      "updatedAt": "2026-10-04T13:11:52.644Z",
+      "likes": "Having fun\nPranks",
+      "dislikes": "Boring things"
+    },
+    {
+      "id": "toyping",
+      "nameKo": "토이핑",
+      "nameEn": "Toyping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성 / Male (English and Russian dubs)",
+      "emotion": "Attachment",
+      "intro": "",
+      "item": "Yoyo",
+      "magic": "Turn anyone and anything into toys",
+      "episodes": [
+        {
+          "episode": "It's Play Time!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#68C6DB",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Toyping",
+        "fandomRevId": 219608
+      },
+      "updatedAt": "2026-10-04T13:11:52.711Z",
+      "likes": "Playing with toys",
+      "dislikes": "Reading\nBoring stuff"
+    },
+    {
+      "id": "tutuping",
+      "nameKo": "투투핑",
+      "nameEn": "Tutuping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Jealousy",
+      "intro": "",
+      "item": "Eyeshadow palette\nBrush",
+      "magic": "Make others jealous",
+      "episodes": [
+        {
+          "episode": "Love Me More",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#AB4895",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tutuping",
+        "fandomRevId": 219632
+      },
+      "updatedAt": "2026-10-04T13:11:52.708Z",
+      "likes": "Makeup\nGetting attention\nLemon tarts",
+      "dislikes": "Not receiving attention\nAnyone prettier than her"
+    },
+    {
+      "id": "floraping",
+      "nameKo": "플라핑",
+      "nameEn": "Floraping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Environment",
+      "intro": "",
+      "item": "Rose",
+      "magic": "Turn anyone and anything into natural elements",
+      "episodes": [
+        {
+          "episode": "The Flower Incident",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#5DBDA7",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Floraping",
+        "fandomRevId": 220553
+      },
+      "updatedAt": "2026-10-04T13:11:52.607Z",
+      "likes": "Flowers\nPlants\nGardening",
+      "dislikes": "People who don't value flowers\nPicking flowers\nPeople harming flowers"
+    },
+    {
+      "id": "aloneping",
+      "nameKo": "홀로핑",
+      "nameEn": "Aloneping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Loneliness",
+      "intro": "",
+      "item": "Fishing rod",
+      "magic": "Make others feel lonely",
+      "episodes": [
+        {
+          "episode": "Teenieping From The Ocean",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E2720A",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Aloneping",
+        "fandomRevId": 219593
+      },
+      "updatedAt": "2026-10-04T13:11:52.611Z",
+      "likes": "Quiet places\nBeing alone",
+      "dislikes": "Bustling atmospheres"
+    },
+    {
+      "id": "roarping",
+      "nameKo": "화나핑",
+      "nameEn": "Roarping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Anger",
+      "intro": "",
+      "item": "Fan",
+      "magic": "Release heat when angry\nMake others angry",
+      "episodes": [
+        {
+          "episode": "Angry Roarping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#D80E1B",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Roarping",
+        "fandomRevId": 217410
+      },
+      "updatedAt": "2026-10-04T13:11:52.676Z",
+      "likes": "Cleaning up trash",
+      "dislikes": "Marylou and her bike"
+    },
+    {
+      "id": "egoping",
+      "nameKo": "앙대핑",
+      "nameEn": "Egoping",
+      "season": "1기 감정",
+      "seasonKey": "emotion",
+      "grade": "빌런",
+      "gender": "여성",
+      "emotion": "Selfishness",
+      "intro": "",
+      "item": "Trident",
+      "magic": "Transform into a seed of the Yummy Fruit\nPartially control a Teenieping eating the Yummy Fruit\nCreate and control a giant plant\nMake others start fights\nMake others fall into a deep sleep\nTrap others into a ball\nMake nearby others levitate\nMake a counterforce\nResist other magic",
+      "episodes": [
+        {
+          "episode": "In The Name Of The Royalpings!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#C21F63",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Egoping",
+        "fandomRevId": 219150
+      },
+      "updatedAt": "2026-10-04T13:11:52.611Z",
+      "likes": "Wreak havoc\nBe the leader\nMesses\nBeing free\nStrength",
+      "dislikes": "Be sealed\nWeak people"
+    },
+    {
+      "id": "trustping",
+      "nameKo": "믿어핑",
+      "nameEn": "Trustping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "로열",
+      "gender": "남성",
+      "emotion": "Trust",
+      "intro": "",
+      "item": "Umbrella",
+      "magic": "Transform Romi into Princess Sapphire\nCreate gusts of wind and hurricanes",
+      "episodes": [
+        {
+          "episode": "Twinkle Twinkle, Jewel Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#00AED8",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Trustping",
+        "fandomRevId": 221120
+      },
+      "updatedAt": "2026-10-04T13:11:52.712Z",
+      "jewel": "Sapphire",
+      "likes": "Taking a bath\nRainy and sunny days\nChocolate balls\nPudding",
+      "dislikes": "Lies\nReading\nWindy days\nVeggies"
+    },
+    {
+      "id": "teeheeping",
+      "nameKo": "방글핑",
+      "nameEn": "Teeheeping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Laughter",
+      "intro": "",
+      "item": "Confetti popper",
+      "magic": "Transform Romi into Princess Ruby\nSummon various items",
+      "episodes": [
+        {
+          "episode": "Twinkle Twinkle, Jewel Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#B7599D",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Teeheeping",
+        "fandomRevId": 221101
+      },
+      "updatedAt": "2026-10-04T13:11:52.711Z",
+      "jewel": "Ruby",
+      "likes": "Laughing\nPlaying\nBeing first\nMint chocolate cake",
+      "dislikes": "Nagging\nBad mood"
+    },
+    {
+      "id": "joahping",
+      "nameKo": "조아핑",
+      "nameEn": "Joahping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Kindness",
+      "intro": "",
+      "item": "Hairbrush",
+      "magic": "Transform Romi into Princess Emerald\nControl animals",
+      "episodes": [
+        {
+          "episode": "Twinkle Twinkle, Jewel Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "maskping",
+          "label": "라이벌"
+        },
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#F19B00",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Joahping",
+        "fandomRevId": 221064
+      },
+      "updatedAt": "2026-10-04T13:11:52.649Z",
+      "jewel": "Emerald",
+      "likes": "Taking care of animals\nBrushing and feeding animals\nMacarons",
+      "dislikes": "Selfish remarks and actions\nAnimal harassment\nHot food"
+    },
+    {
+      "id": "ladyping",
+      "nameKo": "공쥬핑",
+      "nameEn": "Ladyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Elegance",
+      "intro": "",
+      "item": "Scepter",
+      "magic": "Turn others into her dedicated servant",
+      "episodes": [
+        {
+          "episode": "Heartrose Becomes a Kingdom",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#871968",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Ladyping",
+        "fandomRevId": 218355
+      },
+      "updatedAt": "2026-10-04T13:11:52.650Z",
+      "jewel": "Alexandrite",
+      "likes": "Playing the princess\nBeing treated as a princess\nHer kingdom\nHer people",
+      "dislikes": "Being treated badly"
+    },
+    {
+      "id": "tickleping",
+      "nameKo": "까르핑",
+      "nameEn": "Tickleping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Mischief",
+      "intro": "",
+      "item": "Feather fan",
+      "magic": "Tickle others with tiny feathers",
+      "episodes": [
+        {
+          "episode": "Tickle, Tickle~ Try Not to Laugh!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#34A081",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tickleping",
+        "fandomRevId": 219433
+      },
+      "updatedAt": "2026-10-04T13:11:52.713Z",
+      "jewel": "Citrine",
+      "likes": "Tickling others",
+      "dislikes": "Losing a tickle duel"
+    },
+    {
+      "id": "sculptping",
+      "nameKo": "뚝딱핑",
+      "nameEn": "Sculptping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Creativity",
+      "intro": "",
+      "item": "Hammer",
+      "magic": "Bring the sculptures he created to life",
+      "episodes": [
+        {
+          "episode": "Where's My Muse, Sculpt?!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#27879A",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sculptping",
+        "fandomRevId": 221092
+      },
+      "updatedAt": "2026-10-04T13:11:52.682Z",
+      "jewel": "Amethyst",
+      "likes": "Wonderful pieces\nHeartsping",
+      "dislikes": "Something lackluster\nHeartsping running away"
+    },
+    {
+      "id": "yummyping",
+      "nameKo": "맛나핑",
+      "nameEn": "Yummyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Taste",
+      "intro": "",
+      "item": "Ladle",
+      "magic": "Control kitchenware",
+      "episodes": [
+        {
+          "episode": "Top Chef Yummyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#DC081A",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Yummyping",
+        "fandomRevId": 221235
+      },
+      "updatedAt": "2026-10-04T13:11:52.715Z",
+      "jewel": "Coral",
+      "likes": "Cooking\nDelicious food\nHelping others make food",
+      "dislikes": "Tasteless food\nFailures in cooking"
+    },
+    {
+      "id": "memoping",
+      "nameKo": "메모핑",
+      "nameEn": "Memoping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Meticulousness",
+      "intro": "",
+      "item": "Pen and diary",
+      "magic": "Whatever she writes in her diary comes true",
+      "episodes": [
+        {
+          "episode": "Memo This, Memoping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#009CC9",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Memoping",
+        "fandomRevId": 218354
+      },
+      "updatedAt": "2026-10-04T13:11:52.650Z",
+      "jewel": "Turquoise",
+      "likes": "Writing in her diary\nInterest\nFriends",
+      "dislikes": "Indifference\nBeing alone"
+    },
+    {
+      "id": "balletping",
+      "nameKo": "발레핑",
+      "nameEn": "Balletping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Tenderness",
+      "intro": "",
+      "item": "Snow globe",
+      "magic": "Make others imitate her dance moves",
+      "episodes": [
+        {
+          "episode": "Twirl Whirl Teenieping Ballet",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#F199A2",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Balletping",
+        "fandomRevId": 221048
+      },
+      "updatedAt": "2026-10-04T13:11:52.613Z",
+      "jewel": "Rose quartz",
+      "likes": "Dancing ballet\nTeaching ballet",
+      "dislikes": "Slackers\nNot being taken seriously"
+    },
+    {
+      "id": "wishping",
+      "nameKo": "소원핑",
+      "nameEn": "Wishping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Desire",
+      "intro": "",
+      "item": "Magic lamp",
+      "magic": "Grant wishes to others",
+      "episodes": [
+        {
+          "episode": "Wishping's Three Wishes",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        },
+        {
+          "id": "maskping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#7C5EA9",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wishping",
+        "fandomRevId": 214666
+      },
+      "updatedAt": "2026-10-04T13:11:52.713Z",
+      "jewel": "Spinel",
+      "likes": "Friends\nGranting wishes",
+      "dislikes": "Lying\nHurting others"
+    },
+    {
+      "id": "tidyping",
+      "nameKo": "싹싹핑",
+      "nameEn": "Tidyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Neatness",
+      "intro": "",
+      "item": "Broom",
+      "magic": "Clean things up/Make things disappear",
+      "episodes": [
+        {
+          "episode": "Tidy Up Until It Sparkles!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#DB7D00",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tidyping",
+        "fandomRevId": 217556
+      },
+      "updatedAt": "2026-10-04T13:11:52.715Z",
+      "jewel": "Peridot",
+      "likes": "Clean and tidy spaces",
+      "dislikes": "Dirty and messy spaces"
+    },
+    {
+      "id": "owwping",
+      "nameKo": "아야핑",
+      "nameEn": "Owwping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Pain",
+      "intro": "",
+      "item": "Bandage",
+      "magic": "Increase others' pain",
+      "episodes": [
+        {
+          "episode": "Ow-Ow! No More Boo-boos!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E62252",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Owwping",
+        "fandomRevId": 216872
+      },
+      "updatedAt": "2026-10-04T13:11:52.679Z",
+      "jewel": "Garnet",
+      "likes": "Things that don't hurt\nThe Jewel Forest",
+      "dislikes": "Getting hurt\nGetting chased\nHospitals\nLeaving the Jewel Forest"
+    },
+    {
+      "id": "wonderping",
+      "nameKo": "원더핑",
+      "nameEn": "Wonderping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Heroism",
+      "intro": "",
+      "item": "Boomerang",
+      "magic": "Perform a boomerang attack\nUnleash a super-strength",
+      "episodes": [
+        {
+          "episode": "Wonderping, the Hero Teenieping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#CA141C",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wonderping",
+        "fandomRevId": 219514
+      },
+      "updatedAt": "2026-10-04T13:11:52.716Z",
+      "jewel": "Lapis Lazuli",
+      "likes": "Saving the day\nHeroes\nJustice",
+      "dislikes": "Villains\nInjustice"
+    },
+    {
+      "id": "giftping",
+      "nameKo": "주네핑",
+      "nameEn": "Giftping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Sharing",
+      "intro": "",
+      "item": "Gift box",
+      "magic": "Give anyone what they desire on their birthdays",
+      "episodes": [
+        {
+          "episode": "Find the Gift Box!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#D92438",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Giftping",
+        "fandomRevId": 215185
+      },
+      "updatedAt": "2026-10-04T13:11:52.651Z",
+      "jewel": "Topaz",
+      "likes": "Giving gifts to people on their birthdays",
+      "dislikes": "Not being able to give a gift"
+    },
+    {
+      "id": "buddyping",
+      "nameKo": "짝짝핑",
+      "nameEn": "Buddyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Friendship",
+      "intro": "",
+      "item": "Castanet",
+      "magic": "Make copies of anyone and anything except for himself",
+      "episodes": [
+        {
+          "episode": "Who's the Real Heartsping?",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#2796D1",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Buddyping",
+        "fandomRevId": 219588
+      },
+      "updatedAt": "2026-10-04T13:11:52.613Z",
+      "jewel": "Aquamarine",
+      "likes": "Things being doubled\nTalking to himself",
+      "dislikes": "Things not being doubled\nOdd numbers\nJewel Tomatoes\nOne missing sock"
+    },
+    {
+      "id": "timidping",
+      "nameKo": "쪼꼼핑",
+      "nameEn": "Timidping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Timidity",
+      "intro": "",
+      "item": "Accordion",
+      "magic": "Shrink others",
+      "episodes": [
+        {
+          "episode": "Shrinking Romi!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#0B3977",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Timidping",
+        "fandomRevId": 217550
+      },
+      "updatedAt": "2026-10-04T13:11:52.714Z",
+      "jewel": "Tanzanite",
+      "likes": "Hide and seek\nFriends",
+      "dislikes": "Audacious behaviors\nNuisances\nCausing trouble"
+    },
+    {
+      "id": "patping",
+      "nameKo": "토닥핑",
+      "nameEn": "Patping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Comfort",
+      "intro": "",
+      "item": "Attachment blanket",
+      "magic": "Give comfort to others",
+      "episodes": [
+        {
+          "episode": "Pat Pat~ It's Ok~",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#9ACA69",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Patping",
+        "fandomRevId": 220514
+      },
+      "updatedAt": "2026-10-04T13:11:52.680Z",
+      "jewel": "Jade",
+      "likes": "Comfort\nEncouraging\nJoahping\nNot giving up",
+      "dislikes": "Frustration\nDespair\nGiving up"
+    },
+    {
+      "id": "cozyping",
+      "nameKo": "포근핑",
+      "nameEn": "Cozyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Coziness",
+      "intro": "",
+      "item": "Knitting needles",
+      "magic": "Turn objects into wool\nCreate woolen things",
+      "episodes": [
+        {
+          "episode": "Things Get Woolly!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#97CAEA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cozyping",
+        "fandomRevId": 217533
+      },
+      "updatedAt": "2026-10-04T13:11:52.612Z",
+      "jewel": "Moonstone",
+      "likes": "Knitting\nCozy things",
+      "dislikes": "Hard, cold, and sharp things"
+    },
+    {
+      "id": "maskping",
+      "nameKo": "가면핑",
+      "nameEn": "Maskping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "빌런",
+      "gender": "여성",
+      "emotion": "Unknown",
+      "intro": "",
+      "item": "Key",
+      "magic": "Trap Teeniepings into jewels\nOpen portals and doors to teleport\nTie others up\nCreate a shield (only in the Jewel Cavern)",
+      "episodes": [
+        {
+          "episode": "Twinkle Twinkle, Jewel Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "라이벌"
+        },
+        {
+          "id": "happying",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#3C2E3E",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Maskping",
+        "fandomRevId": 217690
+      },
+      "updatedAt": "2026-10-04T13:11:52.649Z",
+      "likes": "Winning\nManipulating people\nMocking her enemies",
+      "dislikes": "Losing\nHaving to back off"
+    },
+    {
+      "id": "onlyping",
+      "nameKo": "다해핑",
+      "nameEn": "Onlyping",
+      "season": "2기 반짝반짝",
+      "seasonKey": "twinkle",
+      "grade": "빌런",
+      "gender": "여성",
+      "emotion": "Dedication",
+      "intro": "",
+      "item": "Hair stick (Season 2)\nScepter/Staff (Seasons 3 to 4)",
+      "magic": "Transform Jenny into Princess Labyrinth\nSend an electric shock",
+      "episodes": [
+        {
+          "episode": "Another Princess",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#7453A3",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Onlyping",
+        "fandomRevId": 218743
+      },
+      "updatedAt": "2026-10-04T13:11:52.681Z",
+      "jewel": "Black pearl",
+      "likes": "Key Teeniepings\nBeing a good Jewel Teenieping\nHeartsping (currently)\nJenny",
+      "dislikes": "Teeniepings getting in her way\nBad things\nCrying (formerly)\nHeartsping (formerly)"
+    },
+    {
+      "id": "okeydokeyping",
+      "nameKo": "꾸래핑",
+      "nameEn": "Okeydokeyping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Peace",
+      "intro": "",
+      "item": "Snowman Doll",
+      "magic": "Transform Romi into Princess Crystal\nSummon giant snowballs (Snowball of Peace)\nFreeze something or someone (Crystal of Peace)",
+      "episodes": [
+        {
+          "episode": "Secret Catch! Key Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "twirlping",
+          "label": "친구"
+        },
+        {
+          "id": "luckyping",
+          "label": "친구"
+        },
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#85C2D4",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Okeydokeyping",
+        "fandomRevId": 221082
+      },
+      "updatedAt": "2026-10-04T13:11:52.683Z",
+      "likes": "Nap time\nSnack time\nCold days\nSnowy days",
+      "dislikes": "Quarrels\nChaotic situations\nConfusions"
+    },
+    {
+      "id": "nanaping",
+      "nameKo": "나나핑",
+      "nameEn": "Nanaping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Passion",
+      "intro": "",
+      "item": "Hand held mirror",
+      "magic": "Transform Romi into Princess Solaris\nReflect another Teenieping's Tinkle Puff\nSummon Sunshine of Passion",
+      "episodes": [
+        {
+          "episode": "\"Secret Catch! Key Teeniepings\"",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "luckyping",
+          "label": "친구"
+        },
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#E6225A",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Nanaping",
+        "fandomRevId": 221080
+      },
+      "updatedAt": "2026-10-04T13:11:52.653Z",
+      "likes": "Warm and sunny days",
+      "dislikes": "Doing things roughly\nDejected atmospheres"
+    },
+    {
+      "id": "trueping",
+      "nameKo": "솔찌핑",
+      "nameEn": "Trueping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "로열",
+      "gender": "남성",
+      "emotion": "Honesty",
+      "intro": "",
+      "item": "Cotton candy",
+      "magic": "Transform Romi into Princess Gloria\nSummon clouds to jump on\nCreate cotton candy clouds to stick to surfaces",
+      "episodes": [
+        {
+          "episode": "Secret Catch! Key Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "luckyping",
+          "label": "친구"
+        },
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#F19C00",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Trueping",
+        "fandomRevId": 221110
+      },
+      "updatedAt": "2026-10-04T13:11:52.717Z",
+      "likes": "Playing\nEating\nSleeping\nRainy days\nCloudy skies",
+      "dislikes": "Lies\nStuffy and uncomfortable places"
+    },
+    {
+      "id": "luckyping",
+      "nameKo": "행운핑",
+      "nameEn": "Luckyping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "레전드",
+      "gender": "여성",
+      "emotion": "Luck",
+      "intro": "",
+      "item": "Staff",
+      "magic": "Transform Romi into Princess Twilight\nFly\nMake objects lucky or unlucky\nAbsorb material representations of luck\nUndo powerful magic\nCreate a protective shield\nCreate a portal to the Mystic Town\nCreate a Tinkle Puff shower\nUse the Breath of Luck",
+      "episodes": [
+        {
+          "episode": "Secret Catch! Key Teeniepings (box form)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#823E93",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Luckyping",
+        "fandomRevId": 221111
+      },
+      "updatedAt": "2026-10-04T13:11:52.654Z",
+      "likes": "Handing out good luck\nTaking a walk",
+      "dislikes": "Misfortune\nNarrow and stuffy places"
+    },
+    {
+      "id": "nursepings",
+      "nameKo": "간호핑들",
+      "nameEn": "Nursepings",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "",
+      "item": "N/A",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "I'll Treat You, Cure!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "cureping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#017DAC",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Nursepings",
+        "fandomRevId": 221081
+      },
+      "updatedAt": "2026-10-04T13:11:52.687Z",
+      "likes": "Treating patients",
+      "dislikes": "Cureping's syringe"
+    },
+    {
+      "id": "handyping",
+      "nameKo": "고쳐핑",
+      "nameEn": "Handyping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Repairment",
+      "intro": "",
+      "item": "Wrench\nToolbox",
+      "magic": "Repair broken or damaged objects",
+      "episodes": [
+        {
+          "episode": "Please Repair This, Handyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#F1AA1B",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Handyping",
+        "fandomRevId": 220407
+      },
+      "updatedAt": "2026-10-04T13:11:52.656Z",
+      "likes": "Fixing things\nTools",
+      "dislikes": "Broken items"
+    },
+    {
+      "id": "justiceping",
+      "nameKo": "꼼딱핑",
+      "nameEn": "Justiceping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Justice",
+      "intro": "",
+      "item": "Whistle\nMegaphone\nMotorbike",
+      "magic": "Make others confess their wrongdoings\nMake others unable to move",
+      "episodes": [
+        {
+          "episode": "Freeze! Justiceping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "splashping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#2D6DAF",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Justiceping",
+        "fandomRevId": 214500
+      },
+      "updatedAt": "2026-10-04T13:11:52.657Z",
+      "likes": "Patrolling\nCatching criminals\nSound mimicking",
+      "dislikes": "People engaging in bad behavior"
+    },
+    {
+      "id": "styleping",
+      "nameKo": "꾸며핑",
+      "nameEn": "Styleping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Style",
+      "intro": "",
+      "item": "Scissors and comb",
+      "magic": "Give others new hairstyles",
+      "episodes": [
+        {
+          "episode": "Get a Cool Hairstyle, Styleping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#74CCEA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Styleping",
+        "fandomRevId": 214512
+      },
+      "updatedAt": "2026-10-04T13:11:52.688Z",
+      "likes": "Creating hairstyles\nHelping others",
+      "dislikes": "Failure\nBeing misunderstood"
+    },
+    {
+      "id": "hotping",
+      "nameKo": "뜨거핑",
+      "nameEn": "Hotping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Thoroughness",
+      "intro": "",
+      "item": "Fire extinguisher",
+      "magic": "Extinguish fire",
+      "episodes": [
+        {
+          "episode": "Hot, Hot, Camping Commotion",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#C2141D",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hotping",
+        "fandomRevId": 219709
+      },
+      "updatedAt": "2026-10-04T13:11:52.655Z",
+      "likes": "Putting out fires\nSafety",
+      "dislikes": "Fire\nThings that produce heat"
+    },
+    {
+      "id": "twirlping",
+      "nameKo": "빙글핑",
+      "nameEn": "Twirlping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Expectation",
+      "intro": "",
+      "item": "Spinning top",
+      "magic": "Make others do ice skating acts\nCreate ice rinks",
+      "episodes": [
+        {
+          "episode": "Twirl, Twirl on Skates",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "okeydokeyping",
+          "label": "친구"
+        },
+        {
+          "id": "onlyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#85CBC9",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Twirlping",
+        "fandomRevId": 219149
+      },
+      "updatedAt": "2026-10-04T13:11:52.718Z",
+      "likes": "Figure skating\nIce skating\nOkeydokeyping",
+      "dislikes": "Not being serious about figure skating\nHot temperatures"
+    },
+    {
+      "id": "hurryping",
+      "nameKo": "빨리핑",
+      "nameEn": "Hurryping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Impatience",
+      "intro": "",
+      "item": "Pocket watch\nRocket booster",
+      "magic": "Make others act crazily fast",
+      "episodes": [
+        {
+          "episode": "Transform! Floraheart",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#60A2D8",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hurryping",
+        "fandomRevId": 216501
+      },
+      "updatedAt": "2026-10-04T13:11:52.655Z",
+      "likes": "Rushing\nBeing busy",
+      "dislikes": "Relaxation\nBeing lazy\nIce rinks"
+    },
+    {
+      "id": "cureping",
+      "nameKo": "삐뽀핑",
+      "nameEn": "Cureping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Health",
+      "intro": "",
+      "item": "First-aid kit",
+      "magic": "Summon the Nursepings\nUse her medical supplies",
+      "episodes": [
+        {
+          "episode": "I'll Treat You, Cure!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "nursepings",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#E42580",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cureping",
+        "fandomRevId": 214494
+      },
+      "updatedAt": "2026-10-04T13:11:52.615Z",
+      "likes": "Treatment\nCollecting medical record cards\nOrdering the Nursepings",
+      "dislikes": "Being called a \"quack doctor\"\nPeople refusing treatment and not wanting to get treated\nBad health habits\nWounds\nPeople refusing help when they need it"
+    },
+    {
+      "id": "huffyping",
+      "nameKo": "삐짐핑",
+      "nameEn": "Huffyping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Attention",
+      "intro": "",
+      "item": "Lollipop",
+      "magic": "Makes others sulk or act angrily towards one another",
+      "episodes": [
+        {
+          "episode": "I'll Get Huffy, Huffyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#85559C",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Huffyping",
+        "fandomRevId": 217785
+      },
+      "updatedAt": "2026-10-04T13:11:52.657Z",
+      "likes": "People who are honest about their feelings",
+      "dislikes": "People hiding their feelings"
+    },
+    {
+      "id": "wizping",
+      "nameKo": "아라핑",
+      "nameEn": "Wizping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Inquiry",
+      "intro": "",
+      "item": "Cane and Erlenmeyer Flask",
+      "magic": "Create a pool of purple mixture to make at least two individuals slip and switch bodies",
+      "episodes": [
+        {
+          "episode": "Romi and Heartsping's Bodies are Switched",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#8AC3E9",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wizping",
+        "fandomRevId": 216470
+      },
+      "updatedAt": "2026-10-04T13:11:52.719Z",
+      "likes": "Experiments\nInventions",
+      "dislikes": "Something or someone interfering with her experiment"
+    },
+    {
+      "id": "ariaping",
+      "nameKo": "아아핑",
+      "nameEn": "Ariaping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Rhythm",
+      "intro": "",
+      "item": "Violin\nMusical Score Book",
+      "magic": "Play music along with her musical score\nMake someone have a robotic voice (with her magical notes)\nPerform a sonic attack with her violin or voice",
+      "episodes": [
+        {
+          "episode": "Ariaping the Singer",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#B787B9",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Ariaping",
+        "fandomRevId": 216938
+      },
+      "updatedAt": "2026-10-04T13:11:52.616Z",
+      "likes": "Singing\nPlaying the violin",
+      "dislikes": "Not being able to sing properly\nLosing her music notes\nSomeone stealing her musical scores"
+    },
+    {
+      "id": "yumyumping",
+      "nameKo": "얌얌핑",
+      "nameEn": "Yumyumping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Hunger",
+      "intro": "",
+      "item": "Fork",
+      "magic": "Make others greedy for food",
+      "episodes": [
+        {
+          "episode": "Overeating is Dangerous, Yum yum!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#59BDAB",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Yumyumping",
+        "fandomRevId": 221236
+      },
+      "updatedAt": "2026-10-04T13:11:52.717Z",
+      "likes": "Delicious food\nEating together",
+      "dislikes": "Being hungry\nPlaces with no food"
+    },
+    {
+      "id": "partyping",
+      "nameKo": "파티핑",
+      "nameEn": "Partyping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Celebration",
+      "intro": "",
+      "item": "Party blow horn\nBalloons",
+      "magic": "Give people party glasses\nUse her balloons to get around",
+      "episodes": [
+        {
+          "episode": "Let's Party with Partyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#6D4295",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Partyping",
+        "fandomRevId": 216462
+      },
+      "updatedAt": "2026-10-04T13:11:52.688Z",
+      "likes": "Having colorful parties\nBalloons\nPlaying",
+      "dislikes": "Having no parties"
+    },
+    {
+      "id": "fashionping",
+      "nameKo": "패션핑",
+      "nameEn": "Fashionping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Originality",
+      "intro": "",
+      "item": "Mannequin\nMeasuring tape",
+      "magic": "Change others' clothes into new designs",
+      "episodes": [
+        {
+          "episode": "Fashionping's Design Ideas",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E9223C",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Fashionping",
+        "fandomRevId": 216427
+      },
+      "updatedAt": "2026-10-04T13:11:52.615Z",
+      "likes": "Stylish clothes\nFashion",
+      "dislikes": "Boring outfits"
+    },
+    {
+      "id": "splashping",
+      "nameKo": "퐁당핑",
+      "nameEn": "Splashping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Freedom",
+      "intro": "",
+      "item": "Conch",
+      "magic": "Make sea animals help her",
+      "episodes": [
+        {
+          "episode": "Splash, Splashping!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#EF8DB5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Splashping",
+        "fandomRevId": 219147
+      },
+      "updatedAt": "2026-10-04T13:11:52.684Z",
+      "likes": "Swimming\nPink Dolphin",
+      "dislikes": "Nets\nBeing oppressed"
+    },
+    {
+      "id": "cheerupping",
+      "nameKo": "힘내핑",
+      "nameEn": "Cheerupping",
+      "season": "3기 비밀",
+      "seasonKey": "secret",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Encouragement",
+      "intro": "",
+      "item": "Pom-poms",
+      "magic": "Make others cheer anyone up",
+      "episodes": [
+        {
+          "episode": "Secret Catch! Key Teeniepings (first appearance)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#BD1920",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cheerupping",
+        "fandomRevId": 217753
+      },
+      "updatedAt": "2026-10-04T13:11:52.614Z",
+      "likes": "Cheering people up\nCheerleading",
+      "dislikes": "Sloppiness\nHard things\nGiving up"
+    },
+    {
+      "id": "jellyping",
+      "nameKo": "말랑핑",
+      "nameEn": "Jellyping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Fun",
+      "intro": "",
+      "item": "Bouncy ball",
+      "magic": "Transform Romi into Princess Jellystin\nTurn an object into jelly\nCreate jelly\nStretch her limbs",
+      "episodes": [
+        {
+          "episode": "Sweet Dessert Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#AC58A2",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Jellyping",
+        "fandomRevId": 221063
+      },
+      "updatedAt": "2026-10-04T13:11:52.659Z",
+      "likes": "Playing\nExercise\nNew things",
+      "dislikes": "Boring atmospheres"
+    },
+    {
+      "id": "shashaping",
+      "nameKo": "샤샤핑",
+      "nameEn": "Shashaping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Optimism\nIce cream (or sherbets)",
+      "intro": "",
+      "item": "Cone hat\nFairies",
+      "magic": "Transform Romi into Princess Shabetina\nSummon her Fairies to do specific actions",
+      "episodes": [
+        {
+          "episode": "Sweet Dessert Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "iceflakeping",
+          "label": "친구"
+        },
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#57B0E3",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shashaping",
+        "fandomRevId": 221093
+      },
+      "updatedAt": "2026-10-04T13:11:52.690Z",
+      "likes": "Making and sharing food\nListening to stories\nCreating a bright atmosphere",
+      "dislikes": "Frustration\nDespair\nGiving up\nDark moods"
+    },
+    {
+      "id": "fluffyping",
+      "nameKo": "포실핑",
+      "nameEn": "Fluffyping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Innocence",
+      "intro": "",
+      "item": "Wand and Vase",
+      "magic": "Transform Romi into Princess SweetFloss\nTurn something into cotton candy",
+      "episodes": [
+        {
+          "episode": "Sweet Dessert Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "happying",
+          "label": "친구"
+        },
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#79C5BF",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Fluffyping",
+        "fandomRevId": 221052
+      },
+      "updatedAt": "2026-10-04T13:11:52.617Z",
+      "likes": "Viewing the scenery\nSnack time\nSleeping\nGetting lost in thought\nChocolate\nOnion rings",
+      "dislikes": "Bad food\nRushing\nLying"
+    },
+    {
+      "id": "sweetping",
+      "nameKo": "달콤핑",
+      "nameEn": "Sweetping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "레전드",
+      "gender": "여성",
+      "emotion": "Sweetness",
+      "intro": "",
+      "item": "Staff",
+      "magic": "Transform Romi into Princess Harmonious",
+      "episodes": [
+        {
+          "episode": "Romi goes to Dessert Town (Cake House)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "tangyping",
+          "label": "친구"
+        },
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#EB6760",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sweetping",
+        "fandomRevId": 216115
+      },
+      "updatedAt": "2026-10-04T13:11:52.720Z",
+      "likes": "Sweet things\nWriting notes\nMaking cakes",
+      "dislikes": "People who hate sweets"
+    },
+    {
+      "id": "tangyping",
+      "nameKo": "새콤핑",
+      "nameEn": "Tangyping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "레전드",
+      "gender": "여성",
+      "emotion": "Refreshment",
+      "intro": "",
+      "item": "Star-shaped staff",
+      "magic": "Transform Romi into Princess Harmonious",
+      "episodes": [
+        {
+          "episode": "Romi goes to Dessert Town (Cake House)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "sweetping",
+          "label": "친구"
+        },
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#8BC043",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Tangyping",
+        "fandomRevId": 216116
+      },
+      "updatedAt": "2026-10-04T13:11:52.720Z",
+      "likes": "Sour things\nWriting notes\nMaking cakes",
+      "dislikes": "People who hate sour things"
+    },
+    {
+      "id": "iceflakeping",
+      "nameKo": "눈꽃핑",
+      "nameEn": "Iceflakeping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Weather",
+      "intro": "",
+      "item": "Sleigh (pulled by Two Snowman Fairies)\nSnowflake clip",
+      "magic": "Create snow\nCreate ice",
+      "episodes": [
+        {
+          "episode": "Ice Princess Iceflakeping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#009ADA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Iceflakeping",
+        "fandomRevId": 216863
+      },
+      "updatedAt": "2026-10-04T13:11:52.662Z",
+      "likes": "Snow sledding\nCar shopping\nMaking friends",
+      "dislikes": "Unexpected situations\nHurting friends\nMagic abilities that are difficult to control"
+    },
+    {
+      "id": "donutping",
+      "nameKo": "또너핑",
+      "nameEn": "Donutping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Freshness",
+      "intro": "",
+      "item": "Donuts",
+      "magic": "Make holes for an entry/escape route",
+      "episodes": [
+        {
+          "episode": "I Want to Be a Royal Teenieping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "cupping",
+          "label": "친구"
+        },
+        {
+          "id": "muffping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#E97CAE",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Donutping",
+        "fandomRevId": 215903
+      },
+      "updatedAt": "2026-10-04T13:11:52.620Z",
+      "likes": "Romi\nCompliments\nDrawing",
+      "dislikes": "Being treated like a child\nBeing ignored"
+    },
+    {
+      "id": "lolliping",
+      "nameKo": "롤리핑",
+      "nameEn": "Lolliping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Rotation",
+      "intro": "",
+      "item": "Pinwheel",
+      "magic": "Make the target spin",
+      "episodes": [
+        {
+          "episode": "Whirl, Swirl, Spin, Lolliping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#32B0D8",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lolliping",
+        "fandomRevId": 216312
+      },
+      "updatedAt": "2026-10-04T13:11:52.661Z",
+      "likes": "Having fun\nPlaytime\nKeeping promises\nThings that spin",
+      "dislikes": "No fun\nBoredom\nBreaking promises\nStill objects\nPeople who are sad"
+    },
+    {
+      "id": "macaping",
+      "nameKo": "마카핑",
+      "nameEn": "Macaping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Color",
+      "intro": "",
+      "item": "Piping Bag",
+      "magic": "Change the color of anyone and anything",
+      "episodes": [
+        {
+          "episode": "I'll Make it Colorful, Macaping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#3FA99F",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Macaping",
+        "fandomRevId": 218713
+      },
+      "updatedAt": "2026-10-04T13:11:52.661Z",
+      "likes": "Bright colors\nMacarons\nColorful environments",
+      "dislikes": "Dark and dull colors\nUncolored environments\nBad mixes of colors\nClashing colors"
+    },
+    {
+      "id": "meringueping",
+      "nameKo": "머랭핑",
+      "nameEn": "Meringueping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Decoration",
+      "intro": "",
+      "item": "Whisk",
+      "magic": "Add decorative toppings to normal things",
+      "episodes": [
+        {
+          "episode": "I'll Make It Pretty, Meringue",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E186A6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Meringueping",
+        "fandomRevId": 215852
+      },
+      "updatedAt": "2026-10-04T13:11:52.660Z",
+      "likes": "Decorating meringues\nColorful and pretty things",
+      "dislikes": "Plain, dark, and dull things\nSomething gloomy"
+    },
+    {
+      "id": "muffping",
+      "nameKo": "머핑",
+      "nameEn": "Muffping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Youth",
+      "intro": "",
+      "item": "Baby stroller\nCupcake basket\nPacifier",
+      "magic": "Grow when crying\nMake others act like babies",
+      "episodes": [
+        {
+          "episode": "Don't Cry, Cupping and Muffping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#E88EB8",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Muffping",
+        "fandomRevId": 220855
+      },
+      "updatedAt": "2026-10-04T13:11:52.659Z",
+      "likes": "Playing together\nPlaying tag\nFunny situations\n5-star milk\nDonutping",
+      "dislikes": "Being scolded\nHaving her pacifier taken away\n1-star milk\nBeing hungry\nPuffping (formerly)"
+    },
+    {
+      "id": "mallowping",
+      "nameKo": "멜로핑",
+      "nameEn": "Mallowping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Fluffiness",
+      "intro": "",
+      "item": "Marshmallow plush",
+      "magic": "Make objects soft",
+      "episodes": [
+        {
+          "episode": "Cushy Cushy Marshmallow",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#D7A2CB",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mallowping",
+        "fandomRevId": 216086
+      },
+      "updatedAt": "2026-10-04T13:11:52.663Z",
+      "likes": "Soft things\nKind people",
+      "dislikes": "Hard things\nHigh places"
+    },
+    {
+      "id": "sandping",
+      "nameKo": "샌드핑",
+      "nameEn": "Sandping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Intimacy",
+      "intro": "",
+      "item": "Spatula",
+      "magic": "Adding cream to empty spaces",
+      "episodes": [
+        {
+          "episode": "The Secret of Sandping and Sandwich Cookies",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#623F27",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sandping",
+        "fandomRevId": 220022
+      },
+      "updatedAt": "2026-10-04T13:11:52.691Z",
+      "likes": "Filling things with cream\nSandwich cookies with cream",
+      "dislikes": "Seeing sandwich cookies being taken apart"
+    },
+    {
+      "id": "waffleping",
+      "nameKo": "와플핑",
+      "nameEn": "Waffleping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Pressure",
+      "intro": "",
+      "item": "Waffle Cymbals",
+      "magic": "Make things flat",
+      "episodes": [
+        {
+          "episode": "Go Flat! Waffleping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#CE2C24",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Waffleping",
+        "fandomRevId": 214993
+      },
+      "updatedAt": "2026-10-04T13:11:52.721Z",
+      "likes": "Flattening things\nPlaying",
+      "dislikes": "Being patient\nStanding still"
+    },
+    {
+      "id": "yogurtping",
+      "nameKo": "요거핑",
+      "nameEn": "Yogurtping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Nutrition",
+      "intro": "",
+      "item": "Spoon\nYogurt Sheep",
+      "magic": "Put others to sleep by making them count her Yogurt Sheep",
+      "episodes": [
+        {
+          "episode": "Good night-odel-ee-dee, Yogurt!",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#95BF22",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Yogurtping",
+        "fandomRevId": 216093
+      },
+      "updatedAt": "2026-10-04T13:11:52.722Z",
+      "likes": "Sleeping well\nYogurt Sheep\nMaking and sharing yogurt\nYodeling",
+      "dislikes": "People who don't sleep\nPeople who don't know the importance of sleep"
+    },
+    {
+      "id": "chocoping",
+      "nameKo": "쪼꼬핑",
+      "nameEn": "Chocoping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Adoration",
+      "intro": "",
+      "item": "Hair",
+      "magic": "Change others' hairstyle to a chocolate ball bun hairstyle\nMake others feel love and care for each other and bonding",
+      "episodes": [
+        {
+          "episode": "Let's All Get Along with Chocolate Hats",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#A5594A",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Chocoping",
+        "fandomRevId": 214961
+      },
+      "updatedAt": "2026-10-04T13:11:52.618Z",
+      "likes": "Changing her hair\nGood friends\nFriendly people",
+      "dislikes": "Enemies\nFriends fighting\nHating"
+    },
+    {
+      "id": "candyping",
+      "nameKo": "캔디핑",
+      "nameEn": "Candyping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Enticement",
+      "intro": "",
+      "item": "Halloween basket",
+      "magic": "Make others act sweet",
+      "episodes": [
+        {
+          "episode": "Transform! Princess BerryHeart",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#F27D94",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Candyping",
+        "fandomRevId": 215869
+      },
+      "updatedAt": "2026-10-04T13:11:52.618Z",
+      "likes": "Compliments\nSweet and kind words",
+      "dislikes": "Fights\nHurtful and negative words"
+    },
+    {
+      "id": "cupping",
+      "nameKo": "커핑",
+      "nameEn": "Cupping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Youth",
+      "intro": "",
+      "item": "Baby stroller\nCupcake basket\nPacifier",
+      "magic": "Grow when crying\nMake others act like babies",
+      "episodes": [
+        {
+          "episode": "Don't Cry, Cupping and Muffping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "puffping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#3EB8D5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cupping",
+        "fandomRevId": 221079
+      },
+      "updatedAt": "2026-10-04T13:11:52.619Z",
+      "likes": "Playing together\nPlaying tag\nFunny situations\n5-star milk<brDonutping",
+      "dislikes": "Being scolded\nHaving his pacifier taken away\n1-star milk\nBeing hungry\nPuffping (formerly)"
+    },
+    {
+      "id": "puddingping",
+      "nameKo": "푸딩핑",
+      "nameEn": "Puddingping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Weakness",
+      "intro": "",
+      "item": "Pudding jar",
+      "magic": "Make others dance",
+      "episodes": [
+        {
+          "episode": "Pudding Pudding, Pudding Dance",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#5C2012",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Puddingping",
+        "fandomRevId": 216029
+      },
+      "updatedAt": "2026-10-04T13:11:52.693Z",
+      "likes": "Dancing\nUpbeat music\nMaking and sharing pudding\nJellyping",
+      "dislikes": "Herself (formerly)\nBeing laughed at"
+    },
+    {
+      "id": "pancakeping",
+      "nameKo": "핫케핑",
+      "nameEn": "Pancakeping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Accomplishment",
+      "intro": "",
+      "item": "Frying pan",
+      "magic": "Stacking up things",
+      "episodes": [
+        {
+          "episode": "Stack It Up, Pancakeping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E99200",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Pancakeping",
+        "fandomRevId": 216598
+      },
+      "updatedAt": "2026-10-04T13:11:52.692Z",
+      "likes": "Stacking\nHelping others\nHard working people",
+      "dislikes": "Objects being scattered around"
+    },
+    {
+      "id": "puffping",
+      "nameKo": "뿌뿌핑",
+      "nameEn": "Puffping",
+      "season": "4기 디저트",
+      "seasonKey": "dessert",
+      "grade": "빌런",
+      "gender": "남성",
+      "emotion": "Interest",
+      "intro": "",
+      "item": "Gumball Dispenser\nGumball Gun (corrupted)",
+      "magic": "Flying\nInflation\nShoot Bubbles\nShapeshift into a giant monster\nFire Lasers\nSummon a portal to Dessert Town\nSummon a Sugar Shield",
+      "episodes": [
+        {
+          "episode": "Sweet Dessert Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E41A54",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Puffping",
+        "fandomRevId": 220003
+      },
+      "updatedAt": "2026-10-04T13:11:52.693Z",
+      "likes": "The Magic Sugar Ball\nSweetping\nTangyping",
+      "dislikes": "Returning the Magic Sugar Ball (formerly)\nBeing alone"
+    },
+    {
+      "id": "shimmerping",
+      "nameKo": "빛나핑",
+      "nameEn": "Shimmerping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Healing",
+      "intro": "",
+      "item": "Flute",
+      "magic": "Transform Romi into Princess Starlight",
+      "episodes": [
+        {
+          "episode": "The Girl Who Came Upon a Star",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "sparkleping",
+          "label": "친구"
+        },
+        {
+          "id": "twinkleping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#A7C4E3",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shimmerping",
+        "fandomRevId": 215058
+      },
+      "updatedAt": "2026-10-04T13:11:52.695Z",
+      "likes": "Ice\nSnow\nClassical plays",
+      "dislikes": "Heat\nSomeone getting hurt\nWounds"
+    },
+    {
+      "id": "twinkleping",
+      "nameKo": "빤짝핑",
+      "nameEn": "Twinkleping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Brightness",
+      "intro": "",
+      "item": "Puppet Fairy",
+      "magic": "Transform Romi into Princess Lunashine",
+      "episodes": [
+        {
+          "episode": "The Girl Who Came Upon a Star",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "sparkleping",
+          "label": "친구"
+        },
+        {
+          "id": "shimmerping",
+          "label": "친구"
+        },
+        {
+          "id": "dazzleping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#47829D",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Twinkleping",
+        "fandomRevId": 218460
+      },
+      "updatedAt": "2026-10-04T13:11:52.722Z",
+      "likes": "Hats\nBright lights\nSunny days\nLaughter",
+      "dislikes": "Serious moods\nDrooling on books\nTearing up books\nDoodling"
+    },
+    {
+      "id": "princeping",
+      "nameKo": "왕자핑",
+      "nameEn": "Princeping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "로열",
+      "gender": "남성",
+      "emotion": "Longing",
+      "intro": "",
+      "item": "Magic wand\nUnicorn Teeniepet\nCarriage",
+      "magic": "Transform Noah into Prince Noah",
+      "episodes": [
+        {
+          "episode": "Follow Kissyping and Go Thirty Thousand Miles (cameo)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "auroraping",
+          "label": "친구"
+        },
+        {
+          "id": "twinkleping",
+          "label": "친구"
+        },
+        {
+          "id": "shimmerping",
+          "label": "친구"
+        },
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "sparkleping",
+          "label": "친구"
+        },
+        {
+          "id": "kissyping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#0D579D",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Princeping",
+        "fandomRevId": 221086
+      },
+      "updatedAt": "2026-10-04T13:11:52.700Z",
+      "likes": "Eternal promises\nCelestial observations\nStargazing\nAuroraping\nKissyping",
+      "dislikes": "Breakups\nFights\nLoss of dignity\nWhen Auroraping leaves him"
+    },
+    {
+      "id": "sparkleping",
+      "nameKo": "초롱핑",
+      "nameEn": "Sparkleping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Wish",
+      "intro": "",
+      "item": "Star Fairy Teeniepet\nHairpin",
+      "magic": "Transform Romi into Princess Glamstar",
+      "episodes": [
+        {
+          "episode": "The Girl Who Came Upon a Star",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "twinkleping",
+          "label": "친구"
+        },
+        {
+          "id": "shimmerping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#66C4D2",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sparkleping",
+        "fandomRevId": 220979
+      },
+      "updatedAt": "2026-10-04T13:11:52.697Z",
+      "likes": "Herself\nHer own reflection\nGolden stars",
+      "dislikes": "Self-reproach\nSelf-deprecation\nBlaming\nDarkness\nCarrots (in CookieRun: Ovenbreak)"
+    },
+    {
+      "id": "auroraping",
+      "nameKo": "오로라핑",
+      "nameEn": "Auroraping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "레전드",
+      "gender": "여성",
+      "emotion": "Promise",
+      "intro": "",
+      "item": "Bow and arrow",
+      "magic": "Transform Romi into Princess Aurora",
+      "episodes": [
+        {
+          "episode": "Auroraping of Promise",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#ED7BB0",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Auroraping",
+        "fandomRevId": 221047
+      },
+      "updatedAt": "2026-10-04T13:11:52.622Z",
+      "likes": "Space\nStars\nKeeping promises\nPrinceping",
+      "dislikes": "Neglect\nBreaking promises\nPrinceping being lost"
+    },
+    {
+      "id": "dazzleping",
+      "nameKo": "고고핑",
+      "nameEn": "Dazzleping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Rapidness",
+      "intro": "",
+      "item": "Pop gun\nRoller skates",
+      "magic": "Change the speed of the target",
+      "episodes": [
+        {
+          "episode": "Dazzleping Doesn't Stop",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#64B7DC",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dazzleping",
+        "fandomRevId": 215037
+      },
+      "updatedAt": "2026-10-04T13:11:52.624Z",
+      "likes": "Roller skating\nRunning\nTag\nTwinkleping",
+      "dislikes": "Staying still\nWalking slowly"
+    },
+    {
+      "id": "mightyping",
+      "nameKo": "고마핑",
+      "nameEn": "Mightyping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Strength",
+      "intro": "",
+      "item": "Honey Pot",
+      "magic": "Give herself super strength",
+      "episodes": [
+        {
+          "episode": "The Strong Teenieping, Mightyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E2829E",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mightyping",
+        "fandomRevId": 215050
+      },
+      "updatedAt": "2026-10-04T13:11:52.666Z",
+      "likes": "Hard work\nHoney\nFairness\nKindness\nHelping others",
+      "dislikes": "Angry people\nVegetables\nBullies\nPicking on the weak\nUnfairness"
+    },
+    {
+      "id": "hopping",
+      "nameKo": "깡총핑",
+      "nameEn": "Hopping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Overcoming",
+      "intro": "",
+      "item": "Skipping rope",
+      "magic": "Make others jump around",
+      "episodes": [
+        {
+          "episode": "Hop Hop, Hopping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#DAACCC",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hopping",
+        "fandomRevId": 220815
+      },
+      "updatedAt": "2026-10-04T13:11:52.665Z",
+      "likes": "Driving\nJumping rope\nJumping jacks\nCarrot juice",
+      "dislikes": "Falling down and not getting up\nGiving up"
+    },
+    {
+      "id": "petitping",
+      "nameKo": "나그네핑",
+      "nameEn": "Petitping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Ideal",
+      "intro": "",
+      "item": "Paper Boat",
+      "magic": "Make others forget their bad memories\nMake shapes out of his paper boat",
+      "episodes": [
+        {
+          "episode": "Wandering Petitping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#73C3AA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Petitping",
+        "fandomRevId": 220234
+      },
+      "updatedAt": "2026-10-04T13:11:52.699Z",
+      "likes": "Wandering around\nCatching stars",
+      "dislikes": "Entanglement"
+    },
+    {
+      "id": "giverping",
+      "nameKo": "나눔핑",
+      "nameEn": "Giverping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Charity",
+      "intro": "",
+      "item": "Star Candy\nStar shaped hair",
+      "magic": "Eat a star candy and give light to dark objects",
+      "episodes": [
+        {
+          "episode": "Share the Light, Giverping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#90C6C6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Giverping",
+        "fandomRevId": 215043
+      },
+      "updatedAt": "2026-10-04T13:11:52.663Z",
+      "likes": "Being generous\nLightness\nListening to stories\nSharing\nEmpathizing",
+      "dislikes": "Darkness\nFrustration\nNegative emotions or situations"
+    },
+    {
+      "id": "bellaping",
+      "nameKo": "다롱핑",
+      "nameEn": "Bellaping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Harmony",
+      "intro": "",
+      "item": "Snare drum",
+      "magic": "Make objects smaller",
+      "episodes": [
+        {
+          "episode": "I Want To Meet You, Ellaping, Bellaping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#745DA7",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bellaping",
+        "fandomRevId": 220758
+      },
+      "updatedAt": "2026-10-04T13:11:52.621Z",
+      "likes": "Being together\nGames in two\nEllaping\nPlaygrounds\nSmall objects",
+      "dislikes": "Separation\nThings that makes Ellaping sad\nScary stories"
+    },
+    {
+      "id": "swayping",
+      "nameKo": "댄스핑",
+      "nameEn": "Swayping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Excitement",
+      "intro": "",
+      "item": "Collar bell\nRecorder\nJar",
+      "magic": "Make anyone and anything dance excitedly and swiftly",
+      "episodes": [
+        {
+          "episode": "Swayping's Dance Is Five Stars",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E99424",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Swayping",
+        "fandomRevId": 215818
+      },
+      "updatedAt": "2026-10-04T13:11:52.723Z",
+      "likes": "Happiness\nDancing\nExciting music\nFive star scores",
+      "dislikes": "Quiet places\nStaying still\nA score below five stars"
+    },
+    {
+      "id": "dingdongping",
+      "nameKo": "딩동핑",
+      "nameEn": "Dingdongping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Dispensation",
+      "intro": "",
+      "item": "Space Suit Helmet",
+      "magic": "Deliver items to the target",
+      "episodes": [
+        {
+          "episode": "Hearts in One: Harmonious! (cameo)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#B16AA6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dingdongping",
+        "fandomRevId": 220849
+      },
+      "updatedAt": "2026-10-04T13:11:52.627Z",
+      "likes": "Delivering\nFlying\nGoing to new places",
+      "dislikes": "Delivery mistakes\nRainy days"
+    },
+    {
+      "id": "doremiping",
+      "nameKo": "루루핑",
+      "nameEn": "Doremiping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Talent",
+      "intro": "",
+      "item": "Guitar",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "Singing With Doremiping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#EA8DB6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Doremiping",
+        "fandomRevId": 215518
+      },
+      "updatedAt": "2026-10-04T13:11:52.623Z",
+      "likes": "Singing\nListening to songs\nFans",
+      "dislikes": "Situations without a song"
+    },
+    {
+      "id": "sneakyping",
+      "nameKo": "몰래핑",
+      "nameEn": "Sneakyping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Usurpation",
+      "intro": "",
+      "item": "Tarot Card",
+      "magic": "Steal others' bad selves",
+      "episodes": [
+        {
+          "episode": "Steal Secretly! Sneakyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#59BBCF",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Sneakyping",
+        "fandomRevId": 217697
+      },
+      "updatedAt": "2026-10-04T13:11:52.697Z",
+      "likes": "Looking into someone's mind\nTake things secretly",
+      "dislikes": "Being recognized\nLosing her tarot cards"
+    },
+    {
+      "id": "kissyping",
+      "nameKo": "뽀뽀핑",
+      "nameEn": "Kissyping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Innocence",
+      "intro": "",
+      "item": "Stroller\nStar cushion",
+      "magic": "Blow a kiss to anyone to make their hearts softened\nHeal anyone's injuries",
+      "episodes": [
+        {
+          "episode": "Follow Kissyping and Go Thirty Thousand Miles",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "princeping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#EBB6D3",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Kissyping",
+        "fandomRevId": 221071
+      },
+      "updatedAt": "2026-10-04T13:11:52.664Z",
+      "likes": "Her pacifier\nBeing kind to others\nPurity\nKisses\nPrinceping",
+      "dislikes": "Lies\nBad thoughts\nScreaming"
+    },
+    {
+      "id": "snuggyping",
+      "nameKo": "뽀송핑",
+      "nameEn": "Snuggyping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Warmth",
+      "intro": "",
+      "item": "Three sheep\nWashing machine\nClothes liner",
+      "magic": "Makes objects soft and clean",
+      "episodes": [
+        {
+          "episode": "Snuggyping's Fluffy Laundry",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#7BB864",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Snuggyping",
+        "fandomRevId": 221099
+      },
+      "updatedAt": "2026-10-04T13:11:52.698Z",
+      "likes": "Coziness\nSoftness\nSoft and warm places",
+      "dislikes": "Hardness\nColdness\nLoneliness\nDark, damp, cold, and hard places"
+    },
+    {
+      "id": "stickerping",
+      "nameKo": "뿌쵸핑",
+      "nameEn": "Stickerping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Exhibition",
+      "intro": "",
+      "item": "Sticker book",
+      "magic": "Make the target into stickers and collect them in a sticker book",
+      "episodes": [
+        {
+          "episode": "Stickerping With Stickers",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E67CAD",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Stickerping",
+        "fandomRevId": 215067
+      },
+      "updatedAt": "2026-10-04T13:11:52.698Z",
+      "likes": "Collecting stickers\nDecorating with stickers\nPretty and cute things",
+      "dislikes": "Something monotonous\nSomething that damages the sticker"
+    },
+    {
+      "id": "ellaping",
+      "nameKo": "아롱핑",
+      "nameEn": "Ellaping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Harmony",
+      "intro": "",
+      "item": "Bass drum",
+      "magic": "Make objects larger",
+      "episodes": [
+        {
+          "episode": "I Want To Meet You, Ellaping, Bellaping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#AD7EB6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Ellaping",
+        "fandomRevId": 220757
+      },
+      "updatedAt": "2026-10-04T13:11:52.626Z",
+      "likes": "Large objects\nLooking in the mirror\nBeing together\nGames in two\nBellaping",
+      "dislikes": "Separation\nBellaping crying\nHer clothes getting dirty"
+    },
+    {
+      "id": "allureping",
+      "nameKo": "여우핑",
+      "nameEn": "Allureping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Bewitchment",
+      "intro": "",
+      "item": "Hourglass",
+      "magic": "Make multiple copies of herself",
+      "episodes": [
+        {
+          "episode": "Naughty Allureping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E5A8CA",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Allureping",
+        "fandomRevId": 215033
+      },
+      "updatedAt": "2026-10-04T13:11:52.625Z",
+      "likes": "Pranks\nFunny situations\nSurprises",
+      "dislikes": "Tail grabbing\nBathing\nBoring stuff"
+    },
+    {
+      "id": "lucyping",
+      "nameKo": "유리핑",
+      "nameEn": "Lucyping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Transparency",
+      "intro": "",
+      "item": "Glass jewelry box",
+      "magic": "Turn anyone, anything, and herself invisible",
+      "episodes": [
+        {
+          "episode": "I Want To Become Transparent, Lucyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#83D5EC",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lucyping",
+        "fandomRevId": 216464
+      },
+      "updatedAt": "2026-10-04T13:11:52.664Z",
+      "likes": "Everything made of glass\nQuietness\nHonesty",
+      "dislikes": "Heights\nGetting hurt"
+    },
+    {
+      "id": "togetherping",
+      "nameKo": "함께핑",
+      "nameEn": "Togetherping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Teamwork",
+      "intro": "",
+      "item": "Rainbow paint roller",
+      "magic": "Make others work together",
+      "episodes": [
+        {
+          "episode": "Let's Do It Together, Togetherping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#F19BC7",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Togetherping",
+        "fandomRevId": 215070
+      },
+      "updatedAt": "2026-10-04T13:11:52.724Z",
+      "likes": "Doing things together\nFriends\nBustling atmospheres",
+      "dislikes": "Others not cooperating\nBeing alone"
+    },
+    {
+      "id": "hulaping",
+      "nameKo": "훌라핑",
+      "nameEn": "Hulaping",
+      "season": "5기 스타",
+      "seasonKey": "star",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Activity",
+      "intro": "",
+      "item": "Hula Hoop",
+      "magic": "Make the subject spin the hula hoop happily",
+      "episodes": [
+        {
+          "episode": "The Queen of Hula Hoop",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#4EBFED",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Hulaping",
+        "fandomRevId": 215111
+      },
+      "updatedAt": "2026-10-04T13:11:52.665Z",
+      "likes": "Spinning the hula hoop\nPutting rings on stars using her Tinkle Puff",
+      "dislikes": "Squares\nObjects that aren't able to be put with rings"
+    },
+    {
+      "id": "bonnyping",
+      "nameKo": "뽀니핑",
+      "nameEn": "Bonnyping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Confidence",
+      "intro": "",
+      "item": "Magic wand",
+      "magic": "Transform Romi into Princess Bonita\nShoot jolts of electricity at others",
+      "episodes": [
+        {
+          "episode": "All Aboard! The Train to the Princess Summit",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "graceping",
+          "label": "친구"
+        },
+        {
+          "id": "claireping",
+          "label": "친구"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#9AC891",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bonnyping",
+        "fandomRevId": 218316
+      },
+      "updatedAt": "2026-10-04T13:11:52.630Z",
+      "likes": "Creating hairstyles\nLeadership\nHanging out with her friends\nHair magazines\nBeauty tools\nHair dryer breeze\nInstant noodles\nLemon pie",
+      "dislikes": "Messy hair\nUnproper dyeing\nGreen onions\nOverworking\nSelfishness\nGetting trapped"
+    },
+    {
+      "id": "graceping",
+      "nameKo": "사뿐핑",
+      "nameEn": "Graceping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Grace",
+      "intro": "",
+      "item": "Magic wand",
+      "magic": "Transform Romi into Princess Plié\nSummon feathers to do various tasks",
+      "episodes": [
+        {
+          "episode": "All Aboard! The Train to the Princess Summit",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "claireping",
+          "label": "친구"
+        },
+        {
+          "id": "bonnyping",
+          "label": "친구"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#92D9F5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Graceping",
+        "fandomRevId": 218834
+      },
+      "updatedAt": "2026-10-04T13:11:52.667Z",
+      "likes": "Dancing ballet\nCultured attitudes\nDignity\nMilk tea\nCakes",
+      "dislikes": "Not maintaining cleanliness\nFrivolous attitudes\nSpicy foods"
+    },
+    {
+      "id": "claireping",
+      "nameKo": "아름핑",
+      "nameEn": "Claireping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "Beauty",
+      "intro": "",
+      "item": "Magic wand",
+      "magic": "Transform Romi into Princess Fantana\nWrap others in fabric\nSummon needles\nMake her Royal Mark disappear",
+      "episodes": [
+        {
+          "episode": "All Aboard! The Train to the Princess Summit",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "graceping",
+          "label": "친구"
+        },
+        {
+          "id": "bonnyping",
+          "label": "친구"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#EE9FC2",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Claireping",
+        "fandomRevId": 218315
+      },
+      "updatedAt": "2026-10-04T13:11:52.629Z",
+      "likes": "Fashion\nSewing\nClothes\nFashion magazines\nNew fabrics\nPeaches\nBlack tea",
+      "dislikes": "Magic not working\nFashion failure\nClothes with holes\nNoodles"
+    },
+    {
+      "id": "dianaping",
+      "nameKo": "다이아나핑",
+      "nameEn": "Dianaping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "레전드",
+      "gender": "여성",
+      "emotion": "Glory",
+      "intro": "",
+      "item": "Mirror\nMagic wand\nCar",
+      "magic": "Transform Romi into Princess Luminous",
+      "episodes": [
+        {
+          "episode": "The Princess Ball",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "eclipseping",
+          "label": "라이벌"
+        },
+        {
+          "id": "mirror-spirit",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#D09EC8",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dianaping",
+        "fandomRevId": 218325
+      },
+      "updatedAt": "2026-10-04T13:11:52.636Z",
+      "likes": "Tea time\nGatherings\nSocial parties\nLooking in the mirror\nBlack tea\nMilk\nScones\nStrawberry jam\nBlueberries",
+      "dislikes": "Conflicts\nChocolate milk"
+    },
+    {
+      "id": "eclipseping",
+      "nameKo": "이클립스핑",
+      "nameEn": "Eclipseping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "레전드",
+      "gender": "여성",
+      "emotion": "Seclusion",
+      "intro": "",
+      "item": "Magic Mirror\nMagic wand\nCar",
+      "magic": "Transform Romi into Princess Darkness",
+      "episodes": [
+        {
+          "episode": "Who Are You in the Mirror?",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "henryping",
+          "label": "친구"
+        },
+        {
+          "id": "mirror-spirit",
+          "label": "친구"
+        },
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "happying",
+          "label": "라이벌"
+        },
+        {
+          "id": "fluffyping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#241B38",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Eclipseping",
+        "fandomRevId": 220735
+      },
+      "updatedAt": "2026-10-04T13:11:52.635Z",
+      "likes": "Trapping Dianaping (formerly)\nStealing the Princess Pact (formerly)\nBeing the Queen of Darkness (formerly)\nCute things\nTaking photos\nGames\nMeringue cookies\nFoods with cute decorations",
+      "dislikes": "Dianaping (formerly)\nBeing ignored or left behind by Dianaping\nFailing her evil plans (formerly)\nFoods with a strong smell or without decorations"
+    },
+    {
+      "id": "frogping",
+      "nameKo": "깨굴핑",
+      "nameEn": "Frogping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Slyness",
+      "intro": "",
+      "item": "Lotus Leaf Umbrella",
+      "magic": "Make others croak like frogs",
+      "episodes": [
+        {
+          "episode": "The Three Musketeers Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "charlesping",
+          "label": "친구"
+        },
+        {
+          "id": "trotping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#009376",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Frogping",
+        "fandomRevId": 215229
+      },
+      "updatedAt": "2026-10-04T13:11:52.667Z",
+      "likes": "Mischief\nSlyness\nLotus flowers and leaves\nPonds\nWater",
+      "dislikes": "Authority\nHard work\nUnfairness\nBeing ignored\nPunishment\nFrogs"
+    },
+    {
+      "id": "flitterping",
+      "nameKo": "나비핑",
+      "nameEn": "Flitterping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Lightness",
+      "intro": "",
+      "item": "Wings",
+      "magic": "Give anyone and anything wings to make them fly\nFlight",
+      "episodes": [
+        {
+          "episode": "Give Me Wings, Flitterping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#94D5F0",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Flitterping",
+        "fandomRevId": 215228
+      },
+      "updatedAt": "2026-10-04T13:11:52.632Z",
+      "likes": "Butterflies\nBirds\nFlying",
+      "dislikes": "Being alone\nHawks (formerly)"
+    },
+    {
+      "id": "glossyping",
+      "nameKo": "롱롱핑",
+      "nameEn": "Glossyping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Growth",
+      "intro": "",
+      "item": "Comb",
+      "magic": "Restore hair to others",
+      "episodes": [
+        {
+          "episode": "Long Hair Fluttering and Glossyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E09BC2",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Glossyping",
+        "fandomRevId": 215230
+      },
+      "updatedAt": "2026-10-04T13:11:52.668Z",
+      "likes": "Long hair\nCombing",
+      "dislikes": "Tangled hair"
+    },
+    {
+      "id": "scrubping",
+      "nameKo": "뽀득핑",
+      "nameEn": "Scrubping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Refreshment",
+      "intro": "",
+      "item": "Shower head",
+      "magic": "Shoot bubbles at others to cover their bodies and make them clean",
+      "episodes": [
+        {
+          "episode": "Scrubping Is Scrub Scrub Scrub",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#0DB7E5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Scrubping",
+        "fandomRevId": 220017
+      },
+      "updatedAt": "2026-10-04T13:11:52.701Z",
+      "likes": "Baths\nShowers\nBathtubs",
+      "dislikes": "Dirty things\nSlime"
+    },
+    {
+      "id": "charlesping",
+      "nameKo": "샤를핑",
+      "nameEn": "Charlesping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Honor",
+      "intro": "",
+      "item": "Toy sword",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "The Three Musketeers Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "trotping",
+          "label": "친구"
+        },
+        {
+          "id": "frogping",
+          "label": "친구"
+        },
+        {
+          "id": "henryping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#025297",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Charlesping",
+        "fandomRevId": 216962
+      },
+      "updatedAt": "2026-10-04T13:11:52.632Z",
+      "likes": "Honor\nChivalry\nHelping\nFriendship\nJustice\nNeatness\nSocializing\nWhite horses\nJewels",
+      "dislikes": "Dishonor\nChaos\nBullying\nLaziness"
+    },
+    {
+      "id": "rellaping",
+      "nameKo": "슈슈핑",
+      "nameEn": "Rellaping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Sincerity",
+      "intro": "",
+      "item": "Glass slippers\nMusic box",
+      "magic": "Trap others in a time loop",
+      "episodes": [
+        {
+          "episode": "Turn Back Time, Rellaping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#75A8D9",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Rellaping",
+        "fandomRevId": 221087
+      },
+      "updatedAt": "2026-10-04T13:11:52.702Z",
+      "likes": "Dianaping\nDancing\nBalls\nShoes\nDonuts",
+      "dislikes": "Midnight\nHumiliation"
+    },
+    {
+      "id": "snowping",
+      "nameKo": "스노우핑",
+      "nameEn": "Snowping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Freezing",
+      "intro": "",
+      "item": "Skis\nSki poles",
+      "magic": "Create piles of snow\nFreeze surface areas",
+      "episodes": [
+        {
+          "episode": "Cold and Frozen, Snowping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#64C5E7",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Snowping",
+        "fandomRevId": 215247
+      },
+      "updatedAt": "2026-10-04T13:11:52.702Z",
+      "likes": "Shaved ice\nIce\nSkiing",
+      "dislikes": "Heat"
+    },
+    {
+      "id": "silkyping",
+      "nameKo": "실크핑",
+      "nameEn": "Silkyping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Adventure",
+      "intro": "",
+      "item": "Magic Carpet",
+      "magic": "Making objects move by placing strings\nHandle the carpet freely",
+      "episodes": [
+        {
+          "episode": "Silkyping and the Magic Carpet",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E65EA1",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Silkyping",
+        "fandomRevId": 220210
+      },
+      "updatedAt": "2026-10-04T13:11:52.701Z",
+      "likes": "Treasures\nFancy things\nMagic Carpet",
+      "dislikes": "Old things"
+    },
+    {
+      "id": "kittyping",
+      "nameKo": "야옹핑",
+      "nameEn": "Kittyping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Snootiness",
+      "intro": "",
+      "item": "Ball of yarn",
+      "magic": "Clip herself into surfaces to hide from others",
+      "episodes": [
+        {
+          "episode": "Hide and Seek! Kittyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#6AA4AD",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Kittyping",
+        "fandomRevId": 220988
+      },
+      "updatedAt": "2026-10-04T13:11:52.668Z",
+      "likes": "Acting like a cat\nBalls of yarn\nFeathers\nHide and Seek\nKittens\nFresh fish\nBoxes",
+      "dislikes": "Getting distracted\nTrash cans\nBeing hungry"
+    },
+    {
+      "id": "dewping",
+      "nameKo": "이슬핑",
+      "nameEn": "Dewping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Innocence",
+      "intro": "",
+      "item": "Dewy flower",
+      "magic": "Give dewdrops from flowers to others to make them energized",
+      "episodes": [
+        {
+          "episode": "A Single Drop of Dew From Dewping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#5ABDAD",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dewping",
+        "fandomRevId": 215224
+      },
+      "updatedAt": "2026-10-04T13:11:52.633Z",
+      "likes": "Flowers\nFlower buds",
+      "dislikes": "Pests"
+    },
+    {
+      "id": "henryping",
+      "nameKo": "젠틀핑",
+      "nameEn": "Henryping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Politeness",
+      "intro": "",
+      "item": "Umbrella",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "The Spinning Mirror (cameo)",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "dianaping",
+          "label": "친구"
+        },
+        {
+          "id": "eclipseping",
+          "label": "친구"
+        },
+        {
+          "id": "charlesping",
+          "label": "친구"
+        },
+        {
+          "id": "trotping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#41B79D",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Henryping",
+        "fandomRevId": 215232
+      },
+      "updatedAt": "2026-10-04T13:11:52.669Z"
+    },
+    {
+      "id": "charmingping",
+      "nameKo": "차밍핑",
+      "nameEn": "Charmingping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Whimsy",
+      "intro": "",
+      "item": "Handbag\nOpera Glasses",
+      "magic": "Summon items that helps others look more charming",
+      "episodes": [
+        {
+          "episode": "I'll Help You Find Your Charm, Charmingping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#07A6E0",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Charmingping",
+        "fandomRevId": 218298
+      },
+      "updatedAt": "2026-10-04T13:11:52.631Z",
+      "likes": "Charming objects",
+      "dislikes": "Someone who looks unimpressed\nBad appearances\nShopping bags with holes in them"
+    },
+    {
+      "id": "choruspings",
+      "nameKo": "코러스핑",
+      "nameEn": "Choruspings",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "",
+      "item": "Rose",
+      "magic": "N/A",
+      "episodes": [
+        {
+          "episode": "Heart-to-Heart, Cupidping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "trotping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "hsl(315 70% 80%)",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Choruspings",
+        "fandomRevId": 216424
+      },
+      "updatedAt": "2026-10-04T13:11:52.637Z"
+    },
+    {
+      "id": "dozyping",
+      "nameKo": "쿨쿨핑",
+      "nameEn": "Dozyping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Dormancy",
+      "intro": "",
+      "item": "Plush pillow",
+      "magic": "Put others who hear the loud snoring to sleep",
+      "episodes": [
+        {
+          "episode": "I Really Love Taking Naps! Dozyping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#9A81BB",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Dozyping",
+        "fandomRevId": 215226
+      },
+      "updatedAt": "2026-10-04T13:11:52.634Z",
+      "likes": "Sleeping\nVideo games\nPlaying at night\nStaying up late\nLullabies",
+      "dislikes": "Being disturbed\nAlarm clocks\nNoise"
+    },
+    {
+      "id": "cupidping",
+      "nameKo": "큐핑",
+      "nameEn": "Cupidping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "Revelation",
+      "intro": "",
+      "item": "Bow and arrows",
+      "magic": "Reveal others' inner thoughts",
+      "episodes": [
+        {
+          "episode": "Heart-to-Heart, Cupidping",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#EAA1C4",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cupidping",
+        "fandomRevId": 216953
+      },
+      "updatedAt": "2026-10-04T13:11:52.635Z",
+      "likes": "Archery\nLaughter\nBeing likable",
+      "dislikes": "Her bow being taken away\nFrowning\nAnger"
+    },
+    {
+      "id": "trotping",
+      "nameKo": "트롯핑",
+      "nameEn": "Trotping",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "Merriness",
+      "intro": "",
+      "item": "Microphone",
+      "magic": "Summon the Choruspings",
+      "episodes": [
+        {
+          "episode": "The Three Musketeers Teeniepings",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "charlesping",
+          "label": "친구"
+        },
+        {
+          "id": "frogping",
+          "label": "친구"
+        },
+        {
+          "id": "henryping",
+          "label": "친구"
+        },
+        {
+          "id": "choruspings",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#119AD5",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Trotping",
+        "fandomRevId": 216466
+      },
+      "updatedAt": "2026-10-04T13:11:52.725Z",
+      "likes": "Music\nSinging\nDancing\nParties\nTeamwork\nSongs\nFlashy lights",
+      "dislikes": "Boredom\nConflicts\nSadness\nSilence"
+    },
+    {
+      "id": "mirror-spirit",
+      "nameKo": "거울의 정령",
+      "nameEn": "Mirror Spirit",
+      "season": "6기 프린세스",
+      "seasonKey": "princess",
+      "grade": "빌런",
+      "gender": "남성",
+      "emotion": "",
+      "intro": "",
+      "item": "",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "Who Are You in the Mirror?",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "eclipseping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#1F4B3D",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Mirror_Spirit",
+        "fandomRevId": 215238
+      },
+      "updatedAt": "2026-10-04T13:11:52.670Z"
+    },
+    {
+      "id": "bubbleping",
+      "nameKo": "방울핑",
+      "nameEn": "Bubbleping",
+      "season": "극장판",
+      "seasonKey": "movie",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "",
+      "item": "Clam shell",
+      "magic": "Transform into a mermaid",
+      "episodes": [
+        {
+          "episode": "Teenieping: Legend of the Whale Heartstone",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "shellyping",
+          "label": "친구"
+        },
+        {
+          "id": "wavyping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#79CED6",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bubbleping",
+        "fandomRevId": 216417
+      },
+      "updatedAt": "2026-10-04T13:11:52.637Z",
+      "likes": "Playing with bubbles\nMaking bubbles",
+      "dislikes": "TBA"
+    },
+    {
+      "id": "shellyping",
+      "nameKo": "소라핑",
+      "nameEn": "Shellyping",
+      "season": "극장판",
+      "seasonKey": "movie",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "",
+      "item": "Conch",
+      "magic": "Transform into a mermaid",
+      "episodes": [
+        {
+          "episode": "Teenieping: Legend of the Whale Heartstone",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "wavyping",
+          "label": "친구"
+        },
+        {
+          "id": "bubbleping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#F481B4",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Shellyping",
+        "fandomRevId": 216416
+      },
+      "updatedAt": "2026-10-04T13:11:52.705Z",
+      "likes": "Blowing her conch shell\nShells",
+      "dislikes": "TBA"
+    },
+    {
+      "id": "wavyping",
+      "nameKo": "찰랑핑",
+      "nameEn": "Wavyping",
+      "season": "극장판",
+      "seasonKey": "movie",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "",
+      "intro": "",
+      "item": "Clam wand",
+      "magic": "Transform into a mermaid\nCreate waves\nCommunicate with sea creatures",
+      "episodes": [
+        {
+          "episode": "Teenieping: Legend of the Whale Heartstone",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "친구"
+        },
+        {
+          "id": "shellyping",
+          "label": "친구"
+        },
+        {
+          "id": "bubbleping",
+          "label": "친구"
+        }
+      ],
+      "colorHex": "#DD536F",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Wavyping",
+        "fandomRevId": 216415
+      },
+      "updatedAt": "2026-10-04T13:11:52.726Z",
+      "likes": "TBA",
+      "dislikes": "TBA"
+    },
+    {
+      "id": "soldierpings",
+      "nameKo": "병사핑",
+      "nameEn": "Soldierpings",
+      "season": "극장판",
+      "seasonKey": "movie",
+      "grade": "빌런",
+      "gender": "Varies",
+      "emotion": "",
+      "intro": "",
+      "item": "",
+      "magic": "",
+      "episodes": [
+        {
+          "episode": "Heartsping: Teenieping of Love",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [
+        {
+          "id": "heartsping",
+          "label": "라이벌"
+        }
+      ],
+      "colorHex": "#4B4955",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Soldierpings",
+        "fandomRevId": 204882
+      },
+      "updatedAt": "2026-10-04T13:11:52.700Z"
+    },
+    {
+      "id": "truthping",
+      "nameKo": "트러핑",
+      "nameEn": "Truthping",
+      "season": "극장판",
+      "seasonKey": "movie",
+      "grade": "빌런",
+      "gender": "남성",
+      "emotion": "",
+      "intro": "",
+      "item": "N/A",
+      "magic": "Using dark magic to shapeshift into a giant monster\nTransform the Emotion Teeniepings into soldiers or monsters\nCreate lightning and tsunamis",
+      "episodes": [
+        {
+          "episode": "Heartsping: Teenieping of Love",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#46BFEC",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Truthping",
+        "fandomRevId": 216305
+      },
+      "updatedAt": "2026-10-04T13:11:52.725Z",
+      "likes": "Liam\nHeartsping\nLoyalty\nSincerity\nRecognition\nAttention",
+      "dislikes": "Betrayal\nHumans (formerly)\nMisunderstandings"
+    },
+    {
+      "id": "limeping",
+      "nameKo": "라임핑",
+      "nameEn": "Limeping",
+      "season": "",
+      "seasonKey": "",
+      "grade": "로열",
+      "gender": "TBA",
+      "emotion": "TBA",
+      "intro": "",
+      "item": "Microphone",
+      "magic": "Transform Romi into Princess Polyphony",
+      "episodes": [
+        {
+          "episode": "TBA",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#6EBFCD",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Limeping",
+        "fandomRevId": 220981
+      },
+      "updatedAt": "2026-10-04T13:11:52.671Z",
+      "likes": "TBA",
+      "dislikes": "TBA",
+      "catchphrase": "TBA"
+    },
+    {
+      "id": "lemonping",
+      "nameKo": "레몬핑",
+      "nameEn": "Lemonping",
+      "season": "",
+      "seasonKey": "",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "TBA",
+      "intro": "",
+      "item": "Microphone",
+      "magic": "Transform Romi into Princess Brillanté",
+      "episodes": [
+        {
+          "episode": "TBA",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#64BE99",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Lemonping",
+        "fandomRevId": 220756
+      },
+      "updatedAt": "2026-10-04T13:11:52.672Z",
+      "likes": "TBA",
+      "dislikes": "TBA",
+      "catchphrase": "TBA"
+    },
+    {
+      "id": "cherryping",
+      "nameKo": "체리핑",
+      "nameEn": "Cherryping",
+      "season": "",
+      "seasonKey": "",
+      "grade": "로열",
+      "gender": "여성",
+      "emotion": "TBA",
+      "intro": "",
+      "item": "Microphone",
+      "magic": "Transform Romi into Princess Cantabile",
+      "episodes": [
+        {
+          "episode": "TBA",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#B08DC1",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Cherryping",
+        "fandomRevId": 220755
+      },
+      "updatedAt": "2026-10-04T13:11:52.639Z",
+      "likes": "TBA",
+      "dislikes": "TBA",
+      "catchphrase": "TBA"
+    },
+    {
+      "id": "meowping",
+      "nameKo": "냐냥핑",
+      "nameEn": "Meowping",
+      "season": "",
+      "seasonKey": "",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "TBA",
+      "intro": "",
+      "item": "Standing microphone",
+      "magic": "Command cats",
+      "episodes": [
+        {
+          "episode": "TBA",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#C2B2D7",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Meowping",
+        "fandomRevId": 220798
+      },
+      "updatedAt": "2026-10-04T13:11:52.670Z",
+      "likes": "TBA",
+      "dislikes": "TBA",
+      "catchphrase": "TBA"
+    },
+    {
+      "id": "bowwowping",
+      "nameKo": "시고르핑",
+      "nameEn": "Bowwowping",
+      "season": "",
+      "seasonKey": "",
+      "grade": "일반",
+      "gender": "남성",
+      "emotion": "TBA",
+      "intro": "",
+      "item": "Drumsticks\nMini drum set",
+      "magic": "Make others move to the drums' rhythm",
+      "episodes": [
+        {
+          "episode": "TBA",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#76CAED",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bowwowping",
+        "fandomRevId": 220857
+      },
+      "updatedAt": "2026-10-04T13:11:52.638Z",
+      "likes": "TBA",
+      "dislikes": "TBA",
+      "catchphrase": "TBA"
+    },
+    {
+      "id": "bouncyping",
+      "nameKo": "폴짝핑",
+      "nameEn": "Bouncyping",
+      "season": "",
+      "seasonKey": "",
+      "grade": "일반",
+      "gender": "여성",
+      "emotion": "TBA",
+      "intro": "",
+      "item": "Electric guitar",
+      "magic": "Make others dance like rabbits",
+      "episodes": [
+        {
+          "episode": "TBA",
+          "label": "첫 등장",
+          "plot": ""
+        }
+      ],
+      "relations": [],
+      "colorHex": "#E490BB",
+      "image": "",
+      "thumb": "",
+      "verified": false,
+      "source": {
+        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Bouncyping",
+        "fandomRevId": 220813
+      },
+      "updatedAt": "2026-10-04T13:11:52.638Z",
+      "likes": "TBA",
+      "dislikes": "TBA",
+      "catchphrase": "TBA"
+    }
+  ]
+}

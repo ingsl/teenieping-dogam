@@ -1,0 +1,52 @@
+{
+  "id": "jellyping",
+  "title": "Jellyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Jellyping",
+  "revid": 221063,
+  "fetchedAt": "2026-10-04T13:11:52.659Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Jellyping",
+  "nameKo": "말랑핑",
+  "gender": "여성",
+  "concept": "Fun",
+  "prop": "Bouncy ball",
+  "jewel": "",
+  "abilities": "Transform Romi into Princess Jellystin\nTurn an object into jelly\nCreate jelly\nStretch her limbs",
+  "likes": "Playing\nExercise\nNew things",
+  "dislikes": "Boring atmospheres",
+  "catchphrase": "",
+  "debut": "Sweet Dessert Teeniepings",
+  "colorHex": "#AC58A2",
+  "friends": [
+    "Dessert Teeniepings"
+  ],
+  "enemies": [
+    "Puffping"
+  ],
+  "categories": [
+    "Characters",
+    "Dessert Catch! Teenieping",
+    "Dessert Teeniepings",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Heroes",
+    "Main characters",
+    "Purple Teeniepings",
+    "Royal Teeniepings",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that wear clothes"
+  ],
+  "seasonKey": "dessert",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Jellyping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/7/79/Jellyping_Render_1.png/revision/latest?cb=20260602112434"
+}

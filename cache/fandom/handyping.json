@@ -1,0 +1,53 @@
+{
+  "id": "handyping",
+  "title": "Handyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Handyping",
+  "revid": 220407,
+  "fetchedAt": "2026-10-04T13:11:52.656Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Handyping",
+  "nameKo": "고쳐핑",
+  "gender": "남성",
+  "concept": "Repairment",
+  "prop": "Wrench\nToolbox",
+  "jewel": "",
+  "abilities": "Repair broken or damaged objects",
+  "likes": "Fixing things\nTools",
+  "dislikes": "Broken items",
+  "catchphrase": "",
+  "debut": "Please Repair This, Handyping",
+  "colorHex": "#F1AA1B",
+  "friends": [],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Key Teeniepings",
+    "Males",
+    "Minor characters",
+    "Orange Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear shoes",
+    "Yellow Teeniepings"
+  ],
+  "seasonKey": "secret",
+  "grade": "",
+  "images": [
+    {
+      "file": "Handyping Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Handyping Dwarf render 1.png",
+      "caption": "Dwarf"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/4/4e/Handyping_Render_1.png/revision/latest?cb=20260218033744"
+}

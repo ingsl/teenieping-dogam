@@ -1,0 +1,64 @@
+{
+  "id": "truthping",
+  "title": "Truthping",
+  "url": "https://catchteenieping.fandom.com/wiki/Truthping",
+  "revid": 216305,
+  "fetchedAt": "2026-10-04T13:11:52.725Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Truthping",
+  "nameKo": "트러핑",
+  "gender": "남성",
+  "concept": "",
+  "prop": "N/A",
+  "jewel": "",
+  "abilities": "Using dark magic to shapeshift into a giant monster\nTransform the Emotion Teeniepings into soldiers or monsters\nCreate lightning and tsunamis",
+  "likes": "Liam\nHeartsping\nLoyalty\nSincerity\nRecognition\nAttention",
+  "dislikes": "Betrayal\nHumans (formerly)\nMisunderstandings",
+  "catchphrase": "",
+  "debut": "Heartsping: Teenieping of Love",
+  "colorHex": "#46BFEC",
+  "friends": [
+    "Romi",
+    "Marie"
+  ],
+  "enemies": [
+    "Liam's father"
+  ],
+  "categories": [
+    "Antagonists",
+    "Blue Teeniepings",
+    "Characters",
+    "Corrupted characters",
+    "Heartsping: Teenieping of Love",
+    "Heroes",
+    "Males",
+    "Movie Teeniepings",
+    "Purple Teeniepings",
+    "Ramien Kingdom residents",
+    "Redeemed Antagonists",
+    "Spoiler articles",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that can turn into monsters",
+    "Teeniepings that do not have catchphrases"
+  ],
+  "seasonKey": "movie",
+  "grade": "빌런",
+  "images": [
+    {
+      "file": "Truthping Normal Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Truthping Corrupted Render 1.png",
+      "caption": "Corrupted"
+    },
+    {
+      "file": "M1 - Monstrous Truthping summoning lightning to attack Romi and Liam.jpeg",
+      "caption": "Monster"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/a/ac/Truthping_Normal_Render_1.png/revision/latest?cb=20260201175548"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "shellyping",
+  "title": "Shellyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Shellyping",
+  "revid": 216416,
+  "fetchedAt": "2026-10-04T13:11:52.705Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Shellyping",
+  "nameKo": "소라핑",
+  "gender": "여성",
+  "concept": "",
+  "prop": "Conch",
+  "jewel": "",
+  "abilities": "Transform into a mermaid",
+  "likes": "Blowing her conch shell\nShells",
+  "dislikes": "TBA",
+  "catchphrase": "",
+  "debut": "Teenieping: Legend of the Whale Heartstone",
+  "colorHex": "#F481B4",
+  "friends": [
+    "Romi",
+    "Heartsping",
+    "Wavyping",
+    "Bubbleping"
+  ],
+  "enemies": [
+    "Levius"
+  ],
+  "categories": [
+    "Characters",
+    "Females",
+    "Mermaid Teeniepings",
+    "Movie Teeniepings",
+    "Pink Teeniepings",
+    "Sea Teeniepings",
+    "Spoiler articles",
+    "Stub articles",
+    "Teenieping: Legend of the Whale Heartstone",
+    "Teeniepings"
+  ],
+  "seasonKey": "movie",
+  "grade": "",
+  "images": [
+    {
+      "file": "Shellyping Normal Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Shellyping Mermaid Render 1.png",
+      "caption": "Mermaid"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/2/20/Shellyping_Normal_Render_1.png/revision/latest?cb=20260626093001"
+}

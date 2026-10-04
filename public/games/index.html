@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>티니핑 게임</title>
+  <meta name="description" content="티니핑 메모리 게임과 퍼즐 게임 — 난이도별로 즐겨요.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../"><span class="heart">💖</span>티니핑 도감</a>
+      <nav class="site-nav" aria-label="주 메뉴">
+        <a href="../">도감</a>
+        <a href="./" aria-current="page">게임</a>
+        <a href="#" id="random-link">랜덤핑</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>티니핑 게임</h1>
+      <p>하고 싶은 게임을 골라요!</p>
+    </section>
+    <div class="game-menu">
+      <a class="game-tile" href="memory.html">
+        <div class="emoji">🃏</div>
+        <h2>메모리 게임</h2>
+        <p>뒤집힌 카드 속 같은 티니핑 짝을 찾아요.<br>3×4 · 4×4 · 5×5 · 6×6 · 8×8</p>
+      </a>
+      <a class="game-tile" href="puzzle.html">
+        <div class="emoji">🧩</div>
+        <h2>퍼즐 게임</h2>
+        <p>조각을 맞춰 티니핑 그림을 완성해요.<br>쉬움 3×3 · 보통 4×4 · 어려움 5×5 · 고수 6×6</p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p><strong>비공식·비영리 팬 페이지</strong>입니다. 광고·후원·판매 등 어떠한 수익화도 하지 않습니다.</p>
+      <p>'캐치! 티니핑' 캐릭터의 이름·이미지 등 모든 권리는 <strong>SAMG엔터테인먼트</strong>에 있습니다.</p>
+    </div>
+  </footer>
+  <script type="module" src="../js/random.js"></script>
+</body>
+</html>

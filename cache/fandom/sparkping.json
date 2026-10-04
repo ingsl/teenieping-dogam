@@ -1,0 +1,44 @@
+{
+  "id": "sparkping",
+  "title": "Sparkping",
+  "url": "https://catchteenieping.fandom.com/wiki/Sparkping",
+  "revid": 220406,
+  "fetchedAt": "2026-10-04T13:11:52.678Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Sparkping",
+  "nameKo": "찌릿핑",
+  "gender": "남성",
+  "concept": "Thrill",
+  "prop": "Lightning staff",
+  "jewel": "",
+  "abilities": "Control and travel through electricity",
+  "likes": "Electricity\nLight bulbs\nThunder\nLightning",
+  "dislikes": "Power outages\nBroken light bulbs\nBoredom",
+  "catchphrase": "",
+  "debut": "The Electric Touch",
+  "colorHex": "#133278",
+  "friends": [],
+  "enemies": [],
+  "categories": [
+    "Blue Teeniepings",
+    "Characters",
+    "Emotion Teenieping",
+    "Emotion Teeniepings",
+    "Emotions Kingdom residents",
+    "Males",
+    "Minor characters",
+    "Star articles",
+    "Teeniepings"
+  ],
+  "seasonKey": "emotion",
+  "grade": "",
+  "images": [
+    {
+      "file": "Sparkping Render 2.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/0/0f/Sparkping_Render_2.png/revision/latest?cb=20260202201950"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "cureping",
+  "title": "Cureping",
+  "url": "https://catchteenieping.fandom.com/wiki/Cureping",
+  "revid": 214494,
+  "fetchedAt": "2026-10-04T13:11:52.615Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Cureping",
+  "nameKo": "삐뽀핑",
+  "gender": "여성",
+  "concept": "Health",
+  "prop": "First-aid kit",
+  "jewel": "",
+  "abilities": "Summon the Nursepings\nUse her medical supplies",
+  "likes": "Treatment\nCollecting medical record cards\nOrdering the Nursepings",
+  "dislikes": "Being called a \"quack doctor\"\nPeople refusing treatment and not wanting to get treated\nBad health habits\nWounds\nPeople refusing help when they need it",
+  "catchphrase": "",
+  "debut": "I'll Treat You, Cure!",
+  "colorHex": "#E42580",
+  "friends": [
+    "Nursepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Females",
+    "Key Teeniepings",
+    "Minor characters",
+    "Pink Teeniepings",
+    "Secret Catch! Teenieping",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear shoes"
+  ],
+  "seasonKey": "secret",
+  "grade": "",
+  "images": [
+    {
+      "file": "Cureping Render 1.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "Cureping Dwarf Render 1.png",
+      "caption": "Dwarf"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/1/1d/Cureping_Render_1.png/revision/latest?cb=20260521074925"
+}

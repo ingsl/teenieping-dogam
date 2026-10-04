@@ -1,0 +1,57 @@
+{
+  "id": "silkyping",
+  "title": "Silkyping",
+  "url": "https://catchteenieping.fandom.com/wiki/Silkyping",
+  "revid": 220210,
+  "fetchedAt": "2026-10-04T13:11:52.701Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Silkyping",
+  "nameKo": "실크핑",
+  "gender": "여성",
+  "concept": "Adventure",
+  "prop": "Magic Carpet",
+  "jewel": "",
+  "abilities": "Making objects move by placing strings\nHandle the carpet freely",
+  "likes": "Treasures\nFancy things\nMagic Carpet",
+  "dislikes": "Old things",
+  "catchphrase": "",
+  "debut": "Silkyping and the Magic Carpet",
+  "colorHex": "#E65EA1",
+  "friends": [
+    "Prince Teeniepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Characters",
+    "Emotions Kingdom residents",
+    "Females",
+    "Minor characters",
+    "Pink Teeniepings",
+    "Princess Catch! Teenieping",
+    "Princess Teeniepings",
+    "Spoiler articles",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear earrings",
+    "Teeniepings that wear shoes",
+    "Teeniepings who wear a tiara or crown",
+    "Teeniepings who wear capes",
+    "Teeniepings who wear gloves"
+  ],
+  "seasonKey": "princess",
+  "grade": "",
+  "images": [
+    {
+      "file": "Silkyping Render 3.png",
+      "caption": "With clothes"
+    },
+    {
+      "file": "(Uncaught) Silkyping Render 1.png",
+      "caption": "Without clothes"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/0/01/Silkyping_Render_3.png/revision/latest?cb=20260203073458"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "puffping",
+  "title": "Puffping",
+  "url": "https://catchteenieping.fandom.com/wiki/Puffping",
+  "revid": 220003,
+  "fetchedAt": "2026-10-04T13:11:52.693Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Puffping",
+  "nameKo": "뿌뿌핑",
+  "gender": "남성",
+  "concept": "Interest",
+  "prop": "Gumball Dispenser\nGumball Gun (corrupted)",
+  "jewel": "",
+  "abilities": "Flying\nInflation\nShoot Bubbles\nShapeshift into a giant monster\nFire Lasers\nSummon a portal to Dessert Town\nSummon a Sugar Shield",
+  "likes": "The Magic Sugar Ball\nSweetping\nTangyping",
+  "dislikes": "Returning the Magic Sugar Ball (formerly)\nBeing alone",
+  "catchphrase": "",
+  "debut": "Sweet Dessert Teeniepings",
+  "colorHex": "#E41A54",
+  "friends": [
+    "Romi",
+    "Dessert Teeniepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Antagonists",
+    "Characters",
+    "Corrupted characters",
+    "Dessert Catch! Teenieping",
+    "Dessert Teeniepings",
+    "Emotion Teenieping",
+    "Males",
+    "Red Teeniepings",
+    "Redeemed Antagonists",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that can turn into monsters",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings who can fly"
+  ],
+  "seasonKey": "dessert",
+  "grade": "빌런",
+  "images": [
+    {
+      "file": "Puffping Render 3.png",
+      "caption": "Normal"
+    },
+    {
+      "file": "S4E14 - Puffping about to enact a plan.png",
+      "caption": "Partially Corrupted"
+    },
+    {
+      "file": "S4E21 - Puffping reminding everyone not to forget about his goal.png",
+      "caption": "Corrupted"
+    },
+    {
+      "file": "S4E25 - Monstrous Puffping looking at Sweetping and Tangyping.png",
+      "caption": "Monster"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/d/d2/Puffping_Render_3.png/revision/latest?cb=20260319190412"
+}

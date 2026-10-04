@@ -1,0 +1,53 @@
+{
+  "id": "gogoping",
+  "title": "Gogoping",
+  "url": "https://catchteenieping.fandom.com/wiki/Gogoping",
+  "revid": 214325,
+  "fetchedAt": "2026-10-04T13:11:52.641Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Gogoping",
+  "nameKo": "아자핑",
+  "gender": "남성",
+  "concept": "Courage",
+  "prop": "Camera",
+  "jewel": "",
+  "abilities": "Transforms with Romi into Princess Star\n(With his camera) Sprinkle Tinkle Puff to immobilize someone\nGive courage to someone (Flash of Courage/Courage Flash)",
+  "likes": "Physical training\nMartial arts and action movies\nTaking pictures",
+  "dislikes": "Fear\nRunning away\nGiving up",
+  "catchphrase": "",
+  "debut": "You Can Do It, Maya!",
+  "colorHex": "#E99200",
+  "friends": [
+    "Royal Emotion Teeniepings"
+  ],
+  "enemies": [
+    "Heavyping",
+    "Phew, Too Heavy!"
+  ],
+  "categories": [
+    "Catch! Teenieping",
+    "Characters",
+    "Emotion Teenieping",
+    "Emotion Teeniepings",
+    "Emotions Kingdom residents",
+    "Heroes",
+    "Main characters",
+    "Males",
+    "Royal Teeniepings",
+    "Star articles",
+    "Teeniepings",
+    "Twinkle Catch! Teenieping",
+    "Yellow Teeniepings"
+  ],
+  "seasonKey": "emotion",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Gogoping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/0/04/Gogoping_Render_1.png/revision/latest?cb=20220114163807"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "trustping",
+  "title": "Trustping",
+  "url": "https://catchteenieping.fandom.com/wiki/Trustping",
+  "revid": 221120,
+  "fetchedAt": "2026-10-04T13:11:52.712Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Trustping",
+  "nameKo": "믿어핑",
+  "gender": "남성",
+  "concept": "Trust",
+  "prop": "Umbrella",
+  "jewel": "Sapphire",
+  "abilities": "Transform Romi into Princess Sapphire\nCreate gusts of wind and hurricanes",
+  "likes": "Taking a bath\nRainy and sunny days\nChocolate balls\nPudding",
+  "dislikes": "Lies\nReading\nWindy days\nVeggies",
+  "catchphrase": "",
+  "debut": "Twinkle Twinkle, Jewel Teeniepings",
+  "colorHex": "#00AED8",
+  "friends": [
+    "Jewel Teeniepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Blue Teeniepings",
+    "Characters",
+    "Emotion Teenieping",
+    "Emotions Kingdom residents",
+    "Heroes",
+    "Jewel Teeniepings",
+    "Main characters",
+    "Males",
+    "Royal Teeniepings",
+    "Star articles",
+    "Teeniepings",
+    "Twinkle Catch! Teenieping",
+    "Young Teeniepings"
+  ],
+  "seasonKey": "twinkle",
+  "grade": "로열",
+  "images": [
+    {
+      "file": "Trustping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/d/d9/Trustping_Render_1.png/revision/latest?cb=20210920174301"
+}

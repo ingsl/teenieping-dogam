@@ -1,0 +1,58 @@
+{
+  "id": "flitterping",
+  "title": "Flitterping",
+  "url": "https://catchteenieping.fandom.com/wiki/Flitterping",
+  "revid": 215228,
+  "fetchedAt": "2026-10-04T13:11:52.632Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Flitterping",
+  "nameKo": "나비핑",
+  "gender": "여성",
+  "concept": "Lightness",
+  "prop": "Wings",
+  "jewel": "",
+  "abilities": "Give anyone and anything wings to make them fly\nFlight",
+  "likes": "Butterflies\nBirds\nFlying",
+  "dislikes": "Being alone\nHawks (formerly)",
+  "catchphrase": "",
+  "debut": "Give Me Wings, Flitterping",
+  "colorHex": "#94D5F0",
+  "friends": [
+    "Prince Teeniepings"
+  ],
+  "enemies": [],
+  "categories": [
+    "Blue Teeniepings",
+    "Characters",
+    "Emotions Kingdom residents",
+    "Females",
+    "Minor characters",
+    "Princess Catch! Teenieping",
+    "Princess Teeniepings",
+    "Spoiler articles",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that have beige fur",
+    "Teeniepings that wear clothes",
+    "Teeniepings that wear earrings",
+    "Teeniepings that wear shoes",
+    "Teeniepings who can fly",
+    "Teeniepings who have wings",
+    "Teeniepings who wear a tiara or crown"
+  ],
+  "seasonKey": "princess",
+  "grade": "",
+  "images": [
+    {
+      "file": "Flitterping Render 4.png",
+      "caption": "With clothes"
+    },
+    {
+      "file": "(Uncaught) Flitterping Render 1.png",
+      "caption": "Without clothes"
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/9/96/Flitterping_Render_4.png/revision/latest?cb=20260521034110"
+}

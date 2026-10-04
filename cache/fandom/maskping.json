@@ -1,0 +1,50 @@
+{
+  "id": "maskping",
+  "title": "Maskping",
+  "url": "https://catchteenieping.fandom.com/wiki/Maskping",
+  "revid": 217690,
+  "fetchedAt": "2026-10-04T13:11:52.649Z",
+  "license": "CC-BY-SA 3.0 (Catch! Teenieping Wiki, Fandom)",
+  "hasInfobox": true,
+  "isGroup": false,
+  "nameEn": "Maskping",
+  "nameKo": "가면핑",
+  "gender": "여성",
+  "concept": "Unknown",
+  "prop": "Key",
+  "jewel": "",
+  "abilities": "Trap Teeniepings into jewels\nOpen portals and doors to teleport\nTie others up\nCreate a shield (only in the Jewel Cavern)",
+  "likes": "Winning\nManipulating people\nMocking her enemies",
+  "dislikes": "Losing\nHaving to back off",
+  "catchphrase": "",
+  "debut": "Twinkle Twinkle, Jewel Teeniepings",
+  "colorHex": "#3C2E3E",
+  "friends": [],
+  "enemies": [
+    "Heartsping",
+    "Romi",
+    "Jewel Teeniepings",
+    "Happying"
+  ],
+  "categories": [
+    "Antagonists",
+    "Black Teeniepings",
+    "Characters",
+    "Females",
+    "Star articles",
+    "Teeniepings",
+    "Teeniepings that do not have catchphrases",
+    "Teeniepings that do not have tails",
+    "Teeniepings that wear clothes",
+    "Twinkle Catch! Teenieping"
+  ],
+  "seasonKey": "twinkle",
+  "grade": "빌런",
+  "images": [
+    {
+      "file": "Maskping Render 1.png",
+      "caption": ""
+    }
+  ],
+  "imageUrl": "https://static.wikia.nocookie.net/catchteeniepin/images/4/46/Maskping_Render_1.png/revision/latest?cb=20260405025734"
+}
