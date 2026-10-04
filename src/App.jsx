@@ -8,6 +8,7 @@ import Puzzle from './pages/Puzzle.jsx';
 import Quiz from './pages/Quiz.jsx';
 import Shadow from './pages/Shadow.jsx';
 import Catch from './pages/Catch.jsx';
+import Pang from './pages/Pang.jsx';
 import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="games/quiz" element={<Quiz />} />
         <Route path="games/shadow" element={<Shadow />} />
         <Route path="games/catch" element={<Catch />} />
+        <Route path="games/pang" element={<Pang />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

@@ -59,7 +59,9 @@ export default function Catch() {
         const others = pool.current.filter((p) => p.id !== target.id);
         const item = Math.random() < 0.4 ? target : others[Math.floor(Math.random() * others.length)];
         const key = seq.current++;
-        setTimeout(() => setHoles((cur) => cur.map((h) => (h?.key === key && h.state === 'up' ? null : h))), speed.show);
+        // 시간이 지나면 쏙 내려갔다가(down) 사라진다
+        setTimeout(() => setHoles((cur) => cur.map((h) => (h?.key === key && h.state === 'up' ? { ...h, state: 'down' } : h))), speed.show);
+        setTimeout(() => setHoles((cur) => cur.map((h) => (h?.key === key && h.state === 'down' ? null : h))), speed.show + 220);
         return hs.map((h, i) => (i === at ? { item, key, state: 'up' } : h));
       });
     }, speed.every);
@@ -132,11 +134,17 @@ export default function Catch() {
         <div className="catch-field">
           {holes.map((h, i) => (
             <button key={i} type="button" className="hole" onPointerDown={() => tap(i)} aria-label={h ? h.item.nameKo : '빈 구멍'}>
-              {h && (
-                <span className={`popper ${h.state}`}>
-                  <img src={asset(h.item.thumb)} alt="" draggable="false" />
-                </span>
-              )}
+              {/* 뒤에서 앞으로: 흙 둔덕 → 구멍 속 → (캐릭터 창) → 앞쪽 흙 테두리. 창 아래쪽이 구멍 가운데라 몸이 구멍 속에서 올라온다 */}
+              <span className="mound" aria-hidden="true" />
+              <span className="pit" aria-hidden="true" />
+              <span className="pop-window" aria-hidden="true">
+                {h && (
+                  <span className={`popper ${h.state}`}>
+                    <img src={asset(h.item.thumb)} alt="" draggable="false" />
+                  </span>
+                )}
+              </span>
+              <span className="lip" aria-hidden="true" />
               {h?.state === 'caught' && <span className="catch-burst" aria-hidden="true" />}
             </button>
           ))}
