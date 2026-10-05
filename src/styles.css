@@ -594,7 +594,10 @@ img { -webkit-user-drag: none; }
   .hud { padding: 8px 10px; }
   .hud .stats { gap: 10px; font-size: 0.95rem; }
   .hud .actions { width: 100%; }
-  .hud .actions .btn { flex: 1; padding: 8px 6px; font-size: 0.85rem; }
+  .hud .actions { flex-wrap: nowrap; gap: 6px; }
+  /* 좁은 화면: 아이콘 위·글자 아래로 쌓고 줄바꿈 금지 ('번\n호' 처럼 깨지지 않게) */
+  .hud .actions .btn { flex: 1 1 0; min-width: 0; flex-direction: column; gap: 2px; padding: 6px 2px; font-size: 0.78rem; line-height: 1.1; white-space: nowrap; border-radius: 14px; }
+  .hud .actions .btn svg { width: 18px; height: 18px; }
   .kids-hud .actions { width: auto; }
   .kids-title { font-size: 1.1rem; }
   .detail h1 { font-size: 2.1rem; }
