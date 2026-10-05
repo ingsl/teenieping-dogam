@@ -1,9 +1,12 @@
 import { Star, Trophy } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-/** 게임 결과 모달. result 가 있으면 열린다: { stars, text, isBest } */
-export default function ResultDialog({ result, title, onAgain, onMenu, menuLabel }) {
+/** 게임 결과 모달. result 가 있으면 열린다: { stars, text, isBest } · 닫기(Esc 포함) = 게임 목록으로 */
+export default function ResultDialog({ result, title, onAgain }) {
   const ref = useRef(null);
+  const navigate = useNavigate();
+  const toMenu = () => navigate('/games');
   useEffect(() => {
     const d = ref.current;
     if (!d) return;
@@ -11,7 +14,7 @@ export default function ResultDialog({ result, title, onAgain, onMenu, menuLabel
     if (!result && d.open) d.close();
   }, [result]);
   return (
-    <dialog className="result" ref={ref} onClose={() => result && onMenu?.()}>
+    <dialog className="result" ref={ref} onClose={() => result && toMenu()}>
       <h2>{title}</h2>
       {result && (
         <>
@@ -24,7 +27,7 @@ export default function ResultDialog({ result, title, onAgain, onMenu, menuLabel
       )}
       <div className="btns">
         <button className="btn" type="button" onClick={onAgain}>한 번 더</button>
-        <button className="btn ghost" type="button" onClick={onMenu}>{menuLabel}</button>
+        <button className="btn ghost" type="button" onClick={toMenu}>닫기</button>
       </div>
     </dialog>
   );

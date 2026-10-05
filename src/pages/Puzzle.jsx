@@ -1,6 +1,6 @@
 // 퍼즐 게임: 바꾸기(swap) / 슬라이드(slide) × 난이도 3~6
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Camera, Eye, Hand, Hash, Shuffle, Timer } from 'lucide-react';
+import { Camera, Eye, Hand, Hash, RotateCcw, Settings, Shuffle, Timer } from 'lucide-react';
 import ResultDialog from '../components/ResultDialog.jsx';
 import { useData, useTitle, useTimer, asset, shuffle, store, formatTime, confetti, matches, characterCanvas } from '../lib/data.js';
 import { useFx, SoundToggle } from '../lib/fx.jsx';
@@ -251,8 +251,8 @@ export default function Puzzle() {
           <button className="btn ghost" type="button" aria-pressed={showNum} onClick={() => { setShowNum(!showNum); store.set('puzzle:showNum', !showNum); }}><Hash size={18} aria-hidden="true" /> 번호</button>
           <button className="btn ghost" type="button" onPointerDown={() => setPeek(true)} onPointerUp={() => setPeek(false)} onPointerLeave={() => setPeek(false)}
             onKeyDown={(e) => (e.key === ' ' || e.key === 'Enter') && setPeek(true)} onKeyUp={() => setPeek(false)}><Eye size={18} aria-hidden="true" /> 정답 보기</button>
-          <button className="btn ghost" type="button" onClick={() => start(n)}>다시 섞기</button>
-          <button className="btn ghost" type="button" onClick={() => setN(null)}>설정</button>
+          <button className="btn ghost" type="button" onClick={() => start(n)}><RotateCcw size={18} aria-hidden="true" /> 다시 섞기</button>
+          <button className="btn ghost" type="button" onClick={() => setN(null)}><Settings size={18} aria-hidden="true" /> 설정</button>
           <SoundToggle on={soundOn} toggle={toggleSound} />
         </div>
       </div>
@@ -277,7 +277,7 @@ export default function Puzzle() {
           {mode === 'swap' ? '두 조각을 차례로 누르면 자리가 바뀌어요. 제자리에 온 조각은 초록 테두리!' : '빈칸 옆(같은 줄) 조각을 누르거나, 손가락으로 쓱 밀어요. 키보드 화살표도 돼요.'}
         </p>
       </div>
-      <ResultDialog result={result} title="완성!" onAgain={() => start(n)} onMenu={() => setN(null)} menuLabel="다른 그림·난이도" />
+      <ResultDialog result={result} title="완성!" onAgain={() => start(n)} />
     </section>
   );
 }

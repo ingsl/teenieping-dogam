@@ -154,7 +154,7 @@ export default function Memory() {
           );
         })}
       </div>
-      <ResultDialog result={result} title="모두 찾았어요!" onAgain={() => start(level)} onMenu={() => setLevel(null)} menuLabel="다른 난이도" />
+      <ResultDialog result={result} title="모두 찾았어요!" onAgain={() => start(level)} />
     </section>
   );
 }

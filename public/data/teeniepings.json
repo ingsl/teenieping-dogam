@@ -5,7 +5,7 @@
     "namu": "https://namu.wiki (CC BY-NC-SA 2.0 KR)",
     "fandom": "https://catchteenieping.fandom.com (CC BY-SA 3.0)"
   },
-  "count": 161,
+  "count": 159,
   "seasons": [
     {
       "key": "emotion",
@@ -5481,36 +5481,6 @@
       "voice": "강성우"
     },
     {
-      "id": "limeping",
-      "nameKo": "라임핑",
-      "nameEn": "Limeping",
-      "season": "7기 쥬얼스타",
-      "seasonKey": "jewelstar",
-      "grade": "로열",
-      "gender": "여성",
-      "emotion": "비트",
-      "intro": "비트의 티니핑, 라임핑 귀엽고 엉뚱하다. 평소엔 아주 귀엽고 귀여움 받는 것도 좋아하지만, 무대에선 진지하고 멋있으며 힙하다. 은근 성격 급한 구석이 있다.",
-      "item": "핸드 마이크 요술봉",
-      "magic": "<비트의 라임CD>",
-      "episodes": [
-        {
-          "episode": "○○○○\n(쥬얼스타 캐치! 티니핑 1화)",
-          "label": "첫 등장",
-          "plot": ""
-        }
-      ],
-      "relations": [],
-      "colorHex": "#6EBFCD",
-      "image": "images/limeping.webp",
-      "thumb": "images/thumb/limeping.webp",
-      "source": {
-        "fandomUrl": "https://catchteenieping.fandom.com/wiki/Limeping",
-        "fandomRevId": 220981,
-        "namuUrl": "https://namu.wiki/w/라임핑"
-      },
-      "updatedAt": "2026-10-04T13:11:52.671Z"
-    },
-    {
       "id": "lemonping",
       "nameKo": "레몬핑",
       "nameEn": "Lemonping",
@@ -5629,34 +5599,6 @@
         "namuUrl": "https://namu.wiki/w/시고르핑"
       },
       "updatedAt": "2026-10-04T13:11:52.638Z"
-    },
-    {
-      "id": "angangping",
-      "nameKo": "앙앙핑",
-      "nameEn": "",
-      "season": "7기 쥬얼스타",
-      "seasonKey": "jewelstar",
-      "grade": "일반",
-      "gender": "남성",
-      "emotion": "",
-      "intro": "쥬얼스타 캐치! 티니핑에 나오는 티니핑이다.",
-      "item": "",
-      "magic": "",
-      "episodes": [
-        {
-          "episode": "○○○○\n(쥬얼스타 캐치! 티니핑 ?화)",
-          "label": "첫 등장",
-          "plot": ""
-        }
-      ],
-      "relations": [],
-      "colorHex": "hsl(74 70% 80%)",
-      "image": "images/angangping.webp",
-      "thumb": "images/thumb/angangping.webp",
-      "source": {
-        "namuUrl": "https://namu.wiki/w/앙앙핑"
-      },
-      "updatedAt": ""
     },
     {
       "id": "bouncyping",

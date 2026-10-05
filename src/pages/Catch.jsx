@@ -150,7 +150,7 @@ export default function Catch() {
           ))}
         </div>
       </div>
-      <ResultDialog result={result} title="시간 끝!" onAgain={() => start(speed)} onMenu={() => setSpeed(null)} menuLabel="빠르기 바꾸기" />
+      <ResultDialog result={result} title="시간 끝!" onAgain={() => start(speed)} />
     </GameShell>
   );
 }
