@@ -1,3 +1,5 @@
 {
-  "_comment": "id별 부분 보정. 여기 값이 모든 소스를 이긴다. 재수집해도 유지된다. 예: \"heartsping\": { \"emotion\": \"사랑\", \"intro\": \"...\" }"
+  "_comment": "id별 부분 보정. 여기 값이 모든 소스를 이긴다. 재수집해도 유지된다. 예: \"heartsping\": { \"emotion\": \"사랑\", \"intro\": \"...\" }. \"hide\": true 는 도감·게임에서 숨김 (아직 완성되지 않은 캐릭터).",
+  "limeping": { "hide": true, "hideWhy": "얼굴만 있는 그림" },
+  "angangping": { "hide": true, "hideWhy": "미공개 (공식 그림 없음)" }
 }

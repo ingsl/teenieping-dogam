@@ -411,6 +411,7 @@ dialog.result .btns { display: flex; gap: 8px; justify-content: center; margin-t
 .step-n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--pink); color: #fff; font-size: 0.95rem; }
 .choice-grid { display: grid; gap: 10px; }
 .choice-grid.three { grid-template-columns: repeat(3, 1fr); }
+.choice-grid.two { grid-template-columns: repeat(2, 1fr); }
 .choice {
   display: grid; gap: 4px; justify-items: center; text-align: center; padding: 14px 8px; border-radius: 18px; cursor: pointer;
   border: 2px solid var(--line); background: var(--bg); transition: transform 0.12s ease, border-color 0.12s ease;
@@ -459,7 +460,6 @@ dialog.result .btns { display: flex; gap: 8px; justify-content: center; margin-t
 .quiz-feedback.ok { color: #0b8a68; }
 .quiz-feedback.no { color: #d0335a; }
 .quiz-options { width: 100%; display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
-.quiz-options.n3 { grid-template-columns: repeat(3, 1fr); }
 .quiz-option {
   min-height: 64px; padding: 6px; border-radius: 18px; border: 2px solid var(--line); background: var(--surface); cursor: pointer; color: var(--ink);
   font-family: var(--font-display); font-size: clamp(1.1rem, 4vw, 1.4rem); box-shadow: var(--shadow);
@@ -472,22 +472,18 @@ dialog.result .btns { display: flex; gap: 8px; justify-content: center; margin-t
 .quiz-option.dim { opacity: 0.45; }
 @keyframes shake2 { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
 
-/* ── 그림자 찾기 ── */
+/* ── 숨은 티니핑 찾기 (그림자·확대 → 티니핑 그림 4개 중 고르기) ── */
 .shadow-stage { display: grid; justify-items: center; }
-.shadow-target {
-  width: min(70%, 240px, 30vh); aspect-ratio: 1; padding: 6%; border-radius: 28px; background: var(--surface); box-shadow: var(--shadow);
-  display: grid; place-items: center;
-}
-.shadow-target img { width: 100%; height: 100%; object-fit: contain; }
-.shadow-options { width: 100%; display: grid; gap: 10px; grid-template-columns: repeat(5, 1fr); }
+.shadow-options { width: 100%; display: grid; gap: 10px; grid-template-columns: repeat(4, 1fr); }
 .shadow-option {
-  aspect-ratio: 1; padding: 10%; border-radius: 20px; border: 3px solid transparent; background: var(--surface); box-shadow: var(--shadow);
-  display: grid; place-items: center; cursor: pointer; transition: transform 0.12s ease, border-color 0.15s ease, opacity 0.2s ease;
+  display: grid; grid-template-rows: 1fr auto; justify-items: center; gap: 4px; padding: 8px 6px 10px; min-width: 0;
+  border-radius: 20px; border: 3px solid transparent; background: var(--surface); box-shadow: var(--shadow); color: var(--ink);
+  cursor: pointer; transition: transform 0.12s ease, border-color 0.15s ease, opacity 0.2s ease;
 }
-.shadow-option img { width: 100%; height: 100%; object-fit: contain; filter: brightness(0) opacity(0.78); transition: filter 0.45s ease; pointer-events: none; }
+.shadow-option img { width: 100%; aspect-ratio: 1; object-fit: contain; pointer-events: none; filter: drop-shadow(0 3px 4px rgba(59, 35, 64, 0.15)); }
+.shadow-option .name { max-width: 100%; font-family: var(--font-display); font-size: clamp(0.85rem, 3.2vw, 1.05rem); line-height: 1.2; word-break: keep-all; overflow-wrap: anywhere; }
 .shadow-option:not(:disabled):active { transform: scale(0.95); }
-.shadow-option.correct { border-color: var(--mint); animation: pop 0.45s ease; }
-.shadow-option.correct img { filter: none; }
+.shadow-option.correct { border-color: var(--mint); background: #d8fbef; animation: pop 0.45s ease; opacity: 1; }
 .shadow-option.wrong { opacity: 0.35; animation: shake2 0.35s ease; }
 .shadow-option.dim { opacity: 0.4; }
 .shadow-option:disabled { cursor: default; }
@@ -614,13 +610,13 @@ img { -webkit-user-drag: none; }
   .choice-grid.three { grid-template-columns: 1fr; }
   .choice { grid-template-columns: auto 1fr; justify-items: start; text-align: left; column-gap: 10px; padding: 12px 14px; }
   .choice .choice-emoji { grid-row: span 2; }
+  .choice-grid.two .choice { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 12px 8px; }
   .choice.start { grid-template-columns: 1fr auto; }
   .choice.start .best { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
-  .shadow-options { display: flex; flex-wrap: wrap; justify-content: center; }
-  .shadow-option { width: calc((100% - 20px) / 3); }
+  .shadow-options { gap: 6px; }
+  .shadow-option { padding: 6px 4px 8px; border-radius: 16px; }
   .game-bar { height: 54px; }
   .game-title { font-size: 1.1rem; }
-  .quiz-options.n3 { grid-template-columns: 1fr; }
   .quiz-option { min-height: 56px; }
   .detail-nav .btn { padding: 8px 14px; }
 }
@@ -773,7 +769,12 @@ dialog.result .big-stars svg.off { color: var(--line); fill: var(--line); }
   background: #fff; color: var(--pink-deep); font-family: var(--font-display); font-size: 1.35rem; box-shadow: 0 4px 10px rgba(226, 61, 134, 0.18);
 }
 .game-art .art-shadow { filter: brightness(0) opacity(0.72); }
-.game-art .art-small { position: absolute; right: calc(50% - 110px); bottom: 14px; height: 64px !important; filter: drop-shadow(0 4px 6px rgba(59,35,64,.2)); }
+.art-lens {
+  position: absolute; right: calc(50% - 118px); bottom: 12px; width: 78px; height: 78px; border-radius: 50%; overflow: hidden;
+  background: #fff; border: 4px solid #fff; box-shadow: 0 0 0 3px var(--pink), 0 6px 12px rgba(59, 35, 64, 0.2);
+}
+.art-lens::after { content: ''; position: absolute; right: -16px; bottom: -16px; width: 26px; height: 8px; border-radius: 4px; background: var(--pink); transform: rotate(45deg); }
+.game-art .art-lens img { position: absolute; left: -60%; top: -30%; width: 230%; height: auto; max-width: none; filter: none; }
 .art-catch { gap: 22px !important; align-items: flex-end; padding-bottom: 18px !important; background: linear-gradient(160deg, #fff3f9, #efe6ff) !important; }
 .mini-hole { position: relative; width: 108px; height: 120px; display: block; }
 .mini-hole img { position: absolute; left: 12px; right: 12px; bottom: 20px; height: 92px !important; width: auto; max-width: none !important; margin: 0 auto; }

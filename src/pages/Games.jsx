@@ -4,8 +4,8 @@ import { useData, useTitle, asset } from '../lib/data.js';
 
 // art: 카드 그림에 쓸 티니핑 id (없으면 로열 티니핑으로 대신) · look: 게임별 그림 연출
 const GAMES = [
-  { to: '/games/quiz', name: '누구일까?', desc: '사진·그림자·확대 사진을 보고 이름을 맞혀요', tags: ['3단계', '기수별'], art: ['twinkleping'], look: 'quiz' },
-  { to: '/games/shadow', name: '그림자 찾기', desc: '티니핑과 똑같은 그림자를 5개 중에서 찾아요', tags: ['어린이 추천'], art: ['lalaping'], look: 'shadow' },
+  { to: '/games/quiz', name: '누구일까?', desc: '사진을 보고 티니핑 이름을 맞혀요', tags: ['4지선다', '기수별'], art: ['twinkleping'], look: 'quiz' },
+  { to: '/games/shadow', name: '숨은 티니핑 찾기', desc: '그림자나 확대된 부분을 보고 어떤 티니핑인지 찾아요', tags: ['그림자·확대', '어린이 추천'], art: ['lalaping'], look: 'shadow' },
   { to: '/games/catch', name: '티니핑을 캐치!', desc: '쏙쏙 나오는 티니핑 중 찾는 친구만 콕 잡아요', tags: ['30초', '어린이 추천'], art: ['happying'], look: 'catch' },
   { to: '/games/pang', name: '티니핑 팡팡', desc: '같은 티니핑 3개를 한 줄로 맞추면 팡!', tags: ['60초', '인기'], art: ['heartsping', 'dadaping', 'chachaping', 'lalaping', 'happying', 'gogoping'], look: 'pang' },
   { to: '/games/memory', name: '메모리 게임', desc: '카드를 뒤집어 같은 티니핑 짝을 찾아요', tags: ['3×4 ~ 8×8'], art: ['gogoping'], look: 'memory' },
@@ -21,7 +21,8 @@ function GameArt({ look, art }) {
     case 'quiz':
       return <div className="game-art"><img src={src} alt="" /><span className="art-bubble">누구?</span></div>;
     case 'shadow':
-      return <div className="game-art"><img className="art-shadow" src={src} alt="" /><img className="art-small" src={src} alt="" /></div>;
+      // 그림자 + 돋보기(확대) — 두 가지 놀이 방법
+      return <div className="game-art"><img className="art-shadow" src={src} alt="" /><span className="art-lens"><img src={src} alt="" /></span></div>;
     case 'catch':
       return (
         <div className="game-art art-catch">

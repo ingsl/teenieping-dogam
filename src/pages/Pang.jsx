@@ -300,7 +300,7 @@ export default function Pang() {
         </div>
         <p className="hint-text">이웃한 두 티니핑을 차례로 누르거나, 손가락으로 쓱 밀어서 바꿔요.</p>
       </div>
-      <ResultDialog result={result} title="시간 끝!" onAgain={() => start(level)} onMenu={() => setLevel(null)} menuLabel="난이도 바꾸기" />
+      <ResultDialog result={result} title="시간 끝!" onAgain={() => start(level)} />
     </GameShell>
   );
 }

@@ -126,10 +126,14 @@ async function main() {
 
     // 정보(나무위키·Fandom)도 이미지도 있어야 도감에 넣는다. overrides 의 keep: true 는 예외
     const hasInfo = Boolean(n?.namu || f?.hasInfobox || roster);
+    // overrides 의 hide: true 는 무조건 제외 (얼굴만 있는 그림·미공개 캐릭터처럼 아직 완성되지 않은 항목)
     const keep = overrides[id]?.keep;
+    const hide = overrides[id]?.hide;
     delete rec.keep;
-    if (!keep && (!rec.image || !hasInfo || !rec.nameKo)) {
-      excluded.push({ ...rec, why: !rec.image ? '이미지 없음' : '정보 없음' });
+    delete rec.hide;
+    delete rec.hideWhy;
+    if (hide || (!keep && (!rec.image || !hasInfo || !rec.nameKo))) {
+      excluded.push({ ...rec, why: hide ? (overrides[id].hideWhy || '숨김') : !rec.image ? '이미지 없음' : '정보 없음' });
       continue;
     }
     items.push(rec);

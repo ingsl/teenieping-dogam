@@ -277,7 +277,7 @@ export default function Puzzle() {
           {mode === 'swap' ? '두 조각을 차례로 누르면 자리가 바뀌어요. 제자리에 온 조각은 초록 테두리!' : '빈칸 옆(같은 줄) 조각을 누르거나, 손가락으로 쓱 밀어요. 키보드 화살표도 돼요.'}
         </p>
       </div>
-      <ResultDialog result={result} title="완성!" onAgain={() => start(n)} onMenu={() => setN(null)} menuLabel="다른 그림·난이도" />
+      <ResultDialog result={result} title="완성!" onAgain={() => start(n)} />
     </section>
   );
 }
